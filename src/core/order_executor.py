@@ -13,11 +13,13 @@ from dataclasses import dataclass
 import time
 from typing import Dict
 
+
 from SmartApi.smartConnect import SmartConnect
 
 from src.config.settings import settings
 from src.core.logger import get_logger
 from src.core.safety import SafetyManager
+from src.core.tokens import TOKEN_MAP
 
 
 logger = get_logger("order_executor")
@@ -105,10 +107,14 @@ class OrderExecutor:
             }
             
             # Build order params for Angel One
+            instrument = self._get_instrument(leg.symbol, leg.exchange)
+            if not instrument:
+                return {"error": "missing token", "status": "error"}
+
             order_params = {
                 "variety": "NORMAL",  # NORMAL, STOPLOSS, AMO, etc.
-                "tradingsymbol": leg.symbol,
-                "symboltoken": self._get_token(leg.symbol, leg.exchange),
+                "tradingsymbol": instrument["tradingsymbol"],
+                "symboltoken": instrument["token"],
                 "transactiontype": leg.side,  # BUY or SELL
                 "exchange": leg.exchange,
                 "ordertype": order_type_map.get(leg.order_type, "MARKET"),
@@ -147,11 +153,15 @@ class OrderExecutor:
             logger.exception("Order failed for %s %s: %s", leg.symbol, leg.side, exc)
             return {"error": str(exc), "status": "error"}
     
-    def _get_token(self, symbol: str, exchange: str) -> str:
-        """Get instrument token for symbol. Placeholder - implement token lookup."""
-        # TODO: Implement proper token resolution from Angel One instrument master
-        logger.warning("Token lookup not implemented for %s on %s", symbol, exchange)
-        return "0"  # Placeholder
+    def _get_instrument(self, symbol: str, exchange: str) -> Dict[str, str] | None:
+        key = f"{symbol.upper()}_{exchange.upper()}"
+        instrument = TOKEN_MAP.get(key)
+
+        if not instrument:
+            logger.error("Token NOT FOUND for %s (%s)", symbol, exchange)
+            return None
+
+        return instrument
 
     def _wait_for_completion(self, order_id: str, timeout: float = 3.0) -> str:
         deadline = time.time() + timeout

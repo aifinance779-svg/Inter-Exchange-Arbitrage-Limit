@@ -172,7 +172,7 @@ class AngelOneDataFeed:
         except (TypeError, ValueError):
             return 0.0
         # SmartAPI returns prices scaled by 100 for equities
-        if abs(price) > 100000:
+        if price > 2000:
             return price / 100.0
         return price
 

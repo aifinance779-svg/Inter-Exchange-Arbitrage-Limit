@@ -46,7 +46,7 @@ class Settings:
     refresh_token: Optional[str] = None
     feed_token: Optional[str] = None
 
-    min_spread: float = float(os.getenv("MIN_SPREAD", 0.60))
+    min_spread: float = float(os.getenv("MIN_SPREAD", 0.70))
     poll_interval_ms: int = int(os.getenv("POLL_INTERVAL_MS", 50))
     depth_levels: int = int(os.getenv("DEPTH_LEVELS", 5))
 
