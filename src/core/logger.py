@@ -10,6 +10,7 @@ from __future__ import annotations
 import logging
 import logging.handlers
 from pathlib import Path
+from datetime import datetime
 from typing import Optional
 
 from src.config.settings import settings
@@ -40,9 +41,11 @@ def get_logger(name: str, level: int = logging.INFO) -> logging.Logger:
     sh.setFormatter(fmt)
     logger.addHandler(sh)
 
-    fh = logging.handlers.TimedRotatingFileHandler(
-        log_dir / "bot.log", when="midnight", backupCount=7, encoding="utf-8"
-    )
+    # Use date-based filename: bot-YYYY-MM-DD.log
+    today = datetime.now().strftime("%Y-%m-%d")
+    log_file = log_dir / f"bot-{today}.log"
+    
+    fh = logging.FileHandler(log_file, encoding="utf-8")
     fh.setFormatter(fmt)
     logger.addHandler(fh)
 

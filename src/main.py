@@ -72,45 +72,53 @@ async def run_bot(args):
         )
 
     async def on_signal(signal, snapshot):
-        logger.info(
-            "Signal %s spread=%.2f buy=%s sell=%s qty=%s",
-            signal.symbol,
-            signal.spread,
-            signal.buy_exchange,
-            signal.sell_exchange,
-            signal.quantity,
-        )
-        if dashboard:
-            dashboard.update_stats(total_signals=dashboard.stats.get("total_signals", 0) + 1)
-            dashboard.update(
+        try:
+            logger.info(
+                "Signal %s spread=%.2f buy=%s@₹%.2f sell=%s@₹%.2f qty=%s",
                 signal.symbol,
-                signal=f"{signal.buy_exchange}->{signal.sell_exchange}",
-                status="PENDING",
+                signal.spread,
+                signal.buy_exchange,
+                snapshot.nse_ltp if signal.buy_exchange == "NSE" else snapshot.bse_ltp,
+                signal.sell_exchange,
+                snapshot.nse_ltp if signal.sell_exchange == "NSE" else snapshot.bse_ltp,
+                signal.quantity,
             )
-        buy_leg = OrderLeg(
-            exchange=signal.buy_exchange,
-            symbol=signal.symbol,
-            side="BUY",
-            quantity=signal.quantity,
-        )
-        sell_leg = OrderLeg(
-            exchange=signal.sell_exchange,
-            symbol=signal.symbol,
-            side="SELL",
-            quantity=signal.quantity,
-        )
-        result = await executor.execute_pair(buy_leg, sell_leg, signal.spread)
-        if dashboard:
-            status = "OK"
-            if result.get("status") == "blocked":
-                status = "BLOCKED"
-            elif any(isinstance(leg.get("result"), dict) and leg["result"].get("status") == "error"
-                     for leg in (result.get("buy", {}), result.get("sell", {}))):
-                status = "FAIL"
-                dashboard.update_stats(failed_trades=dashboard.stats.get("failed_trades", 0) + 1)
-            else:
-                dashboard.update_stats(successful_trades=dashboard.stats.get("successful_trades", 0) + 1)
-            dashboard.update(signal.symbol, status=status)
+            if dashboard:
+                dashboard.update_stats(total_signals=dashboard.stats.get("total_signals", 0) + 1)
+                dashboard.update(
+                    signal.symbol,
+                    signal=f"{signal.buy_exchange}->{signal.sell_exchange}",
+                    status="PENDING",
+                )
+            buy_leg = OrderLeg(
+                exchange=signal.buy_exchange,
+                symbol=signal.symbol,
+                side="BUY",
+                quantity=signal.quantity,
+            )
+            sell_leg = OrderLeg(
+                exchange=signal.sell_exchange,
+                symbol=signal.symbol,
+                side="SELL",
+                quantity=signal.quantity,
+            )
+            result = await executor.execute_pair(buy_leg, sell_leg, signal.spread)
+            if dashboard:
+                status = "OK"
+                if result.get("status") == "blocked":
+                    status = "BLOCKED"
+                elif any(isinstance(leg.get("result"), dict) and leg["result"].get("status") == "error"
+                         for leg in (result.get("buy", {}), result.get("sell", {}))):
+                    status = "FAIL"
+                    dashboard.update_stats(failed_trades=dashboard.stats.get("failed_trades", 0) + 1)
+                else:
+                    dashboard.update_stats(successful_trades=dashboard.stats.get("successful_trades", 0) + 1)
+                dashboard.update(signal.symbol, status=status)
+        except Exception as exc:
+            logger.exception("CRITICAL: Error processing signal for %s: %s", signal.symbol, exc)
+            # Don't re-raise - let bot continue running
+            if dashboard:
+                dashboard.update(signal.symbol, status="ERROR")
 
     feed.start()
     try:

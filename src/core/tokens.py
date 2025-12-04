@@ -16,24 +16,32 @@ WATCHLIST = {
     "BPCL",
 }
 
-DEFAULT_TOKEN_MAP: Dict[str, Dict[str, str]] = {
-    "SBIN_NSE": {"token": "3045", "tradingsymbol": "SBIN-EQ"},
-    "SBIN_BSE": {"token": "500112", "tradingsymbol": "500112"},
+DEFAULT_TOKEN_MAP = {
+    "SBIN_NSE":      {"token": "3045",    "tradingsymbol": "SBIN-EQ"},
+    "SBIN_BSE":      {"token": "500112",  "tradingsymbol": "SBIN"},
+
     "TATAMOTORS_NSE": {"token": "884737", "tradingsymbol": "TATAMOTORS-EQ"},
-    "TATAMOTORS_BSE": {"token": "500570", "tradingsymbol": "500570"},
+    "TATAMOTORS_BSE": {"token": "500570", "tradingsymbol": "TATAMOTORS"},
+
     "ICICIBANK_NSE": {"token": "1270529", "tradingsymbol": "ICICIBANK-EQ"},
-    "ICICIBANK_BSE": {"token": "532174", "tradingsymbol": "532174"},
-    "HDFCBANK_NSE": {"token": "133275", "tradingsymbol": "HDFCBANK-EQ"},
-    "HDFCBANK_BSE": {"token": "500180", "tradingsymbol": "500180"},
-    "INFY_NSE": {"token": "408065", "tradingsymbol": "INFY-EQ"},
-    "INFY_BSE": {"token": "500209", "tradingsymbol": "500209"},
-    "TCS_NSE": {"token": "2953217", "tradingsymbol": "TCS-EQ"},
-    "TCS_BSE": {"token": "532540", "tradingsymbol": "532540"},
-    "POWERGRID_NSE": {"token": "383385", "tradingsymbol": "POWERGRID-EQ"},
-    "POWERGRID_BSE": {"token": "532498", "tradingsymbol": "532498"},
-    "BPCL_NSE": {"token": "134809", "tradingsymbol": "BPCL-EQ"},
-    "BPCL_BSE": {"token": "500547", "tradingsymbol": "500547"},
+    "ICICIBANK_BSE": {"token": "532174",  "tradingsymbol": "ICICIBANK"},
+
+    "HDFCBANK_NSE":  {"token": "133275",  "tradingsymbol": "HDFCBANK-EQ"},
+    "HDFCBANK_BSE":  {"token": "500180",  "tradingsymbol": "HDFCBANK"},
+
+    "INFY_NSE":      {"token": "408065",  "tradingsymbol": "INFY-EQ"},
+    "INFY_BSE":      {"token": "500209",  "tradingsymbol": "INFY"},
+
+    "TCS_NSE":       {"token": "2953217", "tradingsymbol": "TCS-EQ"},
+    "TCS_BSE":       {"token": "532540",  "tradingsymbol": "TCS"},
+
+    "POWERGRID_NSE": {"token": "383385",  "tradingsymbol": "POWERGRID-EQ"},
+    "POWERGRID_BSE": {"token": "532498",  "tradingsymbol": "POWERGRID"},
+
+    "BPCL_NSE":      {"token": "134809",  "tradingsymbol": "BPCL-EQ"},
+    "BPCL_BSE":      {"token": "500547",  "tradingsymbol": "BPCL"},
 }
+
 
 TOKEN_MAP: Dict[str, Dict[str, str]] = {}
 
@@ -50,7 +58,7 @@ def _load_from_csv(csv_path: Path) -> None:
         reader = csv.DictReader(f)
         for row in reader:
             exch = (
-                row.get("exch_seg")
+                row.get("exch_seg")  # NSE / BSE
                 or row.get("exchange")
                 or row.get("exch")
                 or ""
@@ -59,12 +67,13 @@ def _load_from_csv(csv_path: Path) -> None:
                 continue
 
             token = row.get("token") or row.get("symboltoken")
-            trading_symbol = row.get("trading_symbol") or row.get("tradingsymbol")
+            # Use 'symbol' from OpenAPIScripMaster (e.g. SBIN-EQ or SBIN)
+            trading_symbol = row.get("symbol") or row.get("trading_symbol") or row.get("tradingsymbol")
             if not token or not trading_symbol:
                 continue
 
             trading_symbol = trading_symbol.upper()
-            base = _base_symbol(trading_symbol)
+            base = _base_symbol(trading_symbol)  # SBIN-EQ -> SBIN, SBIN -> SBIN
             if base not in WATCHLIST:
                 continue
 
@@ -74,7 +83,7 @@ def _load_from_csv(csv_path: Path) -> None:
 
 def load_tokens() -> None:
     csv_path = Path(
-        r"C:\Users\prath\AppData\Local\Programs\Python\Python311\Lib\site-packages\SmartApi\data\OpenAPI_Instrument.csv"
+        r"C:\Users\prath\.smartapi\OpenAPIScripMaster.csv"
     )
 
     if not csv_path.exists():

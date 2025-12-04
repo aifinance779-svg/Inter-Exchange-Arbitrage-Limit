@@ -1,0 +1,364 @@
+2025-12-04 11:30:14 | INFO | main | Authenticating with Angel One SmartAPI...
+2025-12-04 11:30:14 | INFO | auth | Authentication successful
+2025-12-04 11:30:14 | INFO | main | Authentication successful. Starting bot...
+2025-12-04 11:30:14 | INFO | data_feed | Starting Angel One WebSocket feed for ['TATAMOTORS', 'ICICIBANK', 'HDFCBANK', 'SBIN', 'POWERGRID', 'INFY', 'TCS', 'BPCL']
+2025-12-04 11:30:14 | INFO | data_feed | Fetching instrument master data for 8 symbols...
+2025-12-04 11:30:14 | WARNING | data_feed | Could not fetch from master data. Using manual token lookup.
+2025-12-04 11:30:14 | INFO | data_feed | Resolved 16 instrument tokens
+2025-12-04 11:30:14 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:30:15 | INFO | data_feed | WebSocket connected. Subscribing to 16 instruments
+2025-12-04 11:30:19 | INFO | live | Monitoring... NSE=₹946.20 BSE=₹946.00 Spread=₹0.20
+2025-12-04 11:30:24 | INFO | live | Monitoring... NSE=₹946.25 BSE=₹946.00 Spread=₹0.25
+2025-12-04 11:30:29 | INFO | live | Monitoring... NSE=₹946.30 BSE=₹946.00 Spread=₹0.30
+2025-12-04 11:30:34 | INFO | live | Monitoring... NSE=₹946.25 BSE=₹946.00 Spread=₹0.25
+2025-12-04 11:30:39 | INFO | live | Monitoring... NSE=₹946.25 BSE=₹946.00 Spread=₹0.25
+2025-12-04 11:30:44 | INFO | live | Monitoring... NSE=₹946.30 BSE=₹946.00 Spread=₹0.30
+2025-12-04 11:30:49 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:30:57 | ERROR | data_feed | Failed to process tick: Event loop is closed
+Traceback (most recent call last):
+  File "C:\Projects\BSE-NSE\src\core\data_feed.py", line 246, in _process_tick
+    self.loop.call_soon_threadsafe(self.queue.put_nowait, payload)
+  File "C:\Users\prath\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 803, in call_soon_threadsafe
+    self._check_closed()
+  File "C:\Users\prath\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 519, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2025-12-04 11:30:57 | ERROR | data_feed | Failed to process tick: Event loop is closed
+Traceback (most recent call last):
+  File "C:\Projects\BSE-NSE\src\core\data_feed.py", line 246, in _process_tick
+    self.loop.call_soon_threadsafe(self.queue.put_nowait, payload)
+  File "C:\Users\prath\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 803, in call_soon_threadsafe
+    self._check_closed()
+  File "C:\Users\prath\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 519, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2025-12-04 11:30:59 | INFO | main | Authenticating with Angel One SmartAPI...
+2025-12-04 11:31:00 | INFO | auth | Authentication successful
+2025-12-04 11:31:00 | INFO | main | Authentication successful. Starting bot...
+2025-12-04 11:31:00 | INFO | data_feed | Starting Angel One WebSocket feed for ['TATAMOTORS', 'ICICIBANK', 'HDFCBANK', 'SBIN', 'POWERGRID', 'INFY', 'TCS', 'BPCL']
+2025-12-04 11:31:00 | INFO | data_feed | Fetching instrument master data for 8 symbols...
+2025-12-04 11:31:00 | WARNING | data_feed | Could not fetch from master data. Using manual token lookup.
+2025-12-04 11:31:00 | INFO | data_feed | Resolved 16 instrument tokens
+2025-12-04 11:31:00 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:31:00 | INFO | data_feed | WebSocket connected. Subscribing to 16 instruments
+2025-12-04 11:31:05 | INFO | live | Monitoring... NSE=₹946.65 BSE=₹946.40 Spread=₹0.25
+2025-12-04 11:31:10 | INFO | live | Monitoring... NSE=₹946.90 BSE=₹946.65 Spread=₹0.25
+2025-12-04 11:31:15 | INFO | live | Monitoring... NSE=₹946.80 BSE=₹946.65 Spread=₹0.15
+2025-12-04 11:31:20 | INFO | live | Monitoring... NSE=₹947.00 BSE=₹946.65 Spread=₹0.35
+2025-12-04 11:31:25 | INFO | live | Monitoring... NSE=₹946.90 BSE=₹947.00 Spread=₹0.10
+2025-12-04 11:31:30 | INFO | live | Monitoring... NSE=₹946.95 BSE=₹946.60 Spread=₹0.35
+2025-12-04 11:31:35 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:31:40 | INFO | live | Monitoring... NSE=₹946.90 BSE=₹946.95 Spread=₹0.05
+2025-12-04 11:31:45 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:31:50 | INFO | live | Monitoring... NSE=₹946.85 BSE=₹946.95 Spread=₹0.10
+2025-12-04 11:31:55 | INFO | live | Monitoring... NSE=₹946.65 BSE=₹946.75 Spread=₹0.10
+2025-12-04 11:32:00 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:32:05 | INFO | live | Monitoring... NSE=₹946.75 BSE=₹946.60 Spread=₹0.15
+2025-12-04 11:32:10 | INFO | live | Monitoring... NSE=₹946.70 BSE=₹946.60 Spread=₹0.10
+2025-12-04 11:32:15 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:32:20 | INFO | live | Monitoring... NSE=₹946.75 BSE=₹946.60 Spread=₹0.15
+2025-12-04 11:32:25 | INFO | live | Monitoring... NSE=₹946.65 BSE=₹946.60 Spread=₹0.05
+2025-12-04 11:32:30 | INFO | live | Monitoring... NSE=₹946.65 BSE=₹946.25 Spread=₹0.40
+2025-12-04 11:32:33 | INFO | main | Signal SBIN spread=0.45 buy=BSE@₹946.25 sell=NSE@₹946.70 qty=50
+2025-12-04 11:32:34 | ERROR | order_executor | Order failed for SBIN BUY: 'str' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Projects\BSE-NSE\src\core\order_executor.py", line 136, in _place_order
+    if response and response.get("status") and response.get("data"):
+                    ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+2025-12-04 11:32:34 | ERROR | order_executor | Order failed for SBIN SELL: 'str' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Projects\BSE-NSE\src\core\order_executor.py", line 136, in _place_order
+    if response and response.get("status") and response.get("data"):
+                    ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+2025-12-04 11:32:34 | WARNING | order_executor | ⚠️ Trade INCOMPLETE: SBIN | Spread=₹0.45 | BUY: BSE (id=N/A, status=error, price=N/A) | SELL: NSE (id=N/A, status=error, price=N/A)
+2025-12-04 11:32:34 | ERROR | order_executor | Failsafe triggered for SBIN: {'buy': {'result': {'error': "'str' object has no attribute 'get'", 'status': 'error'}, 'leg': OrderLeg(exchange='BSE', symbol='SBIN', side='BUY', quantity=50, order_type='MARKET', product='INTRADAY', validity='IOC', price=0.0, trigger_price=0.0)}, 'sell': {'result': {'error': "'str' object has no attribute 'get'", 'status': 'error'}, 'leg': OrderLeg(exchange='NSE', symbol='SBIN', side='SELL', quantity=50, order_type='MARKET', product='INTRADAY', validity='IOC', price=0.0, trigger_price=0.0)}}
+2025-12-04 11:32:34 | INFO | main | Signal SBIN spread=0.45 buy=BSE@₹946.25 sell=NSE@₹946.70 qty=50
+2025-12-04 11:32:34 | ERROR | order_executor | Order failed for SBIN SELL: 'str' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Projects\BSE-NSE\src\core\order_executor.py", line 136, in _place_order
+    if response and response.get("status") and response.get("data"):
+                    ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+2025-12-04 11:32:34 | ERROR | order_executor | Order failed for SBIN BUY: 'str' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Projects\BSE-NSE\src\core\order_executor.py", line 136, in _place_order
+    if response and response.get("status") and response.get("data"):
+                    ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+2025-12-04 11:32:34 | WARNING | order_executor | ⚠️ Trade INCOMPLETE: SBIN | Spread=₹0.45 | BUY: BSE (id=N/A, status=error, price=N/A) | SELL: NSE (id=N/A, status=error, price=N/A)
+2025-12-04 11:32:34 | ERROR | order_executor | Failsafe triggered for SBIN: {'buy': {'result': {'error': "'str' object has no attribute 'get'", 'status': 'error'}, 'leg': OrderLeg(exchange='BSE', symbol='SBIN', side='BUY', quantity=50, order_type='MARKET', product='INTRADAY', validity='IOC', price=0.0, trigger_price=0.0)}, 'sell': {'result': {'error': "'str' object has no attribute 'get'", 'status': 'error'}, 'leg': OrderLeg(exchange='NSE', symbol='SBIN', side='SELL', quantity=50, order_type='MARKET', product='INTRADAY', validity='IOC', price=0.0, trigger_price=0.0)}}
+2025-12-04 11:32:34 | INFO | main | Signal SBIN spread=0.45 buy=BSE@₹946.25 sell=NSE@₹946.70 qty=50
+2025-12-04 11:32:34 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-04 11:32:34 | INFO | main | Signal SBIN spread=0.45 buy=BSE@₹946.25 sell=NSE@₹946.70 qty=50
+2025-12-04 11:32:34 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-04 11:32:34 | INFO | main | Signal SBIN spread=0.45 buy=BSE@₹946.25 sell=NSE@₹946.70 qty=50
+2025-12-04 11:32:34 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-04 11:32:35 | INFO | live | Monitoring... NSE=₹946.70 BSE=₹946.35 Spread=₹0.35
+2025-12-04 11:32:40 | INFO | live | Monitoring... NSE=₹946.70 BSE=₹946.75 Spread=₹0.05
+2025-12-04 11:32:45 | INFO | live | Monitoring... NSE=₹946.60 BSE=₹946.75 Spread=₹0.15
+2025-12-04 11:32:50 | INFO | live | Monitoring... NSE=₹946.65 BSE=₹946.75 Spread=₹0.10
+2025-12-04 11:32:55 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:33:01 | ERROR | data_feed | Failed to process tick: Event loop is closed
+Traceback (most recent call last):
+  File "C:\Projects\BSE-NSE\src\core\data_feed.py", line 246, in _process_tick
+    self.loop.call_soon_threadsafe(self.queue.put_nowait, payload)
+  File "C:\Users\prath\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 803, in call_soon_threadsafe
+    self._check_closed()
+  File "C:\Users\prath\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 519, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2025-12-04 11:33:01 | ERROR | data_feed | Failed to process tick: Event loop is closed
+Traceback (most recent call last):
+  File "C:\Projects\BSE-NSE\src\core\data_feed.py", line 246, in _process_tick
+    self.loop.call_soon_threadsafe(self.queue.put_nowait, payload)
+  File "C:\Users\prath\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 803, in call_soon_threadsafe
+    self._check_closed()
+  File "C:\Users\prath\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 519, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2025-12-04 11:33:01 | ERROR | data_feed | Failed to process tick: Event loop is closed
+Traceback (most recent call last):
+  File "C:\Projects\BSE-NSE\src\core\data_feed.py", line 246, in _process_tick
+    self.loop.call_soon_threadsafe(self.queue.put_nowait, payload)
+  File "C:\Users\prath\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 803, in call_soon_threadsafe
+    self._check_closed()
+  File "C:\Users\prath\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 519, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2025-12-04 11:34:48 | INFO | main | Authenticating with Angel One SmartAPI...
+2025-12-04 11:34:48 | INFO | auth | Authentication successful
+2025-12-04 11:34:48 | INFO | main | Authentication successful. Starting bot...
+2025-12-04 11:34:48 | INFO | data_feed | Starting Angel One WebSocket feed for ['TATAMOTORS', 'ICICIBANK', 'HDFCBANK', 'SBIN', 'POWERGRID', 'INFY', 'TCS', 'BPCL']
+2025-12-04 11:34:48 | INFO | data_feed | Fetching instrument master data for 8 symbols...
+2025-12-04 11:34:48 | WARNING | data_feed | Could not fetch from master data. Using manual token lookup.
+2025-12-04 11:34:48 | INFO | data_feed | Resolved 16 instrument tokens
+2025-12-04 11:34:48 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:34:49 | INFO | data_feed | WebSocket connected. Subscribing to 16 instruments
+2025-12-04 11:34:53 | INFO | live | Monitoring... NSE=₹946.65 BSE=₹946.75 Spread=₹0.10
+2025-12-04 11:34:58 | INFO | live | Monitoring... NSE=₹946.65 BSE=₹946.75 Spread=₹0.10
+2025-12-04 11:35:03 | INFO | live | Monitoring... NSE=₹946.65 BSE=₹946.90 Spread=₹0.25
+2025-12-04 11:35:08 | INFO | live | Monitoring... NSE=₹946.60 BSE=₹946.85 Spread=₹0.25
+2025-12-04 11:35:13 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:35:18 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:35:23 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:35:28 | INFO | live | Monitoring... NSE=₹946.70 BSE=₹946.50 Spread=₹0.20
+2025-12-04 11:35:33 | INFO | live | Monitoring... NSE=₹946.70 BSE=₹946.50 Spread=₹0.20
+2025-12-04 11:35:38 | INFO | live | Monitoring... NSE=₹946.85 BSE=₹946.50 Spread=₹0.35
+2025-12-04 11:35:43 | INFO | main | Signal SBIN spread=0.45 buy=BSE@₹946.50 sell=NSE@₹946.95 qty=50
+2025-12-04 11:36:37 | INFO | main | Authenticating with Angel One SmartAPI...
+2025-12-04 11:36:38 | INFO | auth | Authentication successful
+2025-12-04 11:36:38 | INFO | main | Authentication successful. Starting bot...
+2025-12-04 11:36:38 | INFO | data_feed | Starting Angel One WebSocket feed for ['TATAMOTORS', 'ICICIBANK', 'HDFCBANK', 'SBIN', 'POWERGRID', 'INFY', 'TCS', 'BPCL']
+2025-12-04 11:36:38 | INFO | data_feed | Fetching instrument master data for 8 symbols...
+2025-12-04 11:36:38 | WARNING | data_feed | Could not fetch from master data. Using manual token lookup.
+2025-12-04 11:36:38 | INFO | data_feed | Resolved 16 instrument tokens
+2025-12-04 11:36:38 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:36:39 | INFO | data_feed | WebSocket connected. Subscribing to 16 instruments
+2025-12-04 11:36:41 | INFO | main | Signal SBIN spread=0.75 buy=BSE@₹946.00 sell=NSE@₹946.75 qty=50
+2025-12-04 11:38:58 | INFO | main | Authenticating with Angel One SmartAPI...
+2025-12-04 11:38:59 | INFO | auth | Authentication successful
+2025-12-04 11:38:59 | INFO | main | Authentication successful. Starting bot...
+2025-12-04 11:38:59 | INFO | data_feed | Starting Angel One WebSocket feed for ['TATAMOTORS', 'ICICIBANK', 'HDFCBANK', 'SBIN', 'POWERGRID', 'INFY', 'TCS', 'BPCL']
+2025-12-04 11:38:59 | INFO | data_feed | Fetching instrument master data for 8 symbols...
+2025-12-04 11:38:59 | WARNING | data_feed | Could not fetch from master data. Using manual token lookup.
+2025-12-04 11:38:59 | INFO | data_feed | Resolved 16 instrument tokens
+2025-12-04 11:38:59 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:39:00 | INFO | data_feed | WebSocket connected. Subscribing to 16 instruments
+2025-12-04 11:39:04 | INFO | live | Monitoring... NSE=₹945.85 BSE=₹945.60 Spread=₹0.25
+2025-12-04 11:39:09 | INFO | live | Monitoring... NSE=₹945.85 BSE=₹945.60 Spread=₹0.25
+2025-12-04 11:39:14 | INFO | live | Monitoring... NSE=₹945.80 BSE=₹945.85 Spread=₹0.05
+2025-12-04 11:39:19 | INFO | live | Monitoring... NSE=₹945.80 BSE=₹945.85 Spread=₹0.05
+2025-12-04 11:39:24 | INFO | live | Monitoring... NSE=₹945.80 BSE=₹945.85 Spread=₹0.05
+2025-12-04 11:39:28 | INFO | main | Signal SBIN spread=0.45 buy=BSE@₹945.85 sell=NSE@₹946.30 qty=50
+2025-12-04 11:39:29 | ERROR | order_executor | Order failed for SBIN SELL: 'str' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Projects\BSE-NSE\src\core\order_executor.py", line 152, in _place_order
+    if response and response.get("status") and response.get("data"):
+                    ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+2025-12-04 11:39:29 | ERROR | order_executor | Order failed for SBIN BUY: 'str' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Projects\BSE-NSE\src\core\order_executor.py", line 152, in _place_order
+    if response and response.get("status") and response.get("data"):
+                    ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+2025-12-04 11:39:29 | WARNING | order_executor | ⚠️ Trade INCOMPLETE: SBIN | Spread=₹0.45 | BUY: BSE (id=N/A, status=error, price=N/A) | SELL: NSE (id=N/A, status=error, price=N/A)
+2025-12-04 11:39:29 | ERROR | order_executor | Failsafe triggered for SBIN: {'buy': {'result': {'error': "'str' object has no attribute 'get'", 'status': 'error'}, 'leg': OrderLeg(exchange='BSE', symbol='SBIN', side='BUY', quantity=50, order_type='MARKET', product='INTRADAY', validity='IOC', price=0.0, trigger_price=0.0)}, 'sell': {'result': {'error': "'str' object has no attribute 'get'", 'status': 'error'}, 'leg': OrderLeg(exchange='NSE', symbol='SBIN', side='SELL', quantity=50, order_type='MARKET', product='INTRADAY', validity='IOC', price=0.0, trigger_price=0.0)}}
+2025-12-04 11:39:29 | INFO | main | Signal SBIN spread=0.45 buy=BSE@₹945.85 sell=NSE@₹946.30 qty=50
+2025-12-04 11:39:29 | ERROR | order_executor | Order failed for SBIN SELL: 'str' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Projects\BSE-NSE\src\core\order_executor.py", line 152, in _place_order
+    if response and response.get("status") and response.get("data"):
+                    ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+2025-12-04 11:39:29 | ERROR | order_executor | Order failed for SBIN BUY: 'str' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Projects\BSE-NSE\src\core\order_executor.py", line 152, in _place_order
+    if response and response.get("status") and response.get("data"):
+                    ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+2025-12-04 11:39:29 | WARNING | order_executor | ⚠️ Trade INCOMPLETE: SBIN | Spread=₹0.45 | BUY: BSE (id=N/A, status=error, price=N/A) | SELL: NSE (id=N/A, status=error, price=N/A)
+2025-12-04 11:39:29 | ERROR | order_executor | Failsafe triggered for SBIN: {'buy': {'result': {'error': "'str' object has no attribute 'get'", 'status': 'error'}, 'leg': OrderLeg(exchange='BSE', symbol='SBIN', side='BUY', quantity=50, order_type='MARKET', product='INTRADAY', validity='IOC', price=0.0, trigger_price=0.0)}, 'sell': {'result': {'error': "'str' object has no attribute 'get'", 'status': 'error'}, 'leg': OrderLeg(exchange='NSE', symbol='SBIN', side='SELL', quantity=50, order_type='MARKET', product='INTRADAY', validity='IOC', price=0.0, trigger_price=0.0)}}
+2025-12-04 11:39:29 | INFO | live | Monitoring... NSE=₹946.25 BSE=₹945.85 Spread=₹0.40
+2025-12-04 11:39:34 | INFO | live | Monitoring... NSE=₹946.00 BSE=₹945.95 Spread=₹0.05
+2025-12-04 11:39:39 | INFO | live | Monitoring... NSE=₹946.05 BSE=₹945.95 Spread=₹0.10
+2025-12-04 11:39:44 | INFO | live | Monitoring... NSE=₹946.05 BSE=₹946.00 Spread=₹0.05
+2025-12-04 11:39:49 | INFO | live | Monitoring... NSE=₹946.15 BSE=₹946.00 Spread=₹0.15
+2025-12-04 11:39:54 | INFO | live | Monitoring... NSE=₹946.05 BSE=₹945.75 Spread=₹0.30
+2025-12-04 11:40:44 | INFO | main | Authenticating with Angel One SmartAPI...
+2025-12-04 11:40:45 | INFO | auth | Authentication successful
+2025-12-04 11:40:45 | INFO | main | Authentication successful. Starting bot...
+2025-12-04 11:40:45 | INFO | data_feed | Starting Angel One WebSocket feed for ['TATAMOTORS', 'ICICIBANK', 'HDFCBANK', 'SBIN', 'POWERGRID', 'INFY', 'TCS', 'BPCL']
+2025-12-04 11:40:45 | INFO | data_feed | Fetching instrument master data for 8 symbols...
+2025-12-04 11:40:45 | WARNING | data_feed | Could not fetch from master data. Using manual token lookup.
+2025-12-04 11:40:45 | INFO | data_feed | Resolved 16 instrument tokens
+2025-12-04 11:40:45 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:40:45 | INFO | data_feed | WebSocket connected. Subscribing to 16 instruments
+2025-12-04 11:40:50 | INFO | live | Monitoring... NSE=₹945.80 BSE=₹945.60 Spread=₹0.20
+2025-12-04 11:40:55 | INFO | live | Monitoring... NSE=₹945.80 BSE=₹945.60 Spread=₹0.20
+2025-12-04 11:41:00 | INFO | live | Monitoring... NSE=₹945.80 BSE=₹945.95 Spread=₹0.15
+2025-12-04 11:41:05 | INFO | live | Monitoring... NSE=₹945.90 BSE=₹945.60 Spread=₹0.30
+2025-12-04 11:41:10 | INFO | live | Monitoring... NSE=₹945.95 BSE=₹945.60 Spread=₹0.35
+2025-12-04 11:41:15 | INFO | live | Monitoring... NSE=₹946.00 BSE=₹945.60 Spread=₹0.40
+2025-12-04 11:41:20 | INFO | live | Monitoring... NSE=₹945.95 BSE=₹945.60 Spread=₹0.35
+2025-12-04 11:41:25 | INFO | live | Monitoring... NSE=₹945.80 BSE=₹945.95 Spread=₹0.15
+2025-12-04 11:41:30 | INFO | live | Monitoring... NSE=₹945.85 BSE=₹945.60 Spread=₹0.25
+2025-12-04 11:41:35 | INFO | live | Monitoring... NSE=₹945.85 BSE=₹945.90 Spread=₹0.05
+2025-12-04 11:41:40 | INFO | live | Monitoring... NSE=₹945.85 BSE=₹945.90 Spread=₹0.05
+2025-12-04 11:41:45 | INFO | live | Monitoring... NSE=₹945.85 BSE=₹946.00 Spread=₹0.15
+2025-12-04 11:41:50 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:41:55 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:42:00 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:42:05 | INFO | live | Monitoring... NSE=₹945.70 BSE=₹945.80 Spread=₹0.10
+2025-12-04 11:42:10 | INFO | live | Monitoring... NSE=₹945.70 BSE=₹945.80 Spread=₹0.10
+2025-12-04 11:42:15 | INFO | live | Monitoring... NSE=₹945.55 BSE=₹945.50 Spread=₹0.05
+2025-12-04 11:42:20 | INFO | live | Monitoring... NSE=₹945.55 BSE=₹945.60 Spread=₹0.05
+2025-12-04 11:42:25 | INFO | live | Monitoring... NSE=₹945.55 BSE=₹945.50 Spread=₹0.05
+2025-12-04 11:42:30 | INFO | live | Monitoring... NSE=₹945.70 BSE=₹945.50 Spread=₹0.20
+2025-12-04 11:42:35 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:42:40 | INFO | live | Monitoring... NSE=₹945.55 BSE=₹945.50 Spread=₹0.05
+2025-12-04 11:42:45 | INFO | live | Monitoring... NSE=₹945.55 BSE=₹945.60 Spread=₹0.05
+2025-12-04 11:42:50 | INFO | live | Monitoring... NSE=₹945.55 BSE=₹945.50 Spread=₹0.05
+2025-12-04 11:42:55 | INFO | live | Monitoring... NSE=₹945.50 BSE=₹945.60 Spread=₹0.10
+2025-12-04 11:43:00 | INFO | live | Monitoring... NSE=₹945.55 BSE=₹945.60 Spread=₹0.05
+2025-12-04 11:43:05 | INFO | live | Monitoring... NSE=₹945.50 BSE=₹945.60 Spread=₹0.10
+2025-12-04 11:43:10 | INFO | live | Monitoring... NSE=₹945.55 BSE=₹945.60 Spread=₹0.05
+2025-12-04 11:43:15 | INFO | live | Monitoring... NSE=₹945.60 BSE=₹945.50 Spread=₹0.10
+2025-12-04 11:43:20 | INFO | live | Monitoring... NSE=₹945.60 BSE=₹945.50 Spread=₹0.10
+2025-12-04 11:43:25 | INFO | live | Monitoring... NSE=₹945.60 BSE=₹945.50 Spread=₹0.10
+2025-12-04 11:43:30 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:43:35 | INFO | live | Monitoring... NSE=₹945.55 BSE=₹945.50 Spread=₹0.05
+2025-12-04 11:43:40 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:43:45 | INFO | live | Monitoring... NSE=₹945.55 BSE=₹945.60 Spread=₹0.05
+2025-12-04 11:43:50 | INFO | live | Monitoring... NSE=₹945.35 BSE=₹945.50 Spread=₹0.15
+2025-12-04 11:43:55 | INFO | live | Monitoring... NSE=₹945.20 BSE=₹945.50 Spread=₹0.30
+2025-12-04 11:44:00 | INFO | live | Monitoring... NSE=₹945.20 BSE=₹945.40 Spread=₹0.20
+2025-12-04 11:44:05 | INFO | live | Monitoring... NSE=₹945.15 BSE=₹945.30 Spread=₹0.15
+2025-12-04 11:44:10 | INFO | live | Monitoring... NSE=₹945.10 BSE=₹945.30 Spread=₹0.20
+2025-12-04 11:44:15 | INFO | live | Monitoring... NSE=₹945.00 BSE=₹945.20 Spread=₹0.20
+2025-12-04 11:44:20 | INFO | live | Monitoring... NSE=₹944.90 BSE=₹945.10 Spread=₹0.20
+2025-12-04 11:44:25 | INFO | live | Monitoring... NSE=₹945.00 BSE=₹945.05 Spread=₹0.05
+2025-12-04 11:44:30 | INFO | live | Monitoring... NSE=₹945.00 BSE=₹945.05 Spread=₹0.05
+2025-12-04 11:44:35 | INFO | live | Monitoring... NSE=₹944.90 BSE=₹945.10 Spread=₹0.20
+2025-12-04 11:44:40 | INFO | live | Monitoring... NSE=₹944.90 BSE=₹945.05 Spread=₹0.15
+2025-12-04 11:44:45 | INFO | live | Monitoring... NSE=₹945.00 BSE=₹945.05 Spread=₹0.05
+2025-12-04 11:44:50 | INFO | live | Monitoring... NSE=₹945.00 BSE=₹945.05 Spread=₹0.05
+2025-12-04 11:44:55 | INFO | live | Monitoring... NSE=₹944.90 BSE=₹945.05 Spread=₹0.15
+2025-12-04 11:45:00 | INFO | live | Monitoring... NSE=₹945.20 BSE=₹945.05 Spread=₹0.15
+2025-12-04 11:45:05 | INFO | live | Monitoring... NSE=₹945.10 BSE=₹945.25 Spread=₹0.15
+2025-12-04 11:45:10 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:45:15 | INFO | live | Monitoring... NSE=₹945.05 BSE=₹945.25 Spread=₹0.20
+2025-12-04 11:45:20 | INFO | live | Monitoring... NSE=₹945.05 BSE=₹945.10 Spread=₹0.05
+2025-12-04 11:45:25 | INFO | live | Monitoring... NSE=₹945.10 BSE=₹945.05 Spread=₹0.05
+2025-12-04 11:45:30 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:45:35 | INFO | live | Monitoring... NSE=₹945.05 BSE=₹945.20 Spread=₹0.15
+2025-12-04 11:45:40 | INFO | live | Monitoring... NSE=₹945.10 BSE=₹945.00 Spread=₹0.10
+2025-12-04 11:45:45 | INFO | live | Monitoring... NSE=₹945.10 BSE=₹945.00 Spread=₹0.10
+2025-12-04 11:45:50 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:45:55 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:46:00 | INFO | live | Monitoring... NSE=₹945.05 BSE=₹945.00 Spread=₹0.05
+2025-12-04 11:46:05 | INFO | live | Monitoring... NSE=₹945.10 BSE=₹945.05 Spread=₹0.05
+2025-12-04 11:46:10 | INFO | live | Monitoring... NSE=₹945.05 BSE=₹945.00 Spread=₹0.05
+2025-12-04 11:46:10 | INFO | main | Signal SBIN spread=0.50 buy=BSE@₹945.00 sell=NSE@₹945.50 qty=50
+2025-12-04 11:46:11 | ERROR | order_executor | Order placement returned string (error): 251204000529854
+2025-12-04 11:46:11 | ERROR | order_executor | Order params were: {'variety': 'NORMAL', 'tradingsymbol': 'SBIN', 'symboltoken': '500112', 'transactiontype': 'BUY', 'exchange': 'BSE', 'ordertype': 'MARKET', 'producttype': 'INTRADAY', 'duration': 'IOC', 'quantity': '50'}
+2025-12-04 11:46:11 | ERROR | order_executor | Order placement returned string (error): 251204000529857
+2025-12-04 11:46:11 | ERROR | order_executor | Order params were: {'variety': 'NORMAL', 'tradingsymbol': 'SBIN-EQ', 'symboltoken': '3045', 'transactiontype': 'SELL', 'exchange': 'NSE', 'ordertype': 'MARKET', 'producttype': 'INTRADAY', 'duration': 'IOC', 'quantity': '50'}
+2025-12-04 11:46:11 | WARNING | order_executor | ⚠️ Trade INCOMPLETE: SBIN | Spread=₹0.50 | BUY: BSE (id=N/A, status=error, price=N/A) | SELL: NSE (id=N/A, status=error, price=N/A)
+2025-12-04 11:46:11 | ERROR | order_executor | Failsafe triggered for SBIN: {'buy': {'result': {'error': '251204000529854', 'status': 'error'}, 'leg': OrderLeg(exchange='BSE', symbol='SBIN', side='BUY', quantity=50, order_type='MARKET', product='INTRADAY', validity='IOC', price=0.0, trigger_price=0.0)}, 'sell': {'result': {'error': '251204000529857', 'status': 'error'}, 'leg': OrderLeg(exchange='NSE', symbol='SBIN', side='SELL', quantity=50, order_type='MARKET', product='INTRADAY', validity='IOC', price=0.0, trigger_price=0.0)}}
+2025-12-04 11:46:11 | INFO | main | Signal SBIN spread=0.50 buy=BSE@₹945.00 sell=NSE@₹945.50 qty=50
+2025-12-04 11:46:11 | ERROR | order_executor | Order placement returned string (error): 251204000529877
+2025-12-04 11:46:11 | ERROR | order_executor | Order params were: {'variety': 'NORMAL', 'tradingsymbol': 'SBIN-EQ', 'symboltoken': '3045', 'transactiontype': 'SELL', 'exchange': 'NSE', 'ordertype': 'MARKET', 'producttype': 'INTRADAY', 'duration': 'IOC', 'quantity': '50'}
+2025-12-04 11:46:11 | ERROR | order_executor | Order placement returned string (error): 251204000529878
+2025-12-04 11:46:11 | ERROR | order_executor | Order params were: {'variety': 'NORMAL', 'tradingsymbol': 'SBIN', 'symboltoken': '500112', 'transactiontype': 'BUY', 'exchange': 'BSE', 'ordertype': 'MARKET', 'producttype': 'INTRADAY', 'duration': 'IOC', 'quantity': '50'}
+2025-12-04 11:46:11 | WARNING | order_executor | ⚠️ Trade INCOMPLETE: SBIN | Spread=₹0.50 | BUY: BSE (id=N/A, status=error, price=N/A) | SELL: NSE (id=N/A, status=error, price=N/A)
+2025-12-04 11:46:11 | ERROR | order_executor | Failsafe triggered for SBIN: {'buy': {'result': {'error': '251204000529878', 'status': 'error'}, 'leg': OrderLeg(exchange='BSE', symbol='SBIN', side='BUY', quantity=50, order_type='MARKET', product='INTRADAY', validity='IOC', price=0.0, trigger_price=0.0)}, 'sell': {'result': {'error': '251204000529877', 'status': 'error'}, 'leg': OrderLeg(exchange='NSE', symbol='SBIN', side='SELL', quantity=50, order_type='MARKET', product='INTRADAY', validity='IOC', price=0.0, trigger_price=0.0)}}
+2025-12-04 11:46:15 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:46:20 | INFO | live | Monitoring... NSE=₹945.40 BSE=₹945.50 Spread=₹0.10
+2025-12-04 11:46:25 | INFO | live | Monitoring... NSE=₹945.50 BSE=₹945.20 Spread=₹0.30
+2025-12-04 11:46:30 | INFO | live | Monitoring... NSE=₹945.80 BSE=₹945.45 Spread=₹0.35
+2025-12-04 11:46:35 | INFO | live | Monitoring... NSE=₹945.60 BSE=₹945.45 Spread=₹0.15
+2025-12-04 11:46:40 | INFO | live | Monitoring... NSE=₹945.65 BSE=₹945.45 Spread=₹0.20
+2025-12-04 11:52:19 | INFO | main | Authenticating with Angel One SmartAPI...
+2025-12-04 11:52:20 | INFO | auth | Authentication successful
+2025-12-04 11:52:20 | INFO | main | Authentication successful. Starting bot...
+2025-12-04 11:52:20 | INFO | data_feed | Starting Angel One WebSocket feed for ['TATAMOTORS', 'ICICIBANK', 'HDFCBANK', 'SBIN', 'POWERGRID', 'INFY', 'TCS', 'BPCL']
+2025-12-04 11:52:20 | INFO | data_feed | Fetching instrument master data for 8 symbols...
+2025-12-04 11:52:20 | WARNING | data_feed | Could not fetch from master data. Using manual token lookup.
+2025-12-04 11:52:20 | INFO | data_feed | Resolved 16 instrument tokens
+2025-12-04 11:52:20 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:52:20 | INFO | data_feed | WebSocket connected. Subscribing to 16 instruments
+2025-12-04 11:52:25 | INFO | live | Monitoring... NSE=₹945.30 BSE=₹945.35 Spread=₹0.05
+2025-12-04 11:52:30 | INFO | live | Monitoring... NSE=₹945.25 BSE=₹945.20 Spread=₹0.05
+2025-12-04 11:52:35 | INFO | live | Monitoring... NSE=₹945.30 BSE=₹945.35 Spread=₹0.05
+2025-12-04 11:52:40 | INFO | live | Monitoring... NSE=₹945.30 BSE=₹945.20 Spread=₹0.10
+2025-12-04 11:52:45 | INFO | live | Monitoring... NSE=₹945.30 BSE=₹945.20 Spread=₹0.10
+2025-12-04 11:52:50 | INFO | live | Monitoring... (waiting for data)
+2025-12-04 11:52:55 | INFO | live | Monitoring... NSE=₹945.25 BSE=₹945.35 Spread=₹0.10
+2025-12-04 11:52:59 | INFO | main | Signal SBIN spread=0.40 buy=BSE@₹945.05 sell=NSE@₹945.45 qty=50
+2025-12-04 11:52:59 | INFO | order_executor | Order placed NSE SELL SBIN qty=50 id=251204000548783
+2025-12-04 11:52:59 | INFO | order_executor | Order placed BSE BUY SBIN qty=50 id=251204000548784
+2025-12-04 11:53:00 | INFO | live | Monitoring... NSE=₹945.45 BSE=₹945.05 Spread=₹0.40
+2025-12-04 11:53:01 | WARNING | order_executor | ⚠️ Trade INCOMPLETE: SBIN | Spread=₹0.40 | BUY: BSE (id=251204000548784, status=REJECTED, price=949.75) | SELL: NSE (id=251204000548783, status=REJECTED, price=N/A)
+2025-12-04 11:53:01 | ERROR | order_executor | Failsafe triggered for SBIN: {'buy': {'result': {'order_id': '251204000548784', 'status': 'REJECTED', 'price': 949.75}, 'leg': OrderLeg(exchange='BSE', symbol='SBIN', side='BUY', quantity=50, order_type='MARKET', product='INTRADAY', validity='IOC', price=0.0, trigger_price=0.0)}, 'sell': {'result': {'order_id': '251204000548783', 'status': 'REJECTED', 'price': None}, 'leg': OrderLeg(exchange='NSE', symbol='SBIN', side='SELL', quantity=50, order_type='MARKET', product='INTRADAY', validity='IOC', price=0.0, trigger_price=0.0)}}
+2025-12-04 11:53:02 | INFO | main | Signal SBIN spread=0.40 buy=BSE@₹945.05 sell=NSE@₹945.45 qty=50
+2025-12-04 11:53:03 | INFO | order_executor | Order placed NSE SELL SBIN qty=50 id=251204000548923
+2025-12-04 11:53:03 | INFO | order_executor | Order placed BSE BUY SBIN qty=50 id=251204000548927
+2025-12-04 11:53:04 | WARNING | order_executor | ⚠️ Trade INCOMPLETE: SBIN | Spread=₹0.40 | BUY: BSE (id=251204000548927, status=REJECTED, price=N/A) | SELL: NSE (id=251204000548923, status=REJECTED, price=N/A)
+2025-12-04 11:53:04 | ERROR | order_executor | Failsafe triggered for SBIN: {'buy': {'result': {'order_id': '251204000548927', 'status': 'REJECTED', 'price': None}, 'leg': OrderLeg(exchange='BSE', symbol='SBIN', side='BUY', quantity=50, order_type='MARKET', product='INTRADAY', validity='IOC', price=0.0, trigger_price=0.0)}, 'sell': {'result': {'order_id': '251204000548923', 'status': 'REJECTED', 'price': None}, 'leg': OrderLeg(exchange='NSE', symbol='SBIN', side='SELL', quantity=50, order_type='MARKET', product='INTRADAY', validity='IOC', price=0.0, trigger_price=0.0)}}
+2025-12-04 11:53:04 | INFO | main | Signal SBIN spread=0.35 buy=BSE@₹945.05 sell=NSE@₹945.40 qty=50
+2025-12-04 11:53:04 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-04 11:53:04 | INFO | main | Signal SBIN spread=0.35 buy=BSE@₹945.05 sell=NSE@₹945.40 qty=50
+2025-12-04 11:53:04 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-04 11:53:04 | INFO | main | Signal SBIN spread=0.35 buy=BSE@₹945.05 sell=NSE@₹945.40 qty=50
+2025-12-04 11:53:04 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-04 11:53:04 | INFO | main | Signal SBIN spread=0.30 buy=BSE@₹945.05 sell=NSE@₹945.35 qty=50
+2025-12-04 11:53:04 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-04 11:53:04 | INFO | main | Signal SBIN spread=0.30 buy=BSE@₹945.05 sell=NSE@₹945.35 qty=50
+2025-12-04 11:53:04 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-04 11:53:04 | INFO | main | Signal SBIN spread=0.30 buy=BSE@₹945.05 sell=NSE@₹945.35 qty=50
+2025-12-04 11:53:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-04 11:53:05 | INFO | main | Signal SBIN spread=0.30 buy=BSE@₹945.05 sell=NSE@₹945.35 qty=50
+2025-12-04 11:53:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-04 11:53:05 | INFO | main | Signal SBIN spread=0.30 buy=BSE@₹945.05 sell=NSE@₹945.35 qty=50
+2025-12-04 11:53:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-04 11:53:05 | INFO | live | Monitoring... NSE=₹945.35 BSE=₹945.05 Spread=₹0.30
+2025-12-04 11:53:05 | INFO | main | Signal SBIN spread=0.30 buy=BSE@₹945.05 sell=NSE@₹945.35 qty=50
+2025-12-04 11:53:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-04 11:53:07 | INFO | main | Signal SBIN spread=0.35 buy=BSE@₹945.05 sell=NSE@₹945.40 qty=50
+2025-12-04 11:53:07 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-04 11:53:07 | INFO | main | Signal SBIN spread=0.35 buy=BSE@₹945.05 sell=NSE@₹945.40 qty=50
+2025-12-04 11:53:07 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-04 11:53:08 | INFO | main | Signal SBIN spread=0.35 buy=BSE@₹945.05 sell=NSE@₹945.40 qty=50
+2025-12-04 11:53:08 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-04 11:53:10 | INFO | main | Signal SBIN spread=0.35 buy=BSE@₹945.05 sell=NSE@₹945.40 qty=50
+2025-12-04 11:53:10 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-04 11:53:10 | INFO | live | Monitoring... NSE=₹945.40 BSE=₹945.05 Spread=₹0.35
+2025-12-04 11:53:10 | INFO | main | Signal SBIN spread=0.35 buy=BSE@₹945.05 sell=NSE@₹945.40 qty=50
+2025-12-04 11:53:10 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-04 11:53:10 | INFO | main | Signal SBIN spread=0.35 buy=BSE@₹945.05 sell=NSE@₹945.40 qty=50
+2025-12-04 11:53:10 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-04 11:53:11 | INFO | main | Signal SBIN spread=0.35 buy=BSE@₹945.05 sell=NSE@₹945.40 qty=50
+2025-12-04 11:53:11 | ERROR | safety | Too many failed fills; blocking new trades

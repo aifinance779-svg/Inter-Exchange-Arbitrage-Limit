@@ -243,7 +243,17 @@ class AngelOneDataFeed:
                 },
             )
             logger.debug("Tick %s/%s LTP=%.2f bid=%.2f ask=%.2f", symbol, exchange, ltp, best_bid, best_ask)
+            
+            # Check if event loop is still open before putting in queue
+            if self.loop.is_closed():
+                return  # Silently ignore if loop is closed
+            
             self.loop.call_soon_threadsafe(self.queue.put_nowait, payload)
+        except RuntimeError as e:
+            if "Event loop is closed" in str(e):
+                # Silently ignore - bot is shutting down
+                return
+            raise  # Re-raise other RuntimeErrors
         except Exception as exc:
             logger.exception("Failed to process tick: %s", exc)
 

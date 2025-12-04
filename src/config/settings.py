@@ -29,7 +29,7 @@ def _env(key: str, default: Optional[str] = None) -> str:
 @dataclass
 class RiskLimits:
     max_trades_per_minute: int = 6
-    max_open_exposure: int = 3  # concurrent symbol pairs
+    max_open_exposure: int = 1  # concurrent symbol pairs
     max_failed_fills: int = 2   # consecutive failures before auto-stop
     max_slippage_per_leg: float = 0.25
 
@@ -46,7 +46,7 @@ class Settings:
     refresh_token: Optional[str] = None
     feed_token: Optional[str] = None
 
-    min_spread: float = float(os.getenv("MIN_SPREAD", 0.70))
+    min_spread: float = float(os.getenv("MIN_SPREAD", 0.30))
     poll_interval_ms: int = int(os.getenv("POLL_INTERVAL_MS", 50))
     depth_levels: int = int(os.getenv("DEPTH_LEVELS", 5))
 
