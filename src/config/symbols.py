@@ -12,6 +12,7 @@ from typing import Dict, List
 
 
 DEFAULT_SYMBOLS: List[str] = [
+    "RELIANCE",
     "TATAMOTORS",
     "ICICIBANK",
     "HDFCBANK",
@@ -20,6 +21,8 @@ DEFAULT_SYMBOLS: List[str] = [
     "INFY",
     "TCS",
     "BPCL",
+    "TATASTEEL",
+    "WIPRO"
 ]
 
 

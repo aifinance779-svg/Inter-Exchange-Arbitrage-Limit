@@ -126,7 +126,7 @@ if __name__ == "__main__":
     # Default symbols from the bot
     default_symbols = [
         "TATAMOTORS", "ICICIBANK", "HDFCBANK", "SBIN", 
-        "POWERGRID", "INFY", "TCS", "BPCL"
+        "POWERGRID", "INFY","RELIANCE", "TCS", "BPCL", "TATASTEEL"
     ]
     
     # You can also pass symbols as command line arguments

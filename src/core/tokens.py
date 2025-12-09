@@ -6,6 +6,9 @@ from typing import Dict
 
 
 WATCHLIST = {
+    "RELIANCE",
+    "WIPRO",
+    "TATASTEEL",
     "SBIN",
     "TATAMOTORS",
     "ICICIBANK",
@@ -17,8 +20,18 @@ WATCHLIST = {
 }
 
 DEFAULT_TOKEN_MAP = {
-    "SBIN_NSE":      {"token": "3045",    "tradingsymbol": "SBIN-EQ"},
-    "SBIN_BSE":      {"token": "500112",  "tradingsymbol": "SBIN"},
+    "RELIANCE_NSE": {"token": "2885", "tradingsymbol": "RELIANCE-EQ"},
+    "RELIANCE_BSE": {"token": "500325", "tradingsymbol": "500325"},
+    "WIPRO_NSE": {"token": "3787", "tradingsymbol": "WIPRO-EQ"},
+    "WIPRO_BSE": {"token": "507685", "tradingsymbol": "507685"},
+    "TATASTEEL_NSE": {"token": "3499", "tradingsymbol": "TATASTEEL-EQ"},
+    "TATASTEEL_BSE": {"token": "500470", "tradingsymbol": "500470"},
+    "HDFCBANK_NSE": {"token": "133275", "tradingsymbol": "HDFCBANK-EQ"},
+    "HDFCBANK_BSE": {"token": "500180", "tradingsymbol": "500180"},
+
+
+    "SBIN_NSE":{"token": "3045",    "tradingsymbol": "SBIN-EQ"},
+    "SBIN_BSE":{"token": "500112",  "tradingsymbol": "500112"},
 
     "TATAMOTORS_NSE": {"token": "884737", "tradingsymbol": "TATAMOTORS-EQ"},
     "TATAMOTORS_BSE": {"token": "500570", "tradingsymbol": "TATAMOTORS"},
@@ -26,8 +39,8 @@ DEFAULT_TOKEN_MAP = {
     "ICICIBANK_NSE": {"token": "1270529", "tradingsymbol": "ICICIBANK-EQ"},
     "ICICIBANK_BSE": {"token": "532174",  "tradingsymbol": "ICICIBANK"},
 
-    "HDFCBANK_NSE":  {"token": "133275",  "tradingsymbol": "HDFCBANK-EQ"},
-    "HDFCBANK_BSE":  {"token": "500180",  "tradingsymbol": "HDFCBANK"},
+    
+    
 
     "INFY_NSE":      {"token": "408065",  "tradingsymbol": "INFY-EQ"},
     "INFY_BSE":      {"token": "500209",  "tradingsymbol": "INFY"},

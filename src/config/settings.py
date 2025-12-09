@@ -34,6 +34,15 @@ class RiskLimits:
     max_slippage_per_leg: float = 0.25
 
 
+def _parse_symbols_env() -> List[str]:
+    """Parse SYMBOLS environment variable into a list."""
+    symbols_str = os.getenv("SYMBOLS", "").strip()
+    if not symbols_str:
+        return []
+    # Support both comma and space separated
+    symbols = [s.strip().upper() for s in symbols_str.replace(",", " ").split()]
+    return [s for s in symbols if s]  # Remove empty strings
+
 @dataclass
 class Settings:
     # Angel One SmartAPI credentials
@@ -46,8 +55,8 @@ class Settings:
     refresh_token: Optional[str] = None
     feed_token: Optional[str] = None
 
-    min_spread: float = float(os.getenv("MIN_SPREAD", 0.30))
-    poll_interval_ms: int = int(os.getenv("POLL_INTERVAL_MS", 50))
+    min_spread: float = float(os.getenv("MIN_SPREAD", 1))
+    poll_interval_ms: int = int(os.getenv("POLL_INTERVAL_MS", 40))
     depth_levels: int = int(os.getenv("DEPTH_LEVELS", 5))
 
     trading_start: time = time(9, 15)
@@ -63,7 +72,7 @@ class Settings:
     )
 
     risk: RiskLimits = field(default_factory=RiskLimits)
-    symbols: List[str] = field(default_factory=list)
+    symbols: List[str] = field(default_factory=_parse_symbols_env)
 
     def quantity_for(self, symbol: str) -> int:
         return self.per_symbol_qty.get(symbol, self.default_quantity)

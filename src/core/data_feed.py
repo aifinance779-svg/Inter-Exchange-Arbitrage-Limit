@@ -347,12 +347,19 @@ class AngelOneDataFeed:
         # Format: "SYMBOL_EXCHANGE": "EXCHANGE|TOKEN"
         # These tokens are from TOKEN_SETUP.md - verify they are current
         manual_map = {
+            "RELIANCE_NSE": "NSE|2885",
+            "RELIANCE_BSE": "BSE|500325",
+            "WIPRO_NSE": "NSE|3787",
+            "WIPRO_BSE": "BSE|507685",
+            "TATASTEEL_NSE": "NSE|3499",
+            "TATASTEEL_BSE": "BSE|500470",
+            "HDFCBANK_NSE": "NSE|133275",
+            "HDFCBANK_BSE": "BSE|500180",
             "TATAMOTORS_NSE": "NSE|884737",
             "TATAMOTORS_BSE": "BSE|500570",
             "ICICIBANK_NSE": "NSE|1270529",
             "ICICIBANK_BSE": "BSE|532174",
-            "HDFCBANK_NSE": "NSE|133275",
-            "HDFCBANK_BSE": "BSE|500180",
+            
             "SBIN_NSE": "NSE|3045",
             "SBIN_BSE": "BSE|500112",
             "POWERGRID_NSE": "NSE|383385",

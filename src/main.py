@@ -44,7 +44,13 @@ async def run_bot(args):
             return
         logger.info("Authentication successful. Starting bot...")
 
-    watchlist = settings.symbols or symbols_config.DEFAULT_SYMBOLS
+    # Use settings.symbols if it's not empty, otherwise use DEFAULT_SYMBOLS
+    # Check if settings.symbols was explicitly set (not just empty list)
+    watchlist = settings.symbols if settings.symbols else symbols_config.DEFAULT_SYMBOLS
+    
+    # Debug: Log what symbols are being used
+    logger.info("Using watchlist: %s", watchlist)
+    
     if symbols_config.SYMBOL_META:
         settings.per_symbol_qty.update(
             {sym: meta.quantity for sym, meta in symbols_config.SYMBOL_META.items()}
