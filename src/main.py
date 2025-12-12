@@ -79,16 +79,85 @@ async def run_bot(args):
 
     async def on_signal(signal, snapshot):
         try:
-            logger.info(
-                "Signal %s spread=%.2f buy=%s@₹%.2f sell=%s@₹%.2f qty=%s",
-                signal.symbol,
-                signal.spread,
-                signal.buy_exchange,
-                snapshot.nse_ltp if signal.buy_exchange == "NSE" else snapshot.bse_ltp,
-                signal.sell_exchange,
-                snapshot.nse_ltp if signal.sell_exchange == "NSE" else snapshot.bse_ltp,
-                signal.quantity,
-            )
+            # Calculate limit prices from snapshot (best bid/ask prices)
+            if signal.buy_exchange == "NSE":
+                buy_market_price = snapshot.nse_ask  # Best ask price on NSE
+            else:
+                buy_market_price = snapshot.bse_ask  # Best ask price on BSE
+            
+            if signal.sell_exchange == "BSE":
+                sell_market_price = snapshot.bse_bid  # Best bid price on BSE
+            else:
+                sell_market_price = snapshot.nse_bid  # Best bid price on NSE
+            
+            # Apply buffers for limit orders
+            if settings.use_limit_orders:
+                # For BUY: pay slightly more than ask to improve fill probability
+                buy_limit_price = buy_market_price + settings.limit_order_buy_buffer
+                # For SELL: accept slightly less than bid to improve fill probability
+                sell_limit_price = sell_market_price - settings.limit_order_sell_buffer
+                
+                logger.info(
+                    "Signal %s spread=%.2f | BUY: %s@₹%.2f (limit: ₹%.2f) | SELL: %s@₹%.2f (limit: ₹%.2f) | qty=%s",
+                    signal.symbol,
+                    signal.spread,
+                    signal.buy_exchange,
+                    buy_market_price,
+                    buy_limit_price,
+                    signal.sell_exchange,
+                    sell_market_price,
+                    sell_limit_price,
+                    signal.quantity,
+                )
+                
+                buy_leg = OrderLeg(
+                    exchange=signal.buy_exchange,
+                    symbol=signal.symbol,
+                    side="BUY",
+                    quantity=signal.quantity,
+                    order_type="LIMIT",
+                    price=buy_limit_price,
+                    validity="IOC",
+                )
+                sell_leg = OrderLeg(
+                    exchange=signal.sell_exchange,
+                    symbol=signal.symbol,
+                    side="SELL",
+                    quantity=signal.quantity,
+                    order_type="LIMIT",
+                    price=sell_limit_price,
+                    validity="IOC",
+                )
+            else:
+                # Fallback to market orders if limit orders disabled
+                logger.info(
+                    "Signal %s spread=%.2f buy=%s@₹%.2f sell=%s@₹%.2f qty=%s (MARKET)",
+                    signal.symbol,
+                    signal.spread,
+                    signal.buy_exchange,
+                    buy_market_price,
+                    signal.sell_exchange,
+                    sell_market_price,
+                    signal.quantity,
+                )
+                
+                buy_leg = OrderLeg(
+                    exchange=signal.buy_exchange,
+                    symbol=signal.symbol,
+                    side="BUY",
+                    quantity=signal.quantity,
+                    order_type="MARKET",
+                    validity="IOC",
+                )
+                sell_leg = OrderLeg(
+                    exchange=signal.sell_exchange,
+                    symbol=signal.symbol,
+                    side="SELL",
+                    quantity=signal.quantity,
+                    order_type="MARKET",
+                    validity="IOC",
+                )
+            
             if dashboard:
                 dashboard.update_stats(total_signals=dashboard.stats.get("total_signals", 0) + 1)
                 dashboard.update(
@@ -96,25 +165,15 @@ async def run_bot(args):
                     signal=f"{signal.buy_exchange}->{signal.sell_exchange}",
                     status="PENDING",
                 )
-            buy_leg = OrderLeg(
-                exchange=signal.buy_exchange,
-                symbol=signal.symbol,
-                side="BUY",
-                quantity=signal.quantity,
-            )
-            sell_leg = OrderLeg(
-                exchange=signal.sell_exchange,
-                symbol=signal.symbol,
-                side="SELL",
-                quantity=signal.quantity,
-            )
+            
             result = await executor.execute_pair(buy_leg, sell_leg, signal.spread)
+            
             if dashboard:
                 status = "OK"
                 if result.get("status") == "blocked":
                     status = "BLOCKED"
                 elif any(isinstance(leg.get("result"), dict) and leg["result"].get("status") == "error"
-                         for leg in (result.get("buy", {}), result.get("sell", {}))):
+                        for leg in (result.get("buy", {}), result.get("sell", {}))):
                     status = "FAIL"
                     dashboard.update_stats(failed_trades=dashboard.stats.get("failed_trades", 0) + 1)
                 else:
@@ -127,10 +186,18 @@ async def run_bot(args):
                 dashboard.update(signal.symbol, status="ERROR")
 
     feed.start()
+    logger.info("Data feed started. Bot is now running...")
     try:
         await engine.run(feed, on_signal, telemetry_hook=telemetry)
+    except KeyboardInterrupt:
+        logger.info("Bot stopped by user (Ctrl+C)")
+    except Exception as exc:
+        logger.exception("CRITICAL: Bot crashed with error: %s", exc)
+        raise
     finally:
+        logger.info("Shutting down data feed...")
         feed.stop()
+        logger.info("Bot shutdown complete")
 
 
 def main():

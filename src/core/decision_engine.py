@@ -35,29 +35,64 @@ class DecisionEngine:
         # Start heartbeat task that runs independently
         heartbeat_task = asyncio.create_task(self._heartbeat_loop())
         
+        logger.info("Decision engine started. Waiting for market data...")
+        logger.info("Market hours: %s to %s", settings.trading_start, settings.trading_end)
+        logger.info("Monitoring symbols: %s", self.symbols)
+        logger.info("Minimum spread threshold: ₹%.2f", settings.min_spread)
+        
+        tick_count = 0
         try:
             while True:
-                tick = await feed.next_tick()
-                bucket = self.nse_ticks if tick.exchange == "NSE" else self.bse_ticks
-                bucket[tick.symbol] = tick
+                try:
+                    logger.debug("Waiting for next tick from feed...")
+                    tick = await feed.next_tick()
+                    tick_count += 1
+                    logger.debug("Received tick #%d: %s %s LTP=₹%.2f bid=₹%.2f ask=₹%.2f", 
+                                tick_count, tick.symbol, tick.exchange, tick.ltp, tick.best_bid, tick.best_ask)
+                    
+                    bucket = self.nse_ticks if tick.exchange == "NSE" else self.bse_ticks
+                    bucket[tick.symbol] = tick
 
-                if not self._market_open():
-                    continue
+                    now = datetime.now().time()
+                    if not self._market_open():
+                        logger.debug("Market closed. Current time: %s, Market hours: %s-%s. Skipping tick.", 
+                                   now, settings.trading_start, settings.trading_end)
+                        continue
 
-                snapshot = self._build_snapshot(tick.symbol)
-                if not snapshot:
-                    continue
+                    snapshot = self._build_snapshot(tick.symbol)
+                    if not snapshot:
+                        nse_has = tick.symbol in self.nse_ticks
+                        bse_has = tick.symbol in self.bse_ticks
+                        logger.debug("Cannot build snapshot for %s: NSE=%s BSE=%s (need both)", 
+                                    tick.symbol, nse_has, bse_has)
+                        continue
 
-                if telemetry_hook:
-                    try:
-                        telemetry_hook(snapshot)
-                    except Exception as exc:
-                        logger.exception("Telemetry hook error: %s", exc)
+                    logger.debug("Snapshot built for %s: NSE=₹%.2f BSE=₹%.2f spread=₹%.2f", 
+                               snapshot.symbol, snapshot.nse_ltp, snapshot.bse_ltp, 
+                               abs(snapshot.nse_ltp - snapshot.bse_ltp))
 
-                signal = self.detector.evaluate(snapshot)
-                if signal:
-                    await callback(signal, snapshot)
+                    if telemetry_hook:
+                        try:
+                            telemetry_hook(snapshot)
+                        except Exception as exc:
+                            logger.exception("Telemetry hook error: %s", exc)
+
+                    signal = self.detector.evaluate(snapshot)
+                    if signal:
+                        logger.info("Spread signal detected: %s spread=₹%.2f", signal.symbol, signal.spread)
+                        await callback(signal, snapshot)
+                    else:
+                        logger.debug("No signal for %s (spread=₹%.2f < threshold=₹%.2f)", 
+                                   snapshot.symbol, abs(snapshot.nse_ltp - snapshot.bse_ltp), settings.min_spread)
+                except asyncio.CancelledError:
+                    logger.info("Decision engine cancelled")
+                    raise
+                except Exception as exc:
+                    logger.exception("Error processing tick: %s", exc)
+                    # Wait a bit before retrying to avoid tight error loop
+                    await asyncio.sleep(1)
         finally:
+            logger.info("Decision engine shutting down. Processed %d ticks.", tick_count)
             heartbeat_task.cancel()
             try:
                 await heartbeat_task
@@ -66,12 +101,17 @@ class DecisionEngine:
 
     async def _heartbeat_loop(self):
         """Background task that logs heartbeat every few seconds."""
+        logger.info("Heartbeat loop started")
         # Log immediately on start
         self._log_heartbeat()
         # Then log every interval
-        while True:
-            await asyncio.sleep(self._heartbeat_interval)
-            self._log_heartbeat()
+        try:
+            while True:
+                await asyncio.sleep(self._heartbeat_interval)
+                self._log_heartbeat()
+        except asyncio.CancelledError:
+            logger.debug("Heartbeat loop cancelled")
+            raise
     
     def _log_heartbeat(self):
         """Log heartbeat with current monitoring status."""

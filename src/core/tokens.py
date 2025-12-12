@@ -11,6 +11,10 @@ WATCHLIST = {
     "TATASTEEL",
     "SBIN",
     "TATAMOTORS",
+    "ITC",
+    "ONGC",
+    "JIOFIN",
+    "NTPC",
     "ICICIBANK",
     "HDFCBANK",
     "INFY",
@@ -33,26 +37,26 @@ DEFAULT_TOKEN_MAP = {
     "SBIN_NSE":{"token": "3045",    "tradingsymbol": "SBIN-EQ"},
     "SBIN_BSE":{"token": "500112",  "tradingsymbol": "500112"},
 
-    "TATAMOTORS_NSE": {"token": "884737", "tradingsymbol": "TATAMOTORS-EQ"},
-    "TATAMOTORS_BSE": {"token": "500570", "tradingsymbol": "TATAMOTORS"},
+    "TATAMOTORS_NSE": {"token": "3456",    "tradingsymbol": "TATAMOTORS-EQ"},
+    "TATAMOTORS_BSE": {"token": "500570",  "tradingsymbol": "500570"},
 
-    "ICICIBANK_NSE": {"token": "1270529", "tradingsymbol": "ICICIBANK-EQ"},
-    "ICICIBANK_BSE": {"token": "532174",  "tradingsymbol": "ICICIBANK"},
+    "ICICIBANK_NSE":  {"token": "4963",    "tradingsymbol": "ICICIBANK-EQ"},
+    "ICICIBANK_BSE":  {"token": "532174",  "tradingsymbol": "532174"},
 
     
     
 
-    "INFY_NSE":      {"token": "408065",  "tradingsymbol": "INFY-EQ"},
-    "INFY_BSE":      {"token": "500209",  "tradingsymbol": "INFY"},
+    "INFY_NSE":       {"token": "1594",    "tradingsymbol": "INFY-EQ"},
+    "INFY_BSE":       {"token": "500209",  "tradingsymbol": "500209"},
 
-    "TCS_NSE":       {"token": "2953217", "tradingsymbol": "TCS-EQ"},
-    "TCS_BSE":       {"token": "532540",  "tradingsymbol": "TCS"},
+    "TCS_NSE":        {"token": "11536",   "tradingsymbol": "TCS-EQ"},
+    "TCS_BSE":        {"token": "532540",  "tradingsymbol": "532540"},
 
-    "POWERGRID_NSE": {"token": "383385",  "tradingsymbol": "POWERGRID-EQ"},
-    "POWERGRID_BSE": {"token": "532498",  "tradingsymbol": "POWERGRID"},
+    "POWERGRID_NSE": {"token": "18096", "tradingsymbol": "POWERGRID-EQ"},
+    "POWERGRID_BSE": {"token": "532898", "tradingsymbol": "532898"},
 
-    "BPCL_NSE":      {"token": "134809",  "tradingsymbol": "BPCL-EQ"},
-    "BPCL_BSE":      {"token": "500547",  "tradingsymbol": "BPCL"},
+    "BPCL_NSE":       {"token": "526",     "tradingsymbol": "BPCL-EQ"},
+    "BPCL_BSE":       {"token": "500547",  "tradingsymbol": "500547"},
 }
 
 

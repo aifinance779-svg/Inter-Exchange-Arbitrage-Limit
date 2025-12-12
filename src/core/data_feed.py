@@ -118,6 +118,7 @@ class AngelOneDataFeed:
 
         def on_data(ws, data):
             try:
+                logger.debug("WebSocket data received: %s", data)
                 self._process_tick(data)
             except Exception as exc:
                 logger.exception("Failed to process WebSocket payload: %s", exc)
@@ -134,10 +135,13 @@ class AngelOneDataFeed:
         def on_open(ws):
             total_tokens = sum(len(item["tokens"]) for item in token_list)
             logger.info("WebSocket connected. Subscribing to %d instruments", total_tokens)
+            logger.info("Subscription details: correlation_id=%s, mode=%s", correlation_id, mode)
             try:
                 self._ws.subscribe(correlation_id, mode, token_list)
+                logger.info("Subscription request sent successfully. Waiting for market data...")
             except Exception as exc:
                 logger.error("Failed to subscribe: %s", exc)
+                logger.error("Token list: %s", token_list)
         
         def run():
             while not self._stop_event.is_set():
@@ -246,9 +250,14 @@ class AngelOneDataFeed:
             
             # Check if event loop is still open before putting in queue
             if self.loop.is_closed():
+                logger.warning("Event loop is closed. Cannot queue tick for %s/%s", symbol, exchange)
                 return  # Silently ignore if loop is closed
             
-            self.loop.call_soon_threadsafe(self.queue.put_nowait, payload)
+            try:
+                self.loop.call_soon_threadsafe(self.queue.put_nowait, payload)
+                logger.debug("Tick queued successfully: %s/%s", symbol, exchange)
+            except Exception as e:
+                logger.error("Failed to queue tick for %s/%s: %s", symbol, exchange, e)
         except RuntimeError as e:
             if "Event loop is closed" in str(e):
                 # Silently ignore - bot is shutting down
@@ -353,22 +362,30 @@ class AngelOneDataFeed:
             "WIPRO_BSE": "BSE|507685",
             "TATASTEEL_NSE": "NSE|3499",
             "TATASTEEL_BSE": "BSE|500470",
-            "HDFCBANK_NSE": "NSE|133275",
+            "HDFCBANK_NSE": "NSE|1333",
             "HDFCBANK_BSE": "BSE|500180",
-            "TATAMOTORS_NSE": "NSE|884737",
+            "JIOFIN_NSE": "NSE|543940",
+            "JIOFIN_BSE": "BSE|543940",
+            "ITC_NSE": "NSE|1660",
+            "ITC_BSE": "BSE|500875",
+            "NTPC_NSE": "NSE|11630",
+            "NTPC_BSE": "BSE|532555",
+            "POWERGRID_NSE": "NSE|14977",
+            "POWERGRID_BSE": "BSE|532898",
+            "ONGC_NSE": "NSE|2475",
+            "ONGC_BSE": "BSE|500312",
+            "TATAMOTORS_NSE": "NSE|3456",
             "TATAMOTORS_BSE": "BSE|500570",
-            "ICICIBANK_NSE": "NSE|1270529",
+            "ICICIBANK_NSE": "NSE|4963",
             "ICICIBANK_BSE": "BSE|532174",
             
             "SBIN_NSE": "NSE|3045",
             "SBIN_BSE": "BSE|500112",
-            "POWERGRID_NSE": "NSE|383385",
-            "POWERGRID_BSE": "BSE|532498",
-            "INFY_NSE": "NSE|408065",
+            "INFY_NSE": "NSE|1594",
             "INFY_BSE": "BSE|500209",
-            "TCS_NSE": "NSE|2953217",
+            "TCS_NSE": "NSE|11536",
             "TCS_BSE": "BSE|532540",
-            "BPCL_NSE": "NSE|134809",
+            "BPCL_NSE": "NSE|526",
             "BPCL_BSE": "BSE|500547",
         }
         

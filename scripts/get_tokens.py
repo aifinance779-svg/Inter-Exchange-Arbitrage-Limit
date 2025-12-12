@@ -125,7 +125,7 @@ def search_in_master(master_data, symbol, exchange):
 if __name__ == "__main__":
     # Default symbols from the bot
     default_symbols = [
-        "TATAMOTORS", "ICICIBANK", "HDFCBANK", "SBIN", 
+        "TATAMOTORS","ONGC","JIOFIN","NTPC","ITC","POWERGRID", "ICICIBANK", "HDFCBANK", "SBIN", 
         "POWERGRID", "INFY","RELIANCE", "TCS", "BPCL", "TATASTEEL"
     ]
     

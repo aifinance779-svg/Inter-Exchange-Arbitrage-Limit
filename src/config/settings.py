@@ -28,7 +28,7 @@ def _env(key: str, default: Optional[str] = None) -> str:
 
 @dataclass
 class RiskLimits:
-    max_trades_per_minute: int = 6
+    max_trades_per_minute: int = 4
     max_open_exposure: int = 1  # concurrent symbol pairs
     max_failed_fills: int = 2   # consecutive failures before auto-stop
     max_slippage_per_leg: float = 0.25
@@ -59,10 +59,15 @@ class Settings:
     poll_interval_ms: int = int(os.getenv("POLL_INTERVAL_MS", 40))
     depth_levels: int = int(os.getenv("DEPTH_LEVELS", 5))
 
+    # Limit order buffer settings (Strategy 1)
+    limit_order_buy_buffer: float = float(os.getenv("LIMIT_ORDER_BUY_BUFFER", "0.10"))  # ₹0.10 above ask
+    limit_order_sell_buffer: float = float(os.getenv("LIMIT_ORDER_SELL_BUFFER", "0.10"))  # ₹0.10 below bid
+    use_limit_orders: bool = os.getenv("USE_LIMIT_ORDERS", "1") == "1"  # Enable/disable limit orders
+
     trading_start: time = time(9, 15)
     trading_end: time = time(15, 30)
 
-    default_quantity: int = int(os.getenv("DEFAULT_QUANTITY", 50))
+    default_quantity: int = int(os.getenv("DEFAULT_QUANTITY", 1))
     per_symbol_qty: Dict[str, int] = field(default_factory=dict)
 
     log_dir: Path = Path(os.getenv("LOG_DIR", "logs"))

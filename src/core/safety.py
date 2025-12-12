@@ -38,6 +38,11 @@ class SafetyManager:
             logger.warning("Trade rate limit hit: %s/min", trades_per_minute)
             return False
 
+        # Block concurrent trade on the same symbol
+        if self.open_symbols.get(symbol, 0) > 0:
+            logger.warning("Symbol %s already has an open trade; blocking new trade", symbol)
+            return False
+
         if len(self.open_symbols) >= settings.risk.max_open_exposure:
             logger.warning("Open exposure limit reached")
             return False

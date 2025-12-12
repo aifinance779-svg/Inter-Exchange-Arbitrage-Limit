@@ -1,0 +1,1178 @@
+2025-12-11 10:13:59 | INFO | main | Authenticating with Angel One SmartAPI...
+2025-12-11 10:13:59 | INFO | auth | Authentication successful
+2025-12-11 10:13:59 | INFO | main | Authentication successful. Starting bot...
+2025-12-11 10:13:59 | INFO | main | Using watchlist: ['TATASTEEL', 'WIPRO']
+2025-12-11 10:13:59 | INFO | data_feed | Starting Angel One WebSocket feed for ['TATASTEEL', 'WIPRO']
+2025-12-11 10:13:59 | INFO | data_feed | Fetching instrument master data for 2 symbols...
+2025-12-11 10:13:59 | WARNING | data_feed | Could not fetch from master data. Using manual token lookup.
+2025-12-11 10:13:59 | INFO | data_feed | Resolved 4 instrument tokens
+2025-12-11 10:13:59 | INFO | main | Data feed started. Bot is now running...
+2025-12-11 10:13:59 | INFO | decision_engine | Decision engine started. Waiting for market data...
+2025-12-11 10:13:59 | INFO | decision_engine | Market hours: 09:15:00 to 15:30:00
+2025-12-11 10:13:59 | INFO | decision_engine | Monitoring symbols: ['TATASTEEL', 'WIPRO']
+2025-12-11 10:13:59 | INFO | decision_engine | Minimum spread threshold: ₹0.30
+2025-12-11 10:13:59 | INFO | decision_engine | Heartbeat loop started
+2025-12-11 10:13:59 | INFO | live | Monitoring... (waiting for data)
+2025-12-11 10:14:00 | INFO | data_feed | WebSocket connected. Subscribing to 4 instruments
+2025-12-11 10:14:00 | INFO | data_feed | Subscription details: correlation_id=arbitrage_bot_001, mode=3
+2025-12-11 10:14:00 | INFO | data_feed | Subscription request sent successfully. Waiting for market data...
+2025-12-11 10:14:04 | INFO | live | Monitoring... NSE=₹258.58 BSE=₹258.70 Spread=₹0.12
+2025-12-11 10:14:09 | INFO | live | Monitoring... NSE=₹164.41 BSE=₹164.50 Spread=₹0.09
+2025-12-11 10:14:14 | INFO | live | Monitoring... NSE=₹164.41 BSE=₹164.50 Spread=₹0.09
+2025-12-11 10:14:19 | INFO | live | Monitoring... NSE=₹258.82 BSE=₹258.70 Spread=₹0.12
+2025-12-11 10:14:24 | INFO | live | Monitoring... NSE=₹164.43 BSE=₹164.50 Spread=₹0.07
+2025-12-11 10:14:29 | INFO | live | Monitoring... NSE=₹258.79 BSE=₹258.65 Spread=₹0.14
+2025-12-11 10:14:34 | INFO | live | Monitoring... NSE=₹258.83 BSE=₹258.65 Spread=₹0.18
+2025-12-11 10:14:39 | INFO | live | Monitoring... NSE=₹164.44 BSE=₹164.50 Spread=₹0.06
+2025-12-11 10:14:44 | INFO | live | Monitoring... NSE=₹164.45 BSE=₹164.40 Spread=₹0.05
+2025-12-11 10:14:49 | INFO | live | Monitoring... NSE=₹164.45 BSE=₹164.40 Spread=₹0.05
+2025-12-11 10:14:54 | INFO | live | Monitoring... NSE=₹258.94 BSE=₹258.90 Spread=₹0.04
+2025-12-11 10:15:00 | INFO | live | Monitoring... NSE=₹258.96 BSE=₹258.90 Spread=₹0.06
+2025-12-11 10:15:05 | INFO | live | Monitoring... NSE=₹259.20 BSE=₹259.15 Spread=₹0.05
+2025-12-11 10:15:10 | INFO | live | Monitoring... NSE=₹164.51 BSE=₹164.50 Spread=₹0.01
+2025-12-11 10:15:15 | INFO | live | Monitoring... NSE=₹259.22 BSE=₹259.35 Spread=₹0.13
+2025-12-11 10:15:20 | INFO | live | Monitoring... NSE=₹259.11 BSE=₹259.20 Spread=₹0.09
+2025-12-11 10:15:25 | INFO | live | Monitoring... NSE=₹164.50 BSE=₹164.60 Spread=₹0.10
+2025-12-11 10:15:30 | INFO | live | Monitoring... NSE=₹259.05 BSE=₹259.15 Spread=₹0.10
+2025-12-11 10:15:35 | INFO | live | Monitoring... NSE=₹258.97 BSE=₹258.90 Spread=₹0.07
+2025-12-11 10:15:40 | INFO | live | Monitoring... NSE=₹259.05 BSE=₹258.90 Spread=₹0.15
+2025-12-11 10:15:45 | INFO | live | Monitoring... NSE=₹164.64 BSE=₹164.75 Spread=₹0.11
+2025-12-11 10:15:50 | INFO | live | Monitoring... NSE=₹259.09 BSE=₹258.90 Spread=₹0.19
+2025-12-11 10:15:55 | INFO | live | Monitoring... NSE=₹259.08 BSE=₹258.90 Spread=₹0.18
+2025-12-11 10:16:00 | INFO | live | Monitoring... NSE=₹259.13 BSE=₹258.90 Spread=₹0.23
+2025-12-11 10:16:05 | INFO | live | Monitoring... NSE=₹259.07 BSE=₹258.90 Spread=₹0.17
+2025-12-11 10:16:10 | INFO | live | Monitoring... NSE=₹259.08 BSE=₹258.90 Spread=₹0.18
+2025-12-11 10:16:15 | INFO | live | Monitoring... NSE=₹259.08 BSE=₹258.90 Spread=₹0.18
+2025-12-11 10:16:20 | INFO | live | Monitoring... NSE=₹259.08 BSE=₹258.90 Spread=₹0.18
+2025-12-11 10:16:25 | INFO | live | Monitoring... NSE=₹259.08 BSE=₹258.90 Spread=₹0.18
+2025-12-11 10:16:30 | INFO | live | Monitoring... NSE=₹258.98 BSE=₹258.90 Spread=₹0.08
+2025-12-11 10:16:35 | INFO | live | Monitoring... NSE=₹164.88 BSE=₹164.80 Spread=₹0.08
+2025-12-11 10:16:40 | INFO | live | Monitoring... NSE=₹258.97 BSE=₹259.05 Spread=₹0.08
+2025-12-11 10:16:45 | INFO | live | Monitoring... NSE=₹258.97 BSE=₹258.90 Spread=₹0.07
+2025-12-11 10:16:50 | INFO | live | Monitoring... NSE=₹258.96 BSE=₹259.05 Spread=₹0.09
+2025-12-11 10:16:55 | INFO | live | Monitoring... NSE=₹258.96 BSE=₹259.05 Spread=₹0.09
+2025-12-11 10:17:00 | INFO | live | Monitoring... NSE=₹164.96 BSE=₹164.90 Spread=₹0.06
+2025-12-11 10:17:05 | INFO | live | Monitoring... NSE=₹164.95 BSE=₹164.90 Spread=₹0.05
+2025-12-11 10:17:10 | INFO | live | Monitoring... NSE=₹258.97 BSE=₹258.90 Spread=₹0.07
+2025-12-11 10:17:15 | INFO | live | Monitoring... NSE=₹164.97 BSE=₹164.90 Spread=₹0.07
+2025-12-11 10:17:20 | INFO | live | Monitoring... NSE=₹258.91 BSE=₹259.00 Spread=₹0.09
+2025-12-11 10:17:25 | INFO | live | Monitoring... NSE=₹258.97 BSE=₹258.90 Spread=₹0.07
+2025-12-11 10:17:30 | INFO | live | Monitoring... NSE=₹258.95 BSE=₹259.00 Spread=₹0.05
+2025-12-11 10:17:35 | INFO | live | Monitoring... NSE=₹258.91 BSE=₹259.00 Spread=₹0.09
+2025-12-11 10:17:40 | INFO | live | Monitoring... NSE=₹164.95 BSE=₹165.00 Spread=₹0.05
+2025-12-11 10:17:45 | INFO | live | Monitoring... NSE=₹259.00 BSE=₹258.90 Spread=₹0.10
+2025-12-11 10:17:50 | INFO | live | Monitoring... NSE=₹259.10 BSE=₹258.90 Spread=₹0.20
+2025-12-11 10:17:55 | INFO | live | Monitoring... NSE=₹259.08 BSE=₹258.95 Spread=₹0.13
+2025-12-11 10:18:00 | INFO | live | Monitoring... NSE=₹259.12 BSE=₹258.95 Spread=₹0.17
+2025-12-11 10:18:05 | INFO | live | Monitoring... NSE=₹259.15 BSE=₹259.05 Spread=₹0.10
+2025-12-11 10:18:10 | INFO | live | Monitoring... NSE=₹164.84 BSE=₹164.75 Spread=₹0.09
+2025-12-11 10:18:15 | INFO | live | Monitoring... NSE=₹164.76 BSE=₹164.90 Spread=₹0.14
+2025-12-11 10:18:20 | INFO | live | Monitoring... NSE=₹164.84 BSE=₹164.90 Spread=₹0.06
+2025-12-11 10:18:25 | INFO | live | Monitoring... NSE=₹164.80 BSE=₹164.90 Spread=₹0.10
+2025-12-11 10:18:30 | INFO | live | Monitoring... NSE=₹164.80 BSE=₹164.90 Spread=₹0.10
+2025-12-11 10:18:35 | INFO | live | Monitoring... NSE=₹259.31 BSE=₹259.10 Spread=₹0.21
+2025-12-11 10:18:40 | INFO | live | Monitoring... NSE=₹259.30 BSE=₹259.10 Spread=₹0.20
+2025-12-11 10:18:45 | INFO | live | Monitoring... NSE=₹259.31 BSE=₹259.40 Spread=₹0.09
+2025-12-11 10:18:50 | INFO | live | Monitoring... NSE=₹259.31 BSE=₹259.40 Spread=₹0.09
+2025-12-11 10:18:55 | INFO | live | Monitoring... NSE=₹164.84 BSE=₹164.70 Spread=₹0.14
+2025-12-11 10:19:00 | INFO | live | Monitoring... NSE=₹259.35 BSE=₹259.40 Spread=₹0.05
+2025-12-11 10:19:05 | INFO | live | Monitoring... NSE=₹259.32 BSE=₹259.40 Spread=₹0.08
+2025-12-11 10:19:10 | INFO | live | Monitoring... NSE=₹164.87 BSE=₹164.80 Spread=₹0.07
+2025-12-11 10:19:15 | INFO | live | Monitoring... NSE=₹164.85 BSE=₹164.95 Spread=₹0.10
+2025-12-11 10:19:20 | INFO | live | Monitoring... NSE=₹164.85 BSE=₹164.95 Spread=₹0.10
+2025-12-11 10:19:25 | INFO | live | Monitoring... NSE=₹164.80 BSE=₹164.95 Spread=₹0.15
+2025-12-11 10:19:30 | INFO | live | Monitoring... NSE=₹259.24 BSE=₹259.40 Spread=₹0.16
+2025-12-11 10:19:35 | INFO | live | Monitoring... NSE=₹164.82 BSE=₹164.70 Spread=₹0.12
+2025-12-11 10:19:40 | INFO | live | Monitoring... NSE=₹259.26 BSE=₹259.40 Spread=₹0.14
+2025-12-11 10:19:45 | INFO | live | Monitoring... NSE=₹259.25 BSE=₹259.40 Spread=₹0.15
+2025-12-11 10:19:50 | INFO | live | Monitoring... NSE=₹259.24 BSE=₹259.40 Spread=₹0.16
+2025-12-11 10:19:55 | INFO | live | Monitoring... NSE=₹259.21 BSE=₹259.35 Spread=₹0.14
+2025-12-11 10:20:00 | INFO | live | Monitoring... NSE=₹259.28 BSE=₹259.35 Spread=₹0.07
+2025-12-11 10:20:05 | INFO | live | Monitoring... NSE=₹259.30 BSE=₹259.35 Spread=₹0.05
+2025-12-11 10:20:10 | INFO | live | Monitoring... NSE=₹259.30 BSE=₹259.40 Spread=₹0.10
+2025-12-11 10:20:15 | INFO | live | Monitoring... NSE=₹164.77 BSE=₹164.70 Spread=₹0.07
+2025-12-11 10:20:20 | INFO | live | Monitoring... NSE=₹259.33 BSE=₹259.40 Spread=₹0.07
+2025-12-11 10:20:25 | INFO | live | Monitoring... NSE=₹164.69 BSE=₹164.80 Spread=₹0.11
+2025-12-11 10:20:30 | INFO | live | Monitoring... NSE=₹164.74 BSE=₹164.80 Spread=₹0.06
+2025-12-11 10:20:35 | INFO | live | Monitoring... NSE=₹164.70 BSE=₹164.80 Spread=₹0.10
+2025-12-11 10:20:40 | INFO | live | Monitoring... NSE=₹259.32 BSE=₹259.40 Spread=₹0.08
+2025-12-11 10:20:45 | INFO | live | Monitoring... NSE=₹164.73 BSE=₹164.65 Spread=₹0.08
+2025-12-11 10:20:50 | INFO | live | Monitoring... NSE=₹259.33 BSE=₹259.40 Spread=₹0.07
+2025-12-11 10:20:55 | INFO | live | Monitoring... NSE=₹164.75 BSE=₹164.85 Spread=₹0.10
+2025-12-11 10:21:00 | INFO | live | Monitoring... NSE=₹259.33 BSE=₹259.40 Spread=₹0.07
+2025-12-11 10:21:05 | INFO | live | Monitoring... NSE=₹164.74 BSE=₹164.65 Spread=₹0.09
+2025-12-11 10:21:10 | INFO | live | Monitoring... NSE=₹259.31 BSE=₹259.40 Spread=₹0.09
+2025-12-11 10:21:15 | INFO | live | Monitoring... NSE=₹164.65 BSE=₹164.75 Spread=₹0.10
+2025-12-11 10:21:20 | INFO | live | Monitoring... NSE=₹259.26 BSE=₹259.35 Spread=₹0.09
+2025-12-11 10:21:25 | INFO | live | Monitoring... NSE=₹164.68 BSE=₹164.75 Spread=₹0.07
+2025-12-11 10:21:30 | INFO | live | Monitoring... NSE=₹259.20 BSE=₹259.35 Spread=₹0.15
+2025-12-11 10:21:35 | INFO | live | Monitoring... NSE=₹259.26 BSE=₹259.35 Spread=₹0.09
+2025-12-11 10:21:40 | INFO | live | Monitoring... NSE=₹164.65 BSE=₹164.60 Spread=₹0.05
+2025-12-11 10:21:45 | INFO | live | Monitoring... NSE=₹259.17 BSE=₹259.25 Spread=₹0.08
+2025-12-11 10:21:50 | INFO | live | Monitoring... NSE=₹164.71 BSE=₹164.85 Spread=₹0.14
+2025-12-11 10:21:55 | INFO | live | Monitoring... NSE=₹259.10 BSE=₹259.20 Spread=₹0.10
+2025-12-11 10:22:00 | INFO | live | Monitoring... NSE=₹259.12 BSE=₹259.20 Spread=₹0.08
+2025-12-11 10:22:05 | INFO | live | Monitoring... NSE=₹164.72 BSE=₹164.80 Spread=₹0.08
+2025-12-11 10:22:10 | INFO | live | Monitoring... NSE=₹259.04 BSE=₹259.20 Spread=₹0.16
+2025-12-11 10:22:15 | INFO | live | Monitoring... NSE=₹259.06 BSE=₹259.15 Spread=₹0.09
+2025-12-11 10:22:20 | INFO | live | Monitoring... NSE=₹164.64 BSE=₹164.60 Spread=₹0.04
+2025-12-11 10:22:25 | INFO | live | Monitoring... NSE=₹164.64 BSE=₹164.75 Spread=₹0.11
+2025-12-11 10:22:30 | INFO | live | Monitoring... NSE=₹164.62 BSE=₹164.75 Spread=₹0.13
+2025-12-11 10:22:35 | INFO | live | Monitoring... NSE=₹259.08 BSE=₹259.15 Spread=₹0.07
+2025-12-11 10:22:40 | INFO | live | Monitoring... NSE=₹259.10 BSE=₹259.15 Spread=₹0.05
+2025-12-11 10:22:45 | INFO | live | Monitoring... NSE=₹164.63 BSE=₹164.60 Spread=₹0.03
+2025-12-11 10:22:50 | INFO | live | Monitoring... NSE=₹164.64 BSE=₹164.75 Spread=₹0.11
+2025-12-11 10:22:55 | INFO | live | Monitoring... NSE=₹164.62 BSE=₹164.70 Spread=₹0.08
+2025-12-11 10:23:00 | INFO | live | Monitoring... NSE=₹164.63 BSE=₹164.75 Spread=₹0.12
+2025-12-11 10:23:05 | INFO | live | Monitoring... NSE=₹259.25 BSE=₹259.15 Spread=₹0.10
+2025-12-11 10:23:10 | INFO | live | Monitoring... NSE=₹259.31 BSE=₹259.15 Spread=₹0.16
+2025-12-11 10:23:15 | INFO | live | Monitoring... NSE=₹259.27 BSE=₹259.35 Spread=₹0.08
+2025-12-11 10:23:20 | INFO | live | Monitoring... NSE=₹164.68 BSE=₹164.75 Spread=₹0.07
+2025-12-11 10:23:25 | INFO | live | Monitoring... NSE=₹164.65 BSE=₹164.60 Spread=₹0.05
+2025-12-11 10:23:30 | INFO | live | Monitoring... NSE=₹164.65 BSE=₹164.75 Spread=₹0.10
+2025-12-11 10:23:35 | INFO | live | Monitoring... NSE=₹164.66 BSE=₹164.75 Spread=₹0.09
+2025-12-11 10:23:40 | INFO | live | Monitoring... NSE=₹164.66 BSE=₹164.75 Spread=₹0.09
+2025-12-11 10:23:45 | INFO | live | Monitoring... NSE=₹259.25 BSE=₹259.35 Spread=₹0.10
+2025-12-11 10:23:50 | INFO | live | Monitoring... NSE=₹259.26 BSE=₹259.15 Spread=₹0.11
+2025-12-11 10:23:55 | INFO | live | Monitoring... NSE=₹259.22 BSE=₹259.15 Spread=₹0.07
+2025-12-11 10:24:00 | INFO | live | Monitoring... NSE=₹259.25 BSE=₹259.15 Spread=₹0.10
+2025-12-11 10:24:05 | INFO | live | Monitoring... NSE=₹259.24 BSE=₹259.15 Spread=₹0.09
+2025-12-11 10:24:10 | INFO | live | Monitoring... NSE=₹259.24 BSE=₹259.15 Spread=₹0.09
+2025-12-11 10:24:15 | INFO | live | Monitoring... NSE=₹259.24 BSE=₹259.15 Spread=₹0.09
+2025-12-11 10:24:20 | INFO | live | Monitoring... NSE=₹164.62 BSE=₹164.70 Spread=₹0.08
+2025-12-11 10:24:25 | INFO | live | Monitoring... NSE=₹164.69 BSE=₹164.75 Spread=₹0.06
+2025-12-11 10:24:30 | INFO | live | Monitoring... NSE=₹259.25 BSE=₹259.35 Spread=₹0.10
+2025-12-11 10:24:35 | INFO | live | Monitoring... NSE=₹164.74 BSE=₹164.65 Spread=₹0.09
+2025-12-11 10:24:40 | INFO | live | Monitoring... NSE=₹259.26 BSE=₹259.35 Spread=₹0.09
+2025-12-11 10:24:45 | INFO | live | Monitoring... NSE=₹164.84 BSE=₹164.90 Spread=₹0.06
+2025-12-11 10:24:50 | INFO | live | Monitoring... NSE=₹164.82 BSE=₹164.90 Spread=₹0.08
+2025-12-11 10:24:55 | INFO | live | Monitoring... NSE=₹164.80 BSE=₹164.90 Spread=₹0.10
+2025-12-11 10:25:00 | INFO | live | Monitoring... NSE=₹164.82 BSE=₹164.90 Spread=₹0.08
+2025-12-11 10:25:03 | INFO | decision_engine | Decision engine cancelled
+2025-12-11 10:25:03 | INFO | decision_engine | Decision engine shutting down. Processed 4458 ticks.
+2025-12-11 10:25:03 | INFO | main | Shutting down data feed...
+2025-12-11 10:25:06 | INFO | main | Bot shutdown complete
+2025-12-11 10:25:06 | WARNING | data_feed | Event loop is closed. Cannot queue tick for TATASTEEL/NSE
+2025-12-11 10:25:06 | WARNING | data_feed | Event loop is closed. Cannot queue tick for WIPRO/BSE
+2025-12-11 10:25:24 | INFO | main | Authenticating with Angel One SmartAPI...
+2025-12-11 10:25:25 | INFO | auth | Authentication successful
+2025-12-11 10:25:25 | INFO | main | Authentication successful. Starting bot...
+2025-12-11 10:25:25 | INFO | main | Using watchlist: ['TATASTEEL', 'WIPRO', 'ONGC']
+2025-12-11 10:25:25 | INFO | data_feed | Starting Angel One WebSocket feed for ['TATASTEEL', 'WIPRO', 'ONGC']
+2025-12-11 10:25:25 | INFO | data_feed | Fetching instrument master data for 3 symbols...
+2025-12-11 10:25:25 | WARNING | data_feed | Could not fetch from master data. Using manual token lookup.
+2025-12-11 10:25:25 | INFO | data_feed | Resolved 6 instrument tokens
+2025-12-11 10:25:25 | INFO | main | Data feed started. Bot is now running...
+2025-12-11 10:25:25 | INFO | decision_engine | Decision engine started. Waiting for market data...
+2025-12-11 10:25:25 | INFO | decision_engine | Market hours: 09:15:00 to 15:30:00
+2025-12-11 10:25:25 | INFO | decision_engine | Monitoring symbols: ['TATASTEEL', 'WIPRO', 'ONGC']
+2025-12-11 10:25:25 | INFO | decision_engine | Minimum spread threshold: ₹0.30
+2025-12-11 10:25:25 | INFO | decision_engine | Heartbeat loop started
+2025-12-11 10:25:25 | INFO | live | Monitoring... (waiting for data)
+2025-12-11 10:25:29 | INFO | data_feed | WebSocket connected. Subscribing to 6 instruments
+2025-12-11 10:25:29 | INFO | data_feed | Subscription details: correlation_id=arbitrage_bot_001, mode=3
+2025-12-11 10:25:29 | INFO | data_feed | Subscription request sent successfully. Waiting for market data...
+2025-12-11 10:25:30 | INFO | live | Monitoring... NSE=₹164.82 BSE=₹164.90 Spread=₹0.08
+2025-12-11 10:25:35 | INFO | live | Monitoring... NSE=₹240.67 BSE=₹240.80 Spread=₹0.13
+2025-12-11 10:25:40 | INFO | live | Monitoring... NSE=₹259.49 BSE=₹259.30 Spread=₹0.19
+2025-12-11 10:25:45 | INFO | live | Monitoring... NSE=₹164.78 BSE=₹164.90 Spread=₹0.12
+2025-12-11 10:25:50 | INFO | live | Monitoring... NSE=₹259.44 BSE=₹259.30 Spread=₹0.14
+2025-12-11 10:25:55 | INFO | live | Monitoring... NSE=₹240.67 BSE=₹240.80 Spread=₹0.13
+2025-12-11 10:26:00 | INFO | live | Monitoring... NSE=₹240.70 BSE=₹240.80 Spread=₹0.10
+2025-12-11 10:26:05 | INFO | live | Monitoring... NSE=₹259.59 BSE=₹259.50 Spread=₹0.09
+2025-12-11 10:26:10 | INFO | live | Monitoring... NSE=₹164.71 BSE=₹164.85 Spread=₹0.14
+2025-12-11 10:26:15 | INFO | live | Monitoring... NSE=₹164.71 BSE=₹164.85 Spread=₹0.14
+2025-12-11 10:26:20 | INFO | live | Monitoring... NSE=₹164.71 BSE=₹164.85 Spread=₹0.14
+2025-12-11 10:26:25 | INFO | live | Monitoring... NSE=₹164.71 BSE=₹164.85 Spread=₹0.14
+2025-12-11 10:26:30 | INFO | live | Monitoring... NSE=₹164.74 BSE=₹164.85 Spread=₹0.11
+2025-12-11 10:26:35 | INFO | live | Monitoring... NSE=₹164.73 BSE=₹164.85 Spread=₹0.12
+2025-12-11 10:26:40 | INFO | live | Monitoring... NSE=₹164.72 BSE=₹164.85 Spread=₹0.13
+2025-12-11 10:26:45 | INFO | live | Monitoring... NSE=₹164.73 BSE=₹164.85 Spread=₹0.12
+2025-12-11 10:26:50 | INFO | live | Monitoring... NSE=₹164.73 BSE=₹164.85 Spread=₹0.12
+2025-12-11 10:26:55 | INFO | live | Monitoring... NSE=₹164.69 BSE=₹164.80 Spread=₹0.11
+2025-12-11 10:27:00 | INFO | live | Monitoring... NSE=₹164.69 BSE=₹164.80 Spread=₹0.11
+2025-12-11 10:27:05 | INFO | live | Monitoring... NSE=₹164.66 BSE=₹164.80 Spread=₹0.14
+2025-12-11 10:27:10 | INFO | live | Monitoring... NSE=₹164.62 BSE=₹164.75 Spread=₹0.13
+2025-12-11 10:27:15 | INFO | live | Monitoring... NSE=₹259.55 BSE=₹259.60 Spread=₹0.05
+2025-12-11 10:27:20 | INFO | live | Monitoring... NSE=₹240.83 BSE=₹240.75 Spread=₹0.08
+2025-12-11 10:27:25 | INFO | live | Monitoring... NSE=₹259.54 BSE=₹259.45 Spread=₹0.09
+2025-12-11 10:27:30 | INFO | live | Monitoring... NSE=₹164.62 BSE=₹164.70 Spread=₹0.08
+2025-12-11 10:27:35 | INFO | live | Monitoring... NSE=₹164.61 BSE=₹164.70 Spread=₹0.09
+2025-12-11 10:27:40 | INFO | live | Monitoring... NSE=₹164.60 BSE=₹164.70 Spread=₹0.10
+2025-12-11 10:27:45 | INFO | live | Monitoring... NSE=₹164.64 BSE=₹164.70 Spread=₹0.06
+2025-12-11 10:27:50 | INFO | live | Monitoring... NSE=₹259.49 BSE=₹259.65 Spread=₹0.16
+2025-12-11 10:27:55 | INFO | live | Monitoring... NSE=₹259.53 BSE=₹259.45 Spread=₹0.08
+2025-12-11 10:28:00 | INFO | live | Monitoring... NSE=₹259.60 BSE=₹259.45 Spread=₹0.15
+2025-12-11 10:28:05 | INFO | live | Monitoring... NSE=₹259.61 BSE=₹259.45 Spread=₹0.16
+2025-12-11 10:28:10 | INFO | live | Monitoring... NSE=₹259.62 BSE=₹259.50 Spread=₹0.12
+2025-12-11 10:28:15 | INFO | live | Monitoring... NSE=₹259.60 BSE=₹259.50 Spread=₹0.10
+2025-12-11 10:28:20 | INFO | live | Monitoring... NSE=₹259.69 BSE=₹259.50 Spread=₹0.19
+2025-12-11 10:28:25 | INFO | live | Monitoring... NSE=₹240.85 BSE=₹240.75 Spread=₹0.10
+2025-12-11 10:28:30 | INFO | live | Monitoring... NSE=₹259.60 BSE=₹259.70 Spread=₹0.10
+2025-12-11 10:28:35 | INFO | live | Monitoring... NSE=₹259.70 BSE=₹259.55 Spread=₹0.15
+2025-12-11 10:28:38 | INFO | decision_engine | Decision engine cancelled
+2025-12-11 10:28:38 | INFO | decision_engine | Decision engine shutting down. Processed 1664 ticks.
+2025-12-11 10:28:38 | INFO | main | Shutting down data feed...
+2025-12-11 10:28:41 | INFO | main | Bot shutdown complete
+2025-12-11 10:28:41 | WARNING | data_feed | Event loop is closed. Cannot queue tick for ONGC/BSE
+2025-12-11 10:28:41 | WARNING | data_feed | Event loop is closed. Cannot queue tick for WIPRO/BSE
+2025-12-11 10:28:41 | WARNING | data_feed | Event loop is closed. Cannot queue tick for TATASTEEL/BSE
+2025-12-11 10:28:41 | WARNING | data_feed | Event loop is closed. Cannot queue tick for TATASTEEL/NSE
+2025-12-11 10:28:41 | WARNING | data_feed | Event loop is closed. Cannot queue tick for WIPRO/NSE
+2025-12-11 10:29:04 | INFO | main | Authenticating with Angel One SmartAPI...
+2025-12-11 10:29:05 | INFO | auth | Authentication successful
+2025-12-11 10:29:05 | INFO | main | Authentication successful. Starting bot...
+2025-12-11 10:29:05 | INFO | main | Using watchlist: ['TATASTEEL', 'WIPRO', 'ONGC']
+2025-12-11 10:29:05 | INFO | data_feed | Starting Angel One WebSocket feed for ['TATASTEEL', 'WIPRO', 'ONGC']
+2025-12-11 10:29:05 | INFO | data_feed | Fetching instrument master data for 3 symbols...
+2025-12-11 10:29:05 | WARNING | data_feed | Could not fetch from master data. Using manual token lookup.
+2025-12-11 10:29:05 | INFO | data_feed | Resolved 6 instrument tokens
+2025-12-11 10:29:05 | INFO | main | Data feed started. Bot is now running...
+2025-12-11 10:29:05 | INFO | decision_engine | Decision engine started. Waiting for market data...
+2025-12-11 10:29:05 | INFO | decision_engine | Market hours: 09:15:00 to 15:30:00
+2025-12-11 10:29:05 | INFO | decision_engine | Monitoring symbols: ['TATASTEEL', 'WIPRO', 'ONGC']
+2025-12-11 10:29:05 | INFO | decision_engine | Minimum spread threshold: ₹0.25
+2025-12-11 10:29:05 | INFO | decision_engine | Heartbeat loop started
+2025-12-11 10:29:05 | INFO | live | Monitoring... (waiting for data)
+2025-12-11 10:29:05 | INFO | data_feed | WebSocket connected. Subscribing to 6 instruments
+2025-12-11 10:29:05 | INFO | data_feed | Subscription details: correlation_id=arbitrage_bot_001, mode=3
+2025-12-11 10:29:05 | INFO | data_feed | Subscription request sent successfully. Waiting for market data...
+2025-12-11 10:29:10 | INFO | live | Monitoring... NSE=₹164.72 BSE=₹164.60 Spread=₹0.12
+2025-12-11 10:29:15 | INFO | live | Monitoring... NSE=₹259.72 BSE=₹259.50 Spread=₹0.22
+2025-12-11 10:29:20 | INFO | live | Monitoring... NSE=₹259.73 BSE=₹259.50 Spread=₹0.23
+2025-12-11 10:29:25 | INFO | live | Monitoring... NSE=₹259.70 BSE=₹259.50 Spread=₹0.20
+2025-12-11 10:29:30 | INFO | live | Monitoring... NSE=₹259.62 BSE=₹259.50 Spread=₹0.12
+2025-12-11 10:29:35 | INFO | live | Monitoring... NSE=₹164.69 BSE=₹164.75 Spread=₹0.06
+2025-12-11 10:29:40 | INFO | live | Monitoring... NSE=₹164.66 BSE=₹164.75 Spread=₹0.09
+2025-12-11 10:29:45 | INFO | live | Monitoring... NSE=₹240.79 BSE=₹240.80 Spread=₹0.01
+2025-12-11 10:29:50 | INFO | live | Monitoring... NSE=₹240.75 BSE=₹240.80 Spread=₹0.05
+2025-12-11 10:29:55 | INFO | live | Monitoring... NSE=₹164.66 BSE=₹164.75 Spread=₹0.09
+2025-12-11 10:30:00 | INFO | live | Monitoring... NSE=₹259.76 BSE=₹259.80 Spread=₹0.04
+2025-12-11 10:30:05 | INFO | live | Monitoring... NSE=₹259.73 BSE=₹259.80 Spread=₹0.07
+2025-12-11 10:30:10 | INFO | live | Monitoring... NSE=₹164.74 BSE=₹164.85 Spread=₹0.11
+2025-12-11 10:30:15 | INFO | live | Monitoring... NSE=₹259.71 BSE=₹259.80 Spread=₹0.09
+2025-12-11 10:30:20 | INFO | live | Monitoring... NSE=₹259.68 BSE=₹259.80 Spread=₹0.12
+2025-12-11 10:30:25 | INFO | live | Monitoring... NSE=₹259.62 BSE=₹259.80 Spread=₹0.18
+2025-12-11 10:30:30 | INFO | live | Monitoring... NSE=₹164.69 BSE=₹164.65 Spread=₹0.04
+2025-12-11 10:30:35 | INFO | live | Monitoring... NSE=₹259.80 BSE=₹259.70 Spread=₹0.10
+2025-12-11 10:30:40 | INFO | live | Monitoring... NSE=₹240.90 BSE=₹240.85 Spread=₹0.05
+2025-12-11 10:30:45 | INFO | live | Monitoring... NSE=₹164.60 BSE=₹164.75 Spread=₹0.15
+2025-12-11 10:30:50 | INFO | live | Monitoring... NSE=₹259.79 BSE=₹259.70 Spread=₹0.09
+2025-12-11 10:30:55 | INFO | live | Monitoring... NSE=₹259.64 BSE=₹259.70 Spread=₹0.06
+2025-12-11 10:31:00 | INFO | live | Monitoring... NSE=₹164.64 BSE=₹164.75 Spread=₹0.11
+2025-12-11 10:31:05 | INFO | live | Monitoring... NSE=₹259.59 BSE=₹259.70 Spread=₹0.11
+2025-12-11 10:31:10 | INFO | live | Monitoring... NSE=₹164.73 BSE=₹164.70 Spread=₹0.03
+2025-12-11 10:31:15 | INFO | live | Monitoring... NSE=₹241.07 BSE=₹241.15 Spread=₹0.08
+2025-12-11 10:31:20 | INFO | live | Monitoring... NSE=₹164.71 BSE=₹164.80 Spread=₹0.09
+2025-12-11 10:31:25 | INFO | live | Monitoring... NSE=₹259.56 BSE=₹259.50 Spread=₹0.06
+2025-12-11 10:31:30 | INFO | live | Monitoring... NSE=₹164.70 BSE=₹164.65 Spread=₹0.05
+2025-12-11 10:31:35 | INFO | live | Monitoring... NSE=₹164.70 BSE=₹164.80 Spread=₹0.10
+2025-12-11 10:31:40 | INFO | live | Monitoring... NSE=₹164.70 BSE=₹164.80 Spread=₹0.10
+2025-12-11 10:31:45 | INFO | live | Monitoring... NSE=₹259.53 BSE=₹259.50 Spread=₹0.03
+2025-12-11 10:31:50 | INFO | live | Monitoring... NSE=₹259.58 BSE=₹259.50 Spread=₹0.08
+2025-12-11 10:31:54 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.29
+2025-12-11 10:31:54 | INFO | main | Signal WIPRO spread=0.29 | BUY: BSE@₹259.75 (limit: ₹259.77) | SELL: NSE@₹259.73 (limit: ₹259.71) | qty=1
+2025-12-11 10:31:54 | INFO | order_executor | Order placed NSE SELL WIPRO qty=1 @ ₹259.71 id=251211000402133
+2025-12-11 10:31:55 | INFO | live | Monitoring... NSE=₹259.79 BSE=₹259.50 Spread=₹0.29
+2025-12-11 10:32:00 | INFO | live | Monitoring... NSE=₹259.79 BSE=₹259.50 Spread=₹0.29
+2025-12-11 10:32:00 | INFO | order_executor | Order placed BSE BUY WIPRO qty=1 @ ₹259.77 id=251211000402880
+2025-12-11 10:32:01 | WARNING | order_executor | ⚠️ Trade INCOMPLETE: WIPRO | Spread=₹0.29 | BUY: BSE (id=251211000402880, status=REJECTED, price=N/A) | SELL: NSE (id=251211000402133, status=COMPLETE, price=N/A)
+2025-12-11 10:32:01 | ERROR | order_executor | Failsafe triggered for WIPRO
+2025-12-11 10:32:01 | INFO | order_executor | Failsafe: Squaring off SELL leg - NSE WIPRO qty=1 (filled=1, requested=1)
+2025-12-11 10:32:01 | INFO | order_executor | Failsafe: Placing 1 square-off order(s) for WIPRO
+2025-12-11 10:32:01 | INFO | order_executor | Order placed NSE BUY WIPRO qty=1 (MARKET) id=251211000402951
+2025-12-11 10:32:02 | INFO | order_executor | Failsafe order executed: NSE BUY WIPRO qty=1
+2025-12-11 10:32:02 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.29
+2025-12-11 10:32:02 | INFO | main | Signal WIPRO spread=0.29 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.73 (limit: ₹259.71) | qty=1
+2025-12-11 10:32:02 | INFO | order_executor | Order placed NSE SELL WIPRO qty=1 @ ₹259.71 id=251211000403032
+2025-12-11 10:32:02 | INFO | order_executor | Order placed BSE BUY WIPRO qty=1 @ ₹259.82 id=251211000403034
+2025-12-11 10:32:04 | WARNING | order_executor | ⚠️ Trade INCOMPLETE: WIPRO | Spread=₹0.29 | BUY: BSE (id=251211000403034, status=REJECTED, price=N/A) | SELL: NSE (id=251211000403032, status=COMPLETE, price=N/A)
+2025-12-11 10:32:04 | ERROR | order_executor | Failsafe triggered for WIPRO
+2025-12-11 10:32:04 | INFO | order_executor | Failsafe: Squaring off SELL leg - NSE WIPRO qty=1 (filled=1, requested=1)
+2025-12-11 10:32:04 | INFO | order_executor | Failsafe: Placing 1 square-off order(s) for WIPRO
+2025-12-11 10:32:04 | INFO | order_executor | Order placed NSE BUY WIPRO qty=1 (MARKET) id=251211000403237
+2025-12-11 10:32:05 | INFO | order_executor | Failsafe order executed: NSE BUY WIPRO qty=1
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.29
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.29 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.77 (limit: ₹259.75) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.29
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.29 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.77 (limit: ₹259.75) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.29
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.29 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.77 (limit: ₹259.75) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.29
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.29 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.77 (limit: ₹259.75) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.29
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.29 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.77 (limit: ₹259.75) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.29
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.29 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.77 (limit: ₹259.75) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.29
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.29 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.77 (limit: ₹259.75) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.30
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.30 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.79 (limit: ₹259.77) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.30
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.30 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.79 (limit: ₹259.77) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.34
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.34 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.79 (limit: ₹259.77) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.34
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.34 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.79 (limit: ₹259.77) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.34
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.34 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.77 (limit: ₹259.75) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.34
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.34 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.77 (limit: ₹259.75) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.34
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.34 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.77 (limit: ₹259.75) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.27
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.27 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.76 (limit: ₹259.74) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.26
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.26 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.76 (limit: ₹259.74) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.26
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.26 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.76 (limit: ₹259.74) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.29
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.29 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.71 (limit: ₹259.69) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.29
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.29 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.71 (limit: ₹259.69) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.29
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.29 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.71 (limit: ₹259.69) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.29
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.29 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.71 (limit: ₹259.69) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.33
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.33 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.71 (limit: ₹259.69) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.33
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.33 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.75 (limit: ₹259.73) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.33
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.33 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.75 (limit: ₹259.73) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.33
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.33 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.75 (limit: ₹259.73) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.34
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.34 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.75 (limit: ₹259.73) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.34
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.34 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.75 (limit: ₹259.73) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.34
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.34 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.75 (limit: ₹259.73) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.34
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.34 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.75 (limit: ₹259.73) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.34
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.34 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.75 (limit: ₹259.73) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.34
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.34 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.75 (limit: ₹259.73) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.37
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.37 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.75 (limit: ₹259.73) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.37
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.37 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.83 (limit: ₹259.81) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.37
+2025-12-11 10:32:05 | INFO | main | Signal WIPRO spread=0.37 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.83 (limit: ₹259.81) | qty=1
+2025-12-11 10:32:05 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:05 | INFO | live | Monitoring... NSE=₹259.87 BSE=₹259.50 Spread=₹0.37
+2025-12-11 10:32:06 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.37
+2025-12-11 10:32:06 | INFO | main | Signal WIPRO spread=0.37 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.83 (limit: ₹259.81) | qty=1
+2025-12-11 10:32:06 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:06 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.33
+2025-12-11 10:32:06 | INFO | main | Signal WIPRO spread=0.33 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.83 (limit: ₹259.81) | qty=1
+2025-12-11 10:32:06 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:06 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.33
+2025-12-11 10:32:06 | INFO | main | Signal WIPRO spread=0.33 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.83 (limit: ₹259.81) | qty=1
+2025-12-11 10:32:06 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:06 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.33
+2025-12-11 10:32:06 | INFO | main | Signal WIPRO spread=0.33 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.83 (limit: ₹259.81) | qty=1
+2025-12-11 10:32:06 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:07 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.37
+2025-12-11 10:32:07 | INFO | main | Signal WIPRO spread=0.37 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.83 (limit: ₹259.81) | qty=1
+2025-12-11 10:32:07 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:07 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.37
+2025-12-11 10:32:07 | INFO | main | Signal WIPRO spread=0.37 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.83 (limit: ₹259.81) | qty=1
+2025-12-11 10:32:07 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:07 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.37
+2025-12-11 10:32:07 | INFO | main | Signal WIPRO spread=0.37 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.83 (limit: ₹259.81) | qty=1
+2025-12-11 10:32:07 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:07 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.35
+2025-12-11 10:32:07 | INFO | main | Signal WIPRO spread=0.35 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.83 (limit: ₹259.81) | qty=1
+2025-12-11 10:32:07 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:07 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.35
+2025-12-11 10:32:07 | INFO | main | Signal WIPRO spread=0.35 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.83 (limit: ₹259.81) | qty=1
+2025-12-11 10:32:07 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:08 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.35
+2025-12-11 10:32:08 | INFO | main | Signal WIPRO spread=0.35 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.77 (limit: ₹259.75) | qty=1
+2025-12-11 10:32:08 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:08 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.35
+2025-12-11 10:32:08 | INFO | main | Signal WIPRO spread=0.35 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.77 (limit: ₹259.75) | qty=1
+2025-12-11 10:32:08 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:09 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.36
+2025-12-11 10:32:09 | INFO | main | Signal WIPRO spread=0.36 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.77 (limit: ₹259.75) | qty=1
+2025-12-11 10:32:09 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:09 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.36
+2025-12-11 10:32:09 | INFO | main | Signal WIPRO spread=0.36 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.77 (limit: ₹259.75) | qty=1
+2025-12-11 10:32:09 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:09 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.36
+2025-12-11 10:32:09 | INFO | main | Signal WIPRO spread=0.36 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.79 (limit: ₹259.77) | qty=1
+2025-12-11 10:32:09 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:09 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.36
+2025-12-11 10:32:09 | INFO | main | Signal WIPRO spread=0.36 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.79 (limit: ₹259.77) | qty=1
+2025-12-11 10:32:09 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:10 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.29
+2025-12-11 10:32:10 | INFO | main | Signal WIPRO spread=0.29 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.79 (limit: ₹259.77) | qty=1
+2025-12-11 10:32:10 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:10 | INFO | live | Monitoring... NSE=₹259.79 BSE=₹259.50 Spread=₹0.29
+2025-12-11 10:32:10 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.29
+2025-12-11 10:32:10 | INFO | main | Signal WIPRO spread=0.29 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.79 (limit: ₹259.77) | qty=1
+2025-12-11 10:32:10 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:10 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.29
+2025-12-11 10:32:10 | INFO | main | Signal WIPRO spread=0.29 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.84 (limit: ₹259.82) | qty=1
+2025-12-11 10:32:10 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:11 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.29
+2025-12-11 10:32:11 | INFO | main | Signal WIPRO spread=0.29 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.84 (limit: ₹259.82) | qty=1
+2025-12-11 10:32:11 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:11 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.37
+2025-12-11 10:32:11 | INFO | main | Signal WIPRO spread=0.37 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.84 (limit: ₹259.82) | qty=1
+2025-12-11 10:32:11 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:11 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.37
+2025-12-11 10:32:11 | INFO | main | Signal WIPRO spread=0.37 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.84 (limit: ₹259.82) | qty=1
+2025-12-11 10:32:11 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:11 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.37
+2025-12-11 10:32:11 | INFO | main | Signal WIPRO spread=0.37 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.84 (limit: ₹259.82) | qty=1
+2025-12-11 10:32:12 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:12 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.37
+2025-12-11 10:32:12 | INFO | main | Signal WIPRO spread=0.37 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.84 (limit: ₹259.82) | qty=1
+2025-12-11 10:32:12 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:12 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.39
+2025-12-11 10:32:12 | INFO | main | Signal WIPRO spread=0.39 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.84 (limit: ₹259.82) | qty=1
+2025-12-11 10:32:12 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:13 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.39
+2025-12-11 10:32:13 | INFO | main | Signal WIPRO spread=0.39 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.84 (limit: ₹259.82) | qty=1
+2025-12-11 10:32:13 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:13 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.39
+2025-12-11 10:32:13 | INFO | main | Signal WIPRO spread=0.39 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.84 (limit: ₹259.82) | qty=1
+2025-12-11 10:32:13 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:13 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.39
+2025-12-11 10:32:13 | INFO | main | Signal WIPRO spread=0.39 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.84 (limit: ₹259.82) | qty=1
+2025-12-11 10:32:13 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:13 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.39
+2025-12-11 10:32:13 | INFO | main | Signal WIPRO spread=0.39 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.84 (limit: ₹259.82) | qty=1
+2025-12-11 10:32:13 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:14 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.39
+2025-12-11 10:32:14 | INFO | main | Signal WIPRO spread=0.39 | BUY: BSE@₹259.80 (limit: ₹259.82) | SELL: NSE@₹259.84 (limit: ₹259.82) | qty=1
+2025-12-11 10:32:14 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 10:32:15 | INFO | live | Monitoring... NSE=₹241.30 BSE=₹241.20 Spread=₹0.10
+2025-12-11 10:32:20 | INFO | live | Monitoring... NSE=₹241.30 BSE=₹241.20 Spread=₹0.10
+2025-12-11 10:32:24 | INFO | decision_engine | Decision engine cancelled
+2025-12-11 10:32:24 | INFO | decision_engine | Decision engine shutting down. Processed 1739 ticks.
+2025-12-11 10:32:24 | INFO | main | Shutting down data feed...
+2025-12-11 10:32:27 | INFO | main | Bot shutdown complete
+2025-12-11 10:32:27 | WARNING | data_feed | Event loop is closed. Cannot queue tick for ONGC/NSE
+2025-12-11 10:32:27 | WARNING | data_feed | Event loop is closed. Cannot queue tick for WIPRO/NSE
+2025-12-11 10:32:27 | WARNING | data_feed | Event loop is closed. Cannot queue tick for TATASTEEL/NSE
+2025-12-11 10:32:27 | WARNING | data_feed | Event loop is closed. Cannot queue tick for ONGC/NSE
+2025-12-11 10:32:28 | WARNING | data_feed | Event loop is closed. Cannot queue tick for ONGC/BSE
+2025-12-11 10:47:21 | INFO | main | Authenticating with Angel One SmartAPI...
+2025-12-11 10:47:21 | INFO | auth | Authentication successful
+2025-12-11 10:47:21 | INFO | main | Authentication successful. Starting bot...
+2025-12-11 10:47:21 | INFO | main | Using watchlist: ['TATASTEEL', 'WIPRO', 'ONGC']
+2025-12-11 10:47:21 | INFO | data_feed | Starting Angel One WebSocket feed for ['TATASTEEL', 'WIPRO', 'ONGC']
+2025-12-11 10:47:21 | INFO | data_feed | Fetching instrument master data for 3 symbols...
+2025-12-11 10:47:22 | WARNING | data_feed | Could not fetch from master data. Using manual token lookup.
+2025-12-11 10:47:22 | INFO | data_feed | Resolved 6 instrument tokens
+2025-12-11 10:47:22 | INFO | main | Data feed started. Bot is now running...
+2025-12-11 10:47:22 | INFO | decision_engine | Decision engine started. Waiting for market data...
+2025-12-11 10:47:22 | INFO | decision_engine | Market hours: 09:15:00 to 15:30:00
+2025-12-11 10:47:22 | INFO | decision_engine | Monitoring symbols: ['TATASTEEL', 'WIPRO', 'ONGC']
+2025-12-11 10:47:22 | INFO | decision_engine | Minimum spread threshold: ₹0.25
+2025-12-11 10:47:22 | INFO | decision_engine | Heartbeat loop started
+2025-12-11 10:47:22 | INFO | live | Monitoring... (waiting for data)
+2025-12-11 10:47:22 | INFO | data_feed | WebSocket connected. Subscribing to 6 instruments
+2025-12-11 10:47:22 | INFO | data_feed | Subscription details: correlation_id=arbitrage_bot_001, mode=3
+2025-12-11 10:47:22 | INFO | data_feed | Subscription request sent successfully. Waiting for market data...
+2025-12-11 10:47:27 | INFO | live | Monitoring... NSE=₹259.62 BSE=₹259.45 Spread=₹0.17
+2025-12-11 10:47:32 | INFO | live | Monitoring... NSE=₹259.65 BSE=₹259.45 Spread=₹0.20
+2025-12-11 10:47:37 | INFO | live | Monitoring... NSE=₹259.63 BSE=₹259.75 Spread=₹0.12
+2025-12-11 10:47:42 | INFO | live | Monitoring... NSE=₹259.64 BSE=₹259.75 Spread=₹0.11
+2025-12-11 10:47:47 | INFO | live | Monitoring... NSE=₹259.64 BSE=₹259.75 Spread=₹0.11
+2025-12-11 10:47:52 | INFO | live | Monitoring... NSE=₹240.29 BSE=₹240.45 Spread=₹0.16
+2025-12-11 10:47:57 | INFO | live | Monitoring... NSE=₹259.63 BSE=₹259.50 Spread=₹0.13
+2025-12-11 10:48:02 | INFO | live | Monitoring... NSE=₹259.59 BSE=₹259.50 Spread=₹0.09
+2025-12-11 10:48:07 | INFO | live | Monitoring... NSE=₹240.34 BSE=₹240.45 Spread=₹0.11
+2025-12-11 10:48:12 | INFO | live | Monitoring... NSE=₹240.38 BSE=₹240.40 Spread=₹0.02
+2025-12-11 10:48:17 | INFO | live | Monitoring... NSE=₹259.38 BSE=₹259.45 Spread=₹0.07
+2025-12-11 10:48:22 | INFO | live | Monitoring... NSE=₹259.32 BSE=₹259.45 Spread=₹0.13
+2025-12-11 10:48:27 | INFO | live | Monitoring... NSE=₹164.85 BSE=₹164.95 Spread=₹0.10
+2025-12-11 10:48:32 | INFO | live | Monitoring... NSE=₹164.86 BSE=₹164.95 Spread=₹0.09
+2025-12-11 10:48:37 | INFO | live | Monitoring... NSE=₹259.38 BSE=₹259.45 Spread=₹0.07
+2025-12-11 10:48:42 | INFO | live | Monitoring... NSE=₹240.28 BSE=₹240.40 Spread=₹0.12
+2025-12-11 10:48:47 | INFO | live | Monitoring... NSE=₹259.49 BSE=₹259.55 Spread=₹0.06
+2025-12-11 10:48:52 | INFO | live | Monitoring... NSE=₹259.44 BSE=₹259.55 Spread=₹0.11
+2025-12-11 10:48:57 | INFO | live | Monitoring... NSE=₹164.70 BSE=₹164.80 Spread=₹0.10
+2025-12-11 10:49:02 | INFO | live | Monitoring... NSE=₹164.74 BSE=₹164.65 Spread=₹0.09
+2025-12-11 10:49:07 | INFO | live | Monitoring... NSE=₹164.76 BSE=₹164.65 Spread=₹0.11
+2025-12-11 10:49:12 | INFO | live | Monitoring... NSE=₹259.44 BSE=₹259.50 Spread=₹0.06
+2025-12-11 10:49:17 | INFO | live | Monitoring... NSE=₹259.40 BSE=₹259.50 Spread=₹0.10
+2025-12-11 10:49:22 | INFO | live | Monitoring... NSE=₹259.44 BSE=₹259.50 Spread=₹0.06
+2025-12-11 10:49:27 | INFO | live | Monitoring... NSE=₹259.58 BSE=₹259.50 Spread=₹0.08
+2025-12-11 10:49:32 | INFO | live | Monitoring... NSE=₹164.73 BSE=₹164.65 Spread=₹0.08
+2025-12-11 10:49:37 | INFO | live | Monitoring... NSE=₹164.73 BSE=₹164.65 Spread=₹0.08
+2025-12-11 10:49:42 | INFO | live | Monitoring... NSE=₹240.30 BSE=₹240.40 Spread=₹0.10
+2025-12-11 10:49:47 | INFO | live | Monitoring... NSE=₹259.56 BSE=₹259.45 Spread=₹0.11
+2025-12-11 10:49:52 | INFO | live | Monitoring... NSE=₹259.60 BSE=₹259.45 Spread=₹0.15
+2025-12-11 10:49:57 | INFO | live | Monitoring... NSE=₹259.60 BSE=₹259.45 Spread=₹0.15
+2025-12-11 10:50:02 | INFO | live | Monitoring... NSE=₹259.57 BSE=₹259.45 Spread=₹0.12
+2025-12-11 10:50:07 | INFO | live | Monitoring... NSE=₹259.60 BSE=₹259.45 Spread=₹0.15
+2025-12-11 10:50:12 | INFO | live | Monitoring... NSE=₹164.76 BSE=₹164.65 Spread=₹0.11
+2025-12-11 10:50:17 | INFO | live | Monitoring... NSE=₹259.65 BSE=₹259.55 Spread=₹0.10
+2025-12-11 10:50:22 | INFO | live | Monitoring... NSE=₹259.63 BSE=₹259.55 Spread=₹0.08
+2025-12-11 10:50:27 | INFO | live | Monitoring... NSE=₹240.49 BSE=₹240.40 Spread=₹0.09
+2025-12-11 10:50:32 | INFO | live | Monitoring... NSE=₹259.65 BSE=₹259.55 Spread=₹0.10
+2025-12-11 10:50:37 | INFO | live | Monitoring... NSE=₹259.66 BSE=₹259.55 Spread=₹0.11
+2025-12-11 10:50:42 | INFO | live | Monitoring... NSE=₹259.75 BSE=₹259.55 Spread=₹0.20
+2025-12-11 10:50:47 | INFO | live | Monitoring... NSE=₹259.69 BSE=₹259.55 Spread=₹0.14
+2025-12-11 10:50:52 | INFO | live | Monitoring... NSE=₹259.70 BSE=₹259.55 Spread=₹0.15
+2025-12-11 10:50:57 | INFO | live | Monitoring... NSE=₹259.73 BSE=₹259.55 Spread=₹0.18
+2025-12-11 10:51:00 | INFO | decision_engine | Spread signal detected: WIPRO spread=₹0.25
+2025-12-11 10:51:00 | INFO | main | Signal WIPRO spread=0.25 | BUY: BSE@₹259.75 (limit: ₹259.80) | SELL: NSE@₹259.72 (limit: ₹259.67) | qty=1
+2025-12-11 10:51:00 | INFO | order_executor | Order placed NSE SELL WIPRO qty=1 @ ₹259.67 id=251211000459734
+2025-12-11 10:51:00 | INFO | order_executor | Order placed BSE BUY WIPRO qty=1 @ ₹259.80 id=251211000459735
+2025-12-11 10:51:01 | INFO | order_executor | ✅ Trade EXECUTED: WIPRO | Spread=₹0.25 | BUY: BSE BUY @ ₹N/A (id=251211000459735) | SELL: NSE SELL @ ₹N/A (id=251211000459734) | Profit=₹N/A
+2025-12-11 10:51:02 | INFO | live | Monitoring... NSE=₹164.67 BSE=₹164.75 Spread=₹0.08
+2025-12-11 10:51:07 | INFO | live | Monitoring... NSE=₹259.78 BSE=₹259.75 Spread=₹0.03
+2025-12-11 10:51:12 | INFO | live | Monitoring... NSE=₹164.68 BSE=₹164.75 Spread=₹0.07
+2025-12-11 10:51:17 | INFO | decision_engine | Decision engine cancelled
+2025-12-11 10:51:17 | INFO | decision_engine | Decision engine shutting down. Processed 2277 ticks.
+2025-12-11 10:51:17 | INFO | main | Shutting down data feed...
+2025-12-11 10:51:20 | INFO | main | Bot shutdown complete
+2025-12-11 11:06:50 | INFO | main | Authenticating with Angel One SmartAPI...
+2025-12-11 11:06:50 | INFO | auth | Authentication successful
+2025-12-11 11:06:50 | INFO | main | Authentication successful. Starting bot...
+2025-12-11 11:06:50 | INFO | main | Using watchlist: ['TATASTEEL', 'WIPRO', 'ONGC']
+2025-12-11 11:06:50 | INFO | data_feed | Starting Angel One WebSocket feed for ['TATASTEEL', 'WIPRO', 'ONGC']
+2025-12-11 11:06:50 | INFO | data_feed | Fetching instrument master data for 3 symbols...
+2025-12-11 11:06:50 | WARNING | data_feed | Could not fetch from master data. Using manual token lookup.
+2025-12-11 11:06:50 | INFO | data_feed | Resolved 6 instrument tokens
+2025-12-11 11:06:50 | INFO | main | Data feed started. Bot is now running...
+2025-12-11 11:06:50 | INFO | decision_engine | Decision engine started. Waiting for market data...
+2025-12-11 11:06:50 | INFO | decision_engine | Market hours: 09:15:00 to 15:30:00
+2025-12-11 11:06:50 | INFO | decision_engine | Monitoring symbols: ['TATASTEEL', 'WIPRO', 'ONGC']
+2025-12-11 11:06:50 | INFO | decision_engine | Minimum spread threshold: ₹0.25
+2025-12-11 11:06:51 | INFO | decision_engine | Heartbeat loop started
+2025-12-11 11:06:51 | INFO | live | Monitoring... (waiting for data)
+2025-12-11 11:06:51 | INFO | data_feed | WebSocket connected. Subscribing to 6 instruments
+2025-12-11 11:06:51 | INFO | data_feed | Subscription details: correlation_id=arbitrage_bot_001, mode=3
+2025-12-11 11:06:51 | INFO | data_feed | Subscription request sent successfully. Waiting for market data...
+2025-12-11 11:06:55 | INFO | live | Monitoring... NSE=₹239.82 BSE=₹239.95 Spread=₹0.13
+2025-12-11 11:07:00 | INFO | live | Monitoring... NSE=₹239.81 BSE=₹239.95 Spread=₹0.14
+2025-12-11 11:07:06 | INFO | live | Monitoring... NSE=₹239.82 BSE=₹239.95 Spread=₹0.13
+2025-12-11 11:07:11 | INFO | live | Monitoring... NSE=₹239.83 BSE=₹239.95 Spread=₹0.12
+2025-12-11 11:07:16 | INFO | live | Monitoring... NSE=₹239.83 BSE=₹239.95 Spread=₹0.12
+2025-12-11 11:07:21 | INFO | live | Monitoring... NSE=₹239.83 BSE=₹239.95 Spread=₹0.12
+2025-12-11 11:07:26 | INFO | live | Monitoring... NSE=₹239.81 BSE=₹239.95 Spread=₹0.14
+2025-12-11 11:07:31 | INFO | live | Monitoring... NSE=₹239.81 BSE=₹239.95 Spread=₹0.14
+2025-12-11 11:07:36 | INFO | live | Monitoring... NSE=₹239.84 BSE=₹239.95 Spread=₹0.11
+2025-12-11 11:07:41 | INFO | live | Monitoring... NSE=₹239.89 BSE=₹240.05 Spread=₹0.16
+2025-12-11 11:07:46 | INFO | live | Monitoring... NSE=₹259.17 BSE=₹259.00 Spread=₹0.17
+2025-12-11 11:07:51 | INFO | live | Monitoring... NSE=₹239.89 BSE=₹240.05 Spread=₹0.16
+2025-12-11 11:07:56 | INFO | live | Monitoring... NSE=₹239.89 BSE=₹240.05 Spread=₹0.16
+2025-12-11 11:08:01 | INFO | live | Monitoring... NSE=₹239.86 BSE=₹240.05 Spread=₹0.19
+2025-12-11 11:08:06 | INFO | live | Monitoring... NSE=₹239.87 BSE=₹240.05 Spread=₹0.18
+2025-12-11 11:08:11 | INFO | live | Monitoring... NSE=₹239.87 BSE=₹240.05 Spread=₹0.18
+2025-12-11 11:08:16 | INFO | live | Monitoring... NSE=₹259.02 BSE=₹259.20 Spread=₹0.18
+2025-12-11 11:08:21 | INFO | live | Monitoring... NSE=₹239.89 BSE=₹240.05 Spread=₹0.16
+2025-12-11 11:08:26 | INFO | live | Monitoring... NSE=₹239.89 BSE=₹240.05 Spread=₹0.16
+2025-12-11 11:08:31 | INFO | live | Monitoring... NSE=₹239.87 BSE=₹240.05 Spread=₹0.18
+2025-12-11 11:08:36 | INFO | live | Monitoring... NSE=₹239.89 BSE=₹240.05 Spread=₹0.16
+2025-12-11 11:08:41 | INFO | live | Monitoring... NSE=₹239.89 BSE=₹240.05 Spread=₹0.16
+2025-12-11 11:08:46 | INFO | live | Monitoring... NSE=₹239.89 BSE=₹240.05 Spread=₹0.16
+2025-12-11 11:08:51 | INFO | live | Monitoring... NSE=₹239.89 BSE=₹240.05 Spread=₹0.16
+2025-12-11 11:08:56 | INFO | live | Monitoring... NSE=₹239.89 BSE=₹240.05 Spread=₹0.16
+2025-12-11 11:09:01 | INFO | live | Monitoring... NSE=₹239.87 BSE=₹240.05 Spread=₹0.18
+2025-12-11 11:09:06 | INFO | live | Monitoring... NSE=₹239.87 BSE=₹240.05 Spread=₹0.18
+2025-12-11 11:09:11 | INFO | live | Monitoring... NSE=₹239.84 BSE=₹240.00 Spread=₹0.16
+2025-12-11 11:09:16 | INFO | live | Monitoring... NSE=₹239.84 BSE=₹240.00 Spread=₹0.16
+2025-12-11 11:09:21 | INFO | live | Monitoring... NSE=₹239.83 BSE=₹239.95 Spread=₹0.12
+2025-12-11 11:09:26 | INFO | live | Monitoring... NSE=₹163.88 BSE=₹164.00 Spread=₹0.12
+2025-12-11 11:09:31 | INFO | live | Monitoring... NSE=₹163.88 BSE=₹164.00 Spread=₹0.12
+2025-12-11 11:09:36 | INFO | live | Monitoring... NSE=₹258.68 BSE=₹258.50 Spread=₹0.18
+2025-12-11 11:09:41 | INFO | live | Monitoring... NSE=₹258.68 BSE=₹258.50 Spread=₹0.18
+2025-12-11 11:09:46 | INFO | live | Monitoring... NSE=₹258.66 BSE=₹258.50 Spread=₹0.16
+2025-12-11 11:09:51 | INFO | live | Monitoring... NSE=₹258.68 BSE=₹258.50 Spread=₹0.18
+2025-12-11 11:09:56 | INFO | live | Monitoring... NSE=₹258.66 BSE=₹258.50 Spread=₹0.16
+2025-12-11 11:10:01 | INFO | live | Monitoring... NSE=₹258.61 BSE=₹258.50 Spread=₹0.11
+2025-12-11 11:10:06 | INFO | live | Monitoring... NSE=₹258.68 BSE=₹258.50 Spread=₹0.18
+2025-12-11 11:10:11 | INFO | live | Monitoring... NSE=₹163.94 BSE=₹164.00 Spread=₹0.06
+2025-12-11 11:10:16 | INFO | live | Monitoring... NSE=₹163.90 BSE=₹164.00 Spread=₹0.10
+2025-12-11 11:10:21 | INFO | live | Monitoring... NSE=₹239.96 BSE=₹239.90 Spread=₹0.06
+2025-12-11 11:10:26 | INFO | live | Monitoring... NSE=₹163.88 BSE=₹163.95 Spread=₹0.07
+2025-12-11 11:10:31 | INFO | live | Monitoring... NSE=₹163.88 BSE=₹163.95 Spread=₹0.07
+2025-12-11 11:10:36 | INFO | live | Monitoring... NSE=₹239.97 BSE=₹239.90 Spread=₹0.07
+2025-12-11 11:10:41 | INFO | live | Monitoring... NSE=₹258.77 BSE=₹258.70 Spread=₹0.07
+2025-12-11 11:10:46 | INFO | live | Monitoring... NSE=₹258.82 BSE=₹258.70 Spread=₹0.12
+2025-12-11 11:10:51 | INFO | live | Monitoring... NSE=₹258.85 BSE=₹258.70 Spread=₹0.15
+2025-12-11 11:10:56 | INFO | live | Monitoring... NSE=₹258.89 BSE=₹258.70 Spread=₹0.19
+2025-12-11 11:11:01 | INFO | live | Monitoring... NSE=₹258.83 BSE=₹258.70 Spread=₹0.13
+2025-12-11 11:11:06 | INFO | live | Monitoring... NSE=₹258.96 BSE=₹258.70 Spread=₹0.26
+2025-12-11 11:11:11 | INFO | live | Monitoring... NSE=₹258.92 BSE=₹258.70 Spread=₹0.22
+2025-12-11 11:11:16 | INFO | live | Monitoring... NSE=₹258.97 BSE=₹258.70 Spread=₹0.27
+2025-12-11 11:11:21 | INFO | live | Monitoring... NSE=₹259.08 BSE=₹258.70 Spread=₹0.38
+2025-12-11 11:11:26 | INFO | live | Monitoring... NSE=₹259.01 BSE=₹258.70 Spread=₹0.31
+2025-12-11 11:11:31 | INFO | live | Monitoring... NSE=₹258.97 BSE=₹258.70 Spread=₹0.27
+2025-12-11 11:11:36 | INFO | live | Monitoring... NSE=₹258.99 BSE=₹258.70 Spread=₹0.29
+2025-12-11 11:11:41 | INFO | live | Monitoring... NSE=₹259.00 BSE=₹258.70 Spread=₹0.30
+2025-12-11 11:11:46 | INFO | live | Monitoring... NSE=₹163.97 BSE=₹164.05 Spread=₹0.08
+2025-12-11 11:11:51 | INFO | live | Monitoring... NSE=₹240.00 BSE=₹239.95 Spread=₹0.05
+2025-12-11 11:11:56 | INFO | live | Monitoring... NSE=₹240.04 BSE=₹239.95 Spread=₹0.09
+2025-12-11 11:12:01 | INFO | live | Monitoring... NSE=₹240.02 BSE=₹239.95 Spread=₹0.07
+2025-12-11 11:12:06 | INFO | live | Monitoring... NSE=₹163.93 BSE=₹164.00 Spread=₹0.07
+2025-12-11 11:12:11 | INFO | live | Monitoring... NSE=₹240.00 BSE=₹239.95 Spread=₹0.05
+2025-12-11 11:12:16 | INFO | live | Monitoring... NSE=₹163.94 BSE=₹164.00 Spread=₹0.06
+2025-12-11 11:12:21 | INFO | live | Monitoring... NSE=₹163.95 BSE=₹164.05 Spread=₹0.10
+2025-12-11 11:12:26 | INFO | live | Monitoring... NSE=₹258.78 BSE=₹258.70 Spread=₹0.08
+2025-12-11 11:12:31 | INFO | live | Monitoring... NSE=₹258.85 BSE=₹258.70 Spread=₹0.15
+2025-12-11 11:12:36 | INFO | live | Monitoring... NSE=₹258.85 BSE=₹258.70 Spread=₹0.15
+2025-12-11 11:12:41 | INFO | live | Monitoring... NSE=₹258.88 BSE=₹258.70 Spread=₹0.18
+2025-12-11 11:12:46 | INFO | live | Monitoring... NSE=₹258.82 BSE=₹258.70 Spread=₹0.12
+2025-12-11 11:12:51 | INFO | live | Monitoring... NSE=₹258.85 BSE=₹258.70 Spread=₹0.15
+2025-12-11 11:12:56 | INFO | live | Monitoring... NSE=₹258.85 BSE=₹258.70 Spread=₹0.15
+2025-12-11 11:13:01 | INFO | live | Monitoring... NSE=₹163.95 BSE=₹164.05 Spread=₹0.10
+2025-12-11 11:13:06 | INFO | live | Monitoring... NSE=₹163.94 BSE=₹164.05 Spread=₹0.11
+2025-12-11 11:13:11 | INFO | live | Monitoring... NSE=₹258.85 BSE=₹258.70 Spread=₹0.15
+2025-12-11 11:13:16 | INFO | live | Monitoring... NSE=₹258.84 BSE=₹258.70 Spread=₹0.14
+2025-12-11 11:13:21 | INFO | live | Monitoring... NSE=₹258.84 BSE=₹258.70 Spread=₹0.14
+2025-12-11 11:13:26 | INFO | live | Monitoring... NSE=₹258.87 BSE=₹258.70 Spread=₹0.17
+2025-12-11 11:13:31 | INFO | live | Monitoring... NSE=₹239.97 BSE=₹240.15 Spread=₹0.18
+2025-12-11 11:13:36 | INFO | live | Monitoring... NSE=₹258.90 BSE=₹258.70 Spread=₹0.20
+2025-12-11 11:13:41 | INFO | live | Monitoring... NSE=₹258.90 BSE=₹258.70 Spread=₹0.20
+2025-12-11 11:13:46 | INFO | live | Monitoring... NSE=₹258.90 BSE=₹258.70 Spread=₹0.20
+2025-12-11 11:13:51 | INFO | live | Monitoring... NSE=₹258.90 BSE=₹258.70 Spread=₹0.20
+2025-12-11 11:13:56 | INFO | live | Monitoring... NSE=₹258.90 BSE=₹258.70 Spread=₹0.20
+2025-12-11 11:14:01 | INFO | live | Monitoring... NSE=₹239.97 BSE=₹240.15 Spread=₹0.18
+2025-12-11 11:14:06 | INFO | live | Monitoring... NSE=₹258.90 BSE=₹258.70 Spread=₹0.20
+2025-12-11 11:14:11 | INFO | live | Monitoring... NSE=₹258.88 BSE=₹258.70 Spread=₹0.18
+2025-12-11 11:14:16 | INFO | live | Monitoring... NSE=₹240.00 BSE=₹240.15 Spread=₹0.15
+2025-12-11 11:14:21 | INFO | live | Monitoring... NSE=₹258.90 BSE=₹258.70 Spread=₹0.20
+2025-12-11 11:14:26 | INFO | live | Monitoring... NSE=₹258.85 BSE=₹258.70 Spread=₹0.15
+2025-12-11 11:14:31 | INFO | live | Monitoring... NSE=₹258.85 BSE=₹258.70 Spread=₹0.15
+2025-12-11 11:14:36 | INFO | live | Monitoring... NSE=₹258.81 BSE=₹258.70 Spread=₹0.11
+2025-12-11 11:14:41 | INFO | live | Monitoring... NSE=₹163.99 BSE=₹163.95 Spread=₹0.04
+2025-12-11 11:14:46 | INFO | live | Monitoring... NSE=₹258.69 BSE=₹258.85 Spread=₹0.16
+2025-12-11 11:14:51 | INFO | live | Monitoring... NSE=₹258.99 BSE=₹258.85 Spread=₹0.14
+2025-12-11 11:14:56 | INFO | live | Monitoring... NSE=₹259.00 BSE=₹258.85 Spread=₹0.15
+2025-12-11 11:15:01 | INFO | live | Monitoring... NSE=₹258.99 BSE=₹258.85 Spread=₹0.14
+2025-12-11 11:15:06 | INFO | live | Monitoring... NSE=₹258.98 BSE=₹258.85 Spread=₹0.13
+2025-12-11 11:15:11 | INFO | live | Monitoring... NSE=₹239.94 BSE=₹239.80 Spread=₹0.14
+2025-12-11 11:15:16 | INFO | live | Monitoring... NSE=₹239.99 BSE=₹239.80 Spread=₹0.19
+2025-12-11 11:15:21 | INFO | live | Monitoring... NSE=₹259.17 BSE=₹259.00 Spread=₹0.17
+2025-12-11 11:15:26 | INFO | live | Monitoring... NSE=₹259.18 BSE=₹259.00 Spread=₹0.18
+2025-12-11 11:15:31 | INFO | live | Monitoring... NSE=₹259.18 BSE=₹259.00 Spread=₹0.18
+2025-12-11 11:15:36 | INFO | live | Monitoring... NSE=₹259.17 BSE=₹259.00 Spread=₹0.17
+2025-12-11 11:15:41 | INFO | live | Monitoring... NSE=₹259.10 BSE=₹259.00 Spread=₹0.10
+2025-12-11 11:15:46 | INFO | live | Monitoring... NSE=₹259.09 BSE=₹259.00 Spread=₹0.09
+2025-12-11 11:15:51 | INFO | live | Monitoring... NSE=₹259.13 BSE=₹259.00 Spread=₹0.13
+2025-12-11 11:15:56 | INFO | live | Monitoring... NSE=₹259.19 BSE=₹259.00 Spread=₹0.19
+2025-12-11 11:16:01 | INFO | live | Monitoring... NSE=₹259.08 BSE=₹259.00 Spread=₹0.08
+2025-12-11 11:16:06 | INFO | live | Monitoring... NSE=₹259.13 BSE=₹259.00 Spread=₹0.13
+2025-12-11 11:16:11 | INFO | live | Monitoring... NSE=₹259.03 BSE=₹259.15 Spread=₹0.12
+2025-12-11 11:16:16 | INFO | live | Monitoring... NSE=₹259.08 BSE=₹259.15 Spread=₹0.07
+2025-12-11 11:16:21 | INFO | live | Monitoring... NSE=₹259.03 BSE=₹259.15 Spread=₹0.12
+2025-12-11 11:16:26 | INFO | live | Monitoring... NSE=₹259.03 BSE=₹259.15 Spread=₹0.12
+2025-12-11 11:16:31 | INFO | live | Monitoring... NSE=₹239.85 BSE=₹239.75 Spread=₹0.10
+2025-12-11 11:16:36 | INFO | live | Monitoring... NSE=₹239.85 BSE=₹239.75 Spread=₹0.10
+2025-12-11 11:16:41 | INFO | live | Monitoring... NSE=₹239.87 BSE=₹239.75 Spread=₹0.12
+2025-12-11 11:16:46 | INFO | live | Monitoring... NSE=₹239.87 BSE=₹239.75 Spread=₹0.12
+2025-12-11 11:16:51 | INFO | live | Monitoring... NSE=₹239.85 BSE=₹239.75 Spread=₹0.10
+2025-12-11 11:16:56 | INFO | live | Monitoring... NSE=₹163.87 BSE=₹164.00 Spread=₹0.13
+2025-12-11 11:17:01 | INFO | live | Monitoring... NSE=₹259.05 BSE=₹258.90 Spread=₹0.15
+2025-12-11 11:17:06 | INFO | live | Monitoring... NSE=₹259.00 BSE=₹259.15 Spread=₹0.15
+2025-12-11 11:17:11 | INFO | live | Monitoring... NSE=₹259.02 BSE=₹259.15 Spread=₹0.13
+2025-12-11 11:17:16 | INFO | live | Monitoring... NSE=₹239.84 BSE=₹239.75 Spread=₹0.09
+2025-12-11 11:17:21 | INFO | live | Monitoring... NSE=₹239.91 BSE=₹239.80 Spread=₹0.11
+2025-12-11 11:17:26 | INFO | live | Monitoring... NSE=₹259.10 BSE=₹259.15 Spread=₹0.05
+2025-12-11 11:17:31 | INFO | live | Monitoring... NSE=₹163.89 BSE=₹164.00 Spread=₹0.11
+2025-12-11 11:17:36 | INFO | live | Monitoring... NSE=₹163.87 BSE=₹164.00 Spread=₹0.13
+2025-12-11 11:17:41 | INFO | live | Monitoring... NSE=₹259.25 BSE=₹259.15 Spread=₹0.10
+2025-12-11 11:17:46 | INFO | live | Monitoring... NSE=₹239.73 BSE=₹239.80 Spread=₹0.07
+2025-12-11 11:17:51 | INFO | live | Monitoring... NSE=₹259.24 BSE=₹259.15 Spread=₹0.09
+2025-12-11 11:17:56 | INFO | live | Monitoring... NSE=₹259.25 BSE=₹259.15 Spread=₹0.10
+2025-12-11 11:18:01 | INFO | live | Monitoring... NSE=₹163.87 BSE=₹163.80 Spread=₹0.07
+2025-12-11 11:18:06 | INFO | live | Monitoring... NSE=₹259.25 BSE=₹259.15 Spread=₹0.10
+2025-12-11 11:18:11 | INFO | live | Monitoring... NSE=₹259.25 BSE=₹259.15 Spread=₹0.10
+2025-12-11 11:18:16 | INFO | live | Monitoring... NSE=₹163.85 BSE=₹163.95 Spread=₹0.10
+2025-12-11 11:18:21 | INFO | live | Monitoring... NSE=₹259.27 BSE=₹259.20 Spread=₹0.07
+2025-12-11 11:18:26 | INFO | live | Monitoring... NSE=₹259.40 BSE=₹259.30 Spread=₹0.10
+2025-12-11 11:18:31 | INFO | live | Monitoring... NSE=₹163.90 BSE=₹163.80 Spread=₹0.10
+2025-12-11 11:18:37 | INFO | live | Monitoring... NSE=₹163.96 BSE=₹163.85 Spread=₹0.11
+2025-12-11 11:18:42 | INFO | live | Monitoring... NSE=₹163.99 BSE=₹163.85 Spread=₹0.14
+2025-12-11 11:18:47 | INFO | live | Monitoring... NSE=₹163.99 BSE=₹163.90 Spread=₹0.09
+2025-12-11 11:18:52 | INFO | live | Monitoring... NSE=₹259.50 BSE=₹259.40 Spread=₹0.10
+2025-12-11 11:18:57 | INFO | live | Monitoring... NSE=₹239.80 BSE=₹239.70 Spread=₹0.10
+2025-12-11 11:19:02 | INFO | live | Monitoring... NSE=₹239.80 BSE=₹239.70 Spread=₹0.10
+2025-12-11 11:19:07 | INFO | live | Monitoring... NSE=₹239.79 BSE=₹239.70 Spread=₹0.09
+2025-12-11 11:19:12 | INFO | live | Monitoring... NSE=₹259.33 BSE=₹259.45 Spread=₹0.12
+2025-12-11 11:19:17 | INFO | live | Monitoring... NSE=₹239.81 BSE=₹239.70 Spread=₹0.11
+2025-12-11 11:19:22 | INFO | live | Monitoring... NSE=₹239.81 BSE=₹239.70 Spread=₹0.11
+2025-12-11 11:19:27 | INFO | live | Monitoring... NSE=₹259.47 BSE=₹259.35 Spread=₹0.12
+2025-12-11 11:19:32 | INFO | live | Monitoring... NSE=₹239.80 BSE=₹239.90 Spread=₹0.10
+2025-12-11 11:19:37 | INFO | live | Monitoring... NSE=₹259.47 BSE=₹259.35 Spread=₹0.12
+2025-12-11 11:19:42 | INFO | live | Monitoring... NSE=₹163.78 BSE=₹163.90 Spread=₹0.12
+2025-12-11 11:19:47 | INFO | live | Monitoring... NSE=₹163.80 BSE=₹163.90 Spread=₹0.10
+2025-12-11 11:19:52 | INFO | live | Monitoring... NSE=₹259.47 BSE=₹259.35 Spread=₹0.12
+2025-12-11 11:19:55 | INFO | decision_engine | Spread signal detected: TATASTEEL spread=₹0.34
+2025-12-11 11:19:55 | INFO | main | Signal TATASTEEL spread=0.34 | BUY: NSE@₹163.81 (limit: ₹163.86) | SELL: BSE@₹164.15 (limit: ₹164.10) | qty=1
+2025-12-11 11:19:56 | INFO | order_executor | Order placed NSE BUY TATASTEEL qty=1 @ ₹163.86 id=251211000556451
+2025-12-11 11:19:56 | INFO | order_executor | Order placed BSE SELL TATASTEEL qty=1 @ ₹164.10 id=251211000556459
+2025-12-11 11:19:57 | INFO | live | Monitoring... NSE=₹163.80 BSE=₹164.00 Spread=₹0.20
+2025-12-11 11:19:58 | WARNING | order_executor | ⚠️ Trade INCOMPLETE: TATASTEEL | Spread=₹0.34 | BUY: NSE (id=251211000556451, status=CANCELLED, price=163.86) | SELL: BSE (id=251211000556459, status=COMPLETE, price=N/A)
+2025-12-11 11:19:58 | ERROR | order_executor | Failsafe triggered for TATASTEEL
+2025-12-11 11:19:58 | INFO | order_executor | Failsafe: Squaring off SELL leg - BSE TATASTEEL qty=1 (filled=1, requested=1)
+2025-12-11 11:19:58 | INFO | order_executor | Failsafe: Placing 1 square-off order(s) for TATASTEEL
+2025-12-11 11:19:58 | INFO | order_executor | Order placed BSE BUY TATASTEEL qty=1 (MARKET) id=251211000556567
+2025-12-11 11:19:59 | INFO | order_executor | Failsafe order executed: BSE BUY TATASTEEL qty=1
+2025-12-11 11:19:59 | INFO | decision_engine | Spread signal detected: TATASTEEL spread=₹0.34
+2025-12-11 11:19:59 | INFO | main | Signal TATASTEEL spread=0.34 | BUY: NSE@₹163.81 (limit: ₹163.86) | SELL: BSE@₹164.15 (limit: ₹164.10) | qty=1
+2025-12-11 11:19:59 | INFO | order_executor | Order placed NSE BUY TATASTEEL qty=1 @ ₹163.86 id=251211000556610
+2025-12-11 11:19:59 | INFO | order_executor | Order placed BSE SELL TATASTEEL qty=1 @ ₹164.10 id=251211000556614
+2025-12-11 11:20:00 | WARNING | order_executor | ⚠️ Trade INCOMPLETE: TATASTEEL | Spread=₹0.34 | BUY: NSE (id=251211000556610, status=CANCELLED, price=N/A) | SELL: BSE (id=251211000556614, status=COMPLETE, price=N/A)
+2025-12-11 11:20:00 | ERROR | order_executor | Failsafe triggered for TATASTEEL
+2025-12-11 11:20:00 | INFO | order_executor | Failsafe: Squaring off SELL leg - BSE TATASTEEL qty=1 (filled=1, requested=1)
+2025-12-11 11:20:00 | INFO | order_executor | Failsafe: Placing 1 square-off order(s) for TATASTEEL
+2025-12-11 11:20:01 | INFO | order_executor | Order placed BSE BUY TATASTEEL qty=1 (MARKET) id=251211000556708
+2025-12-11 11:20:02 | INFO | live | Monitoring... NSE=₹164.20 BSE=₹164.00 Spread=₹0.20
+2025-12-11 11:20:02 | INFO | order_executor | Failsafe order executed: BSE BUY TATASTEEL qty=1
+2025-12-11 11:20:02 | INFO | decision_engine | Spread signal detected: TATASTEEL spread=₹0.34
+2025-12-11 11:20:02 | INFO | main | Signal TATASTEEL spread=0.34 | BUY: NSE@₹163.81 (limit: ₹163.86) | SELL: BSE@₹164.15 (limit: ₹164.10) | qty=1
+2025-12-11 11:20:02 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:20:07 | INFO | live | Monitoring... NSE=₹239.85 BSE=₹239.90 Spread=₹0.05
+2025-12-11 11:20:11 | INFO | decision_engine | Decision engine cancelled
+2025-12-11 11:20:11 | INFO | decision_engine | Decision engine shutting down. Processed 7015 ticks.
+2025-12-11 11:20:11 | INFO | main | Shutting down data feed...
+2025-12-11 11:20:14 | INFO | main | Bot shutdown complete
+2025-12-11 11:20:14 | WARNING | data_feed | Event loop is closed. Cannot queue tick for TATASTEEL/NSE
+2025-12-11 11:20:14 | WARNING | data_feed | Event loop is closed. Cannot queue tick for WIPRO/BSE
+2025-12-11 11:20:14 | WARNING | data_feed | Event loop is closed. Cannot queue tick for TATASTEEL/BSE
+2025-12-11 11:47:57 | INFO | main | Authenticating with Angel One SmartAPI...
+2025-12-11 11:47:57 | INFO | auth | Authentication successful
+2025-12-11 11:47:57 | INFO | main | Authentication successful. Starting bot...
+2025-12-11 11:47:57 | INFO | main | Using watchlist: ['RELIANCE']
+2025-12-11 11:47:57 | INFO | data_feed | Starting Angel One WebSocket feed for ['RELIANCE']
+2025-12-11 11:47:57 | INFO | data_feed | Fetching instrument master data for 1 symbols...
+2025-12-11 11:47:57 | WARNING | data_feed | Could not fetch from master data. Using manual token lookup.
+2025-12-11 11:47:57 | INFO | data_feed | Resolved 2 instrument tokens
+2025-12-11 11:47:57 | INFO | main | Data feed started. Bot is now running...
+2025-12-11 11:47:57 | INFO | decision_engine | Decision engine started. Waiting for market data...
+2025-12-11 11:47:57 | INFO | decision_engine | Market hours: 09:15:00 to 15:30:00
+2025-12-11 11:47:57 | INFO | decision_engine | Monitoring symbols: ['RELIANCE']
+2025-12-11 11:47:57 | INFO | decision_engine | Minimum spread threshold: ₹0.50
+2025-12-11 11:47:57 | INFO | decision_engine | Heartbeat loop started
+2025-12-11 11:47:57 | INFO | live | Monitoring... (waiting for data)
+2025-12-11 11:47:58 | INFO | data_feed | WebSocket connected. Subscribing to 2 instruments
+2025-12-11 11:47:58 | INFO | data_feed | Subscription details: correlation_id=arbitrage_bot_001, mode=3
+2025-12-11 11:47:58 | INFO | data_feed | Subscription request sent successfully. Waiting for market data...
+2025-12-11 11:48:02 | INFO | live | Monitoring... NSE=₹1536.00 BSE=₹1536.40 Spread=₹0.40
+2025-12-11 11:48:07 | INFO | live | Monitoring... (waiting for data)
+2025-12-11 11:48:12 | INFO | live | Monitoring... NSE=₹1536.30 BSE=₹1536.60 Spread=₹0.30
+2025-12-11 11:48:17 | INFO | live | Monitoring... NSE=₹1536.50 BSE=₹1536.80 Spread=₹0.30
+2025-12-11 11:48:22 | INFO | live | Monitoring... NSE=₹1536.50 BSE=₹1536.80 Spread=₹0.30
+2025-12-11 11:48:27 | INFO | live | Monitoring... (waiting for data)
+2025-12-11 11:48:32 | INFO | live | Monitoring... NSE=₹1536.30 BSE=₹1536.80 Spread=₹0.50
+2025-12-11 11:48:37 | INFO | live | Monitoring... NSE=₹1536.20 BSE=₹1536.80 Spread=₹0.60
+2025-12-11 11:48:42 | INFO | live | Monitoring... NSE=₹1536.70 BSE=₹1537.15 Spread=₹0.45
+2025-12-11 11:48:47 | INFO | live | Monitoring... NSE=₹1536.90 BSE=₹1537.00 Spread=₹0.10
+2025-12-11 11:48:52 | INFO | live | Monitoring... NSE=₹1536.80 BSE=₹1537.10 Spread=₹0.30
+2025-12-11 11:48:57 | INFO | live | Monitoring... NSE=₹1536.80 BSE=₹1537.00 Spread=₹0.20
+2025-12-11 11:49:02 | INFO | live | Monitoring... NSE=₹1536.40 BSE=₹1537.00 Spread=₹0.60
+2025-12-11 11:49:08 | INFO | live | Monitoring... NSE=₹1536.80 BSE=₹1537.20 Spread=₹0.40
+2025-12-11 11:49:13 | INFO | live | Monitoring... NSE=₹1536.90 BSE=₹1537.40 Spread=₹0.50
+2025-12-11 11:49:18 | INFO | live | Monitoring... NSE=₹1537.40 BSE=₹1537.50 Spread=₹0.10
+2025-12-11 11:49:23 | INFO | live | Monitoring... NSE=₹1537.60 BSE=₹1537.50 Spread=₹0.10
+2025-12-11 11:49:28 | INFO | live | Monitoring... NSE=₹1537.70 BSE=₹1537.75 Spread=₹0.05
+2025-12-11 11:49:33 | INFO | live | Monitoring... (waiting for data)
+2025-12-11 11:49:38 | INFO | live | Monitoring... (waiting for data)
+2025-12-11 11:49:43 | INFO | live | Monitoring... NSE=₹1537.70 BSE=₹1537.80 Spread=₹0.10
+2025-12-11 11:49:48 | INFO | live | Monitoring... NSE=₹1537.50 BSE=₹1537.80 Spread=₹0.30
+2025-12-11 11:49:53 | INFO | live | Monitoring... NSE=₹1537.70 BSE=₹1537.15 Spread=₹0.55
+2025-12-11 11:49:58 | INFO | live | Monitoring... NSE=₹1537.70 BSE=₹1537.20 Spread=₹0.50
+2025-12-11 11:50:03 | INFO | live | Monitoring... NSE=₹1537.10 BSE=₹1536.85 Spread=₹0.25
+2025-12-11 11:50:08 | INFO | live | Monitoring... NSE=₹1537.50 BSE=₹1536.85 Spread=₹0.65
+2025-12-11 11:50:13 | INFO | live | Monitoring... NSE=₹1536.60 BSE=₹1536.85 Spread=₹0.25
+2025-12-11 11:50:18 | INFO | live | Monitoring... NSE=₹1536.80 BSE=₹1536.85 Spread=₹0.05
+2025-12-11 11:50:23 | INFO | live | Monitoring... NSE=₹1537.40 BSE=₹1536.85 Spread=₹0.55
+2025-12-11 11:50:28 | INFO | live | Monitoring... NSE=₹1537.20 BSE=₹1536.85 Spread=₹0.35
+2025-12-11 11:50:33 | INFO | live | Monitoring... NSE=₹1536.80 BSE=₹1536.85 Spread=₹0.05
+2025-12-11 11:50:38 | INFO | live | Monitoring... NSE=₹1537.20 BSE=₹1536.85 Spread=₹0.35
+2025-12-11 11:50:43 | INFO | live | Monitoring... NSE=₹1537.20 BSE=₹1536.85 Spread=₹0.35
+2025-12-11 11:50:48 | INFO | live | Monitoring... NSE=₹1536.80 BSE=₹1536.85 Spread=₹0.05
+2025-12-11 11:50:53 | INFO | live | Monitoring... NSE=₹1537.30 BSE=₹1536.85 Spread=₹0.45
+2025-12-11 11:50:58 | INFO | live | Monitoring... NSE=₹1537.30 BSE=₹1536.85 Spread=₹0.45
+2025-12-11 11:51:03 | INFO | live | Monitoring... NSE=₹1537.50 BSE=₹1536.85 Spread=₹0.65
+2025-12-11 11:51:08 | INFO | live | Monitoring... NSE=₹1537.50 BSE=₹1536.85 Spread=₹0.65
+2025-12-11 11:51:13 | INFO | live | Monitoring... NSE=₹1537.50 BSE=₹1537.00 Spread=₹0.50
+2025-12-11 11:51:18 | INFO | live | Monitoring... NSE=₹1537.40 BSE=₹1537.00 Spread=₹0.40
+2025-12-11 11:51:23 | INFO | live | Monitoring... NSE=₹1537.50 BSE=₹1537.75 Spread=₹0.25
+2025-12-11 11:51:28 | INFO | live | Monitoring... NSE=₹1537.60 BSE=₹1537.75 Spread=₹0.15
+2025-12-11 11:51:33 | INFO | live | Monitoring... NSE=₹1538.00 BSE=₹1537.75 Spread=₹0.25
+2025-12-11 11:51:36 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:36 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:37 | INFO | order_executor | Order placed NSE SELL RELIANCE qty=1 @ ₹1538.25 id=251211000629924
+2025-12-11 11:51:37 | INFO | order_executor | Order placed BSE BUY RELIANCE qty=1 @ ₹1537.85 id=251211000629926
+2025-12-11 11:51:38 | INFO | live | Monitoring... NSE=₹1538.30 BSE=₹1537.75 Spread=₹0.55
+2025-12-11 11:51:39 | WARNING | order_executor | ⚠️ Trade INCOMPLETE: RELIANCE | Spread=₹0.50 | BUY: BSE (id=251211000629926, status=REJECTED, price=N/A) | SELL: NSE (id=251211000629924, status=REJECTED, price=N/A)
+2025-12-11 11:51:39 | ERROR | order_executor | Failsafe triggered for RELIANCE
+2025-12-11 11:51:39 | WARNING | order_executor | Failsafe: No filled legs to square off for RELIANCE
+2025-12-11 11:51:39 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:39 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:39 | INFO | order_executor | Order placed BSE BUY RELIANCE qty=1 @ ₹1537.85 id=251211000630068
+2025-12-11 11:51:39 | INFO | order_executor | Order placed NSE SELL RELIANCE qty=1 @ ₹1538.25 id=251211000630081
+2025-12-11 11:51:41 | WARNING | order_executor | ⚠️ Trade INCOMPLETE: RELIANCE | Spread=₹0.50 | BUY: BSE (id=251211000630068, status=REJECTED, price=1537.85) | SELL: NSE (id=251211000630081, status=REJECTED, price=N/A)
+2025-12-11 11:51:41 | ERROR | order_executor | Failsafe triggered for RELIANCE
+2025-12-11 11:51:41 | WARNING | order_executor | Failsafe: No filled legs to square off for RELIANCE
+2025-12-11 11:51:41 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:41 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:41 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:41 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:41 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:41 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:41 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:41 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:41 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:41 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:41 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:41 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:41 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:41 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:41 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:41 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:41 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:41 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:41 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:41 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:41 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:41 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:41 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:41 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:41 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:41 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:41 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:41 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:41 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:41 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:41 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:41 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:41 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:41 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:41 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:41 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:41 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:41 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:41 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:42 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:42 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:42 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:42 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:42 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:42 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:42 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:42 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:42 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:43 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:43 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:43 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:43 | INFO | live | Monitoring... NSE=₹1538.40 BSE=₹1537.75 Spread=₹0.65
+2025-12-11 11:51:43 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:43 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:43 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:43 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:43 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:43 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:44 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:44 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:44 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:44 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:44 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:44 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:44 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:44 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:44 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:45 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:45 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:45 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:45 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:45 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:45 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:45 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:45 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:45 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:45 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:45 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:45 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:46 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:46 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:46 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:46 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:46 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:46 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:48 | INFO | live | Monitoring... NSE=₹1538.40 BSE=₹1537.80 Spread=₹0.60
+2025-12-11 11:51:49 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.60
+2025-12-11 11:51:49 | INFO | main | Signal RELIANCE spread=0.60 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.40 (limit: ₹1538.35) | qty=1
+2025-12-11 11:51:49 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:50 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.60
+2025-12-11 11:51:50 | INFO | main | Signal RELIANCE spread=0.60 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.40 (limit: ₹1538.35) | qty=1
+2025-12-11 11:51:50 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:50 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.60
+2025-12-11 11:51:50 | INFO | main | Signal RELIANCE spread=0.60 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.40 (limit: ₹1538.35) | qty=1
+2025-12-11 11:51:50 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:50 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.60
+2025-12-11 11:51:50 | INFO | main | Signal RELIANCE spread=0.60 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.40 (limit: ₹1538.35) | qty=1
+2025-12-11 11:51:50 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:53 | INFO | live | Monitoring... NSE=₹1538.50 BSE=₹1537.80 Spread=₹0.70
+2025-12-11 11:51:53 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:53 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:53 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:54 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:54 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:54 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:54 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:54 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:54 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:54 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:54 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:54 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:54 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:54 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:54 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:55 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:55 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:55 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:55 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:55 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:55 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:55 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:55 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:55 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:55 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:55 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:55 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:56 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:56 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:56 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:56 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:56 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:56 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:56 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:56 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:56 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:57 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:57 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:57 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:57 | INFO | decision_engine | Spread signal detected: RELIANCE spread=₹0.50
+2025-12-11 11:51:57 | INFO | main | Signal RELIANCE spread=0.50 | BUY: BSE@₹1537.80 (limit: ₹1537.85) | SELL: NSE@₹1538.30 (limit: ₹1538.25) | qty=1
+2025-12-11 11:51:57 | ERROR | safety | Too many failed fills; blocking new trades
+2025-12-11 11:51:58 | INFO | live | Monitoring... NSE=₹1538.30 BSE=₹1538.00 Spread=₹0.30
+2025-12-11 11:52:02 | INFO | decision_engine | Decision engine cancelled
+2025-12-11 11:52:02 | INFO | decision_engine | Decision engine shutting down. Processed 874 ticks.
+2025-12-11 11:52:02 | INFO | main | Shutting down data feed...
+2025-12-11 11:52:05 | INFO | main | Bot shutdown complete
+2025-12-11 11:52:05 | WARNING | data_feed | Event loop is closed. Cannot queue tick for RELIANCE/NSE
+2025-12-11 11:52:05 | WARNING | data_feed | Event loop is closed. Cannot queue tick for RELIANCE/BSE
+2025-12-11 14:53:00 | INFO | main | Authenticating with Angel One SmartAPI...
+2025-12-11 14:53:01 | INFO | auth | Authentication successful
+2025-12-11 14:53:01 | INFO | main | Authentication successful. Starting bot...
+2025-12-11 14:53:01 | INFO | main | Using watchlist: ['RELIANCE', 'HDFCBANK', 'ICICIBANK']
+2025-12-11 14:53:01 | INFO | data_feed | Starting Angel One WebSocket feed for ['RELIANCE', 'HDFCBANK', 'ICICIBANK']
+2025-12-11 14:53:01 | INFO | data_feed | Fetching instrument master data for 3 symbols...
+2025-12-11 14:53:01 | WARNING | data_feed | Could not fetch from master data. Using manual token lookup.
+2025-12-11 14:53:01 | INFO | data_feed | Resolved 6 instrument tokens
+2025-12-11 14:53:01 | INFO | main | Data feed started. Bot is now running...
+2025-12-11 14:53:01 | INFO | decision_engine | Decision engine started. Waiting for market data...
+2025-12-11 14:53:01 | INFO | decision_engine | Market hours: 09:15:00 to 15:30:00
+2025-12-11 14:53:01 | INFO | decision_engine | Monitoring symbols: ['RELIANCE', 'HDFCBANK', 'ICICIBANK']
+2025-12-11 14:53:01 | INFO | decision_engine | Minimum spread threshold: ₹0.80
+2025-12-11 14:53:01 | INFO | decision_engine | Heartbeat loop started
+2025-12-11 14:53:01 | INFO | live | Monitoring... (waiting for data)
+2025-12-11 14:53:02 | INFO | data_feed | WebSocket connected. Subscribing to 6 instruments
+2025-12-11 14:53:02 | INFO | data_feed | Subscription details: correlation_id=arbitrage_bot_001, mode=3
+2025-12-11 14:53:02 | INFO | data_feed | Subscription request sent successfully. Waiting for market data...
+2025-12-11 14:53:06 | INFO | live | Monitoring... NSE=₹1360.40 BSE=₹1360.80 Spread=₹0.40
+2025-12-11 14:53:11 | INFO | live | Monitoring... NSE=₹1360.20 BSE=₹1360.70 Spread=₹0.50
+2025-12-11 14:53:16 | INFO | live | Monitoring... NSE=₹1360.40 BSE=₹1360.90 Spread=₹0.50
+2025-12-11 14:53:21 | INFO | live | Monitoring... NSE=₹1000.10 BSE=₹1000.65 Spread=₹0.55
+2025-12-11 14:53:26 | INFO | live | Monitoring... NSE=₹1360.60 BSE=₹1361.40 Spread=₹0.80
+2025-12-11 14:53:31 | INFO | live | Monitoring... NSE=₹1543.40 BSE=₹1544.20 Spread=₹0.80
+2025-12-11 14:53:36 | INFO | live | Monitoring... NSE=₹1543.30 BSE=₹1544.00 Spread=₹0.70
+2025-12-11 14:53:41 | INFO | live | Monitoring... NSE=₹1543.30 BSE=₹1543.90 Spread=₹0.60
+2025-12-11 14:53:46 | INFO | live | Monitoring... NSE=₹1543.30 BSE=₹1543.80 Spread=₹0.50
+2025-12-11 14:53:51 | INFO | live | Monitoring... NSE=₹1543.00 BSE=₹1542.75 Spread=₹0.25
+2025-12-11 14:53:56 | INFO | live | Monitoring... NSE=₹1000.20 BSE=₹1000.05 Spread=₹0.15
+2025-12-11 14:54:01 | INFO | live | Monitoring... NSE=₹1000.30 BSE=₹1000.05 Spread=₹0.25
+2025-12-11 14:54:06 | INFO | live | Monitoring... NSE=₹1000.30 BSE=₹1000.20 Spread=₹0.10
+2025-12-11 14:54:11 | INFO | live | Monitoring... NSE=₹1542.40 BSE=₹1542.65 Spread=₹0.25
+2025-12-11 14:54:16 | INFO | live | Monitoring... NSE=₹1542.40 BSE=₹1542.95 Spread=₹0.55
+2025-12-11 14:54:21 | INFO | live | Monitoring... NSE=₹1542.40 BSE=₹1542.85 Spread=₹0.45
+2025-12-11 14:54:26 | INFO | live | Monitoring... NSE=₹1360.30 BSE=₹1361.20 Spread=₹0.90
+2025-12-11 14:54:31 | INFO | live | Monitoring... NSE=₹1360.30 BSE=₹1361.15 Spread=₹0.85
+2025-12-11 14:54:36 | INFO | live | Monitoring... NSE=₹1000.50 BSE=₹1001.00 Spread=₹0.50
+2025-12-11 14:54:41 | INFO | live | Monitoring... NSE=₹1542.40 BSE=₹1543.35 Spread=₹0.95
+2025-12-11 14:54:46 | INFO | live | Monitoring... NSE=₹1542.50 BSE=₹1542.35 Spread=₹0.15
+2025-12-11 14:54:51 | INFO | live | Monitoring... NSE=₹1360.30 BSE=₹1361.00 Spread=₹0.70
+2025-12-11 14:54:56 | INFO | live | Monitoring... NSE=₹1360.20 BSE=₹1360.80 Spread=₹0.60
+2025-12-11 14:55:01 | INFO | live | Monitoring... NSE=₹1360.20 BSE=₹1360.80 Spread=₹0.60
+2025-12-11 14:55:06 | INFO | live | Monitoring... NSE=₹1360.10 BSE=₹1360.75 Spread=₹0.65
+2025-12-11 14:55:11 | INFO | live | Monitoring... NSE=₹1542.40 BSE=₹1542.85 Spread=₹0.45
+2025-12-11 14:55:16 | INFO | live | Monitoring... NSE=₹1359.90 BSE=₹1360.70 Spread=₹0.80
+2025-12-11 14:55:21 | INFO | live | Monitoring... NSE=₹1542.20 BSE=₹1542.85 Spread=₹0.65
+2025-12-11 14:55:27 | INFO | live | Monitoring... NSE=₹1542.40 BSE=₹1542.85 Spread=₹0.45
+2025-12-11 14:55:32 | INFO | live | Monitoring... NSE=₹1542.40 BSE=₹1542.85 Spread=₹0.45
+2025-12-11 14:55:37 | INFO | live | Monitoring... NSE=₹1000.40 BSE=₹1000.25 Spread=₹0.15
+2025-12-11 14:55:42 | INFO | live | Monitoring... NSE=₹1542.00 BSE=₹1542.40 Spread=₹0.40
+2025-12-11 14:55:47 | INFO | live | Monitoring... NSE=₹1000.40 BSE=₹1000.25 Spread=₹0.15
+2025-12-11 14:55:52 | INFO | live | Monitoring... NSE=₹1360.20 BSE=₹1360.70 Spread=₹0.50
+2025-12-11 14:55:57 | INFO | live | Monitoring... NSE=₹1360.10 BSE=₹1360.70 Spread=₹0.60
+2025-12-11 14:56:02 | INFO | live | Monitoring... NSE=₹1360.10 BSE=₹1360.70 Spread=₹0.60
+2025-12-11 14:56:07 | INFO | live | Monitoring... NSE=₹1542.80 BSE=₹1543.35 Spread=₹0.55
+2025-12-11 14:56:12 | INFO | live | Monitoring... NSE=₹1542.80 BSE=₹1543.35 Spread=₹0.55
+2025-12-11 14:56:17 | INFO | live | Monitoring... NSE=₹1542.80 BSE=₹1542.55 Spread=₹0.25
+2025-12-11 14:56:22 | INFO | live | Monitoring... NSE=₹1542.90 BSE=₹1542.40 Spread=₹0.50
+2025-12-11 14:56:27 | INFO | live | Monitoring... NSE=₹1542.80 BSE=₹1542.40 Spread=₹0.40
+2025-12-11 14:56:32 | INFO | live | Monitoring... NSE=₹1000.50 BSE=₹1000.05 Spread=₹0.45
+2025-12-11 14:56:37 | INFO | live | Monitoring... NSE=₹1360.10 BSE=₹1359.75 Spread=₹0.35
+2025-12-11 14:56:42 | INFO | live | Monitoring... NSE=₹1000.50 BSE=₹1000.05 Spread=₹0.45
+2025-12-11 14:56:47 | INFO | live | Monitoring... NSE=₹1542.50 BSE=₹1543.00 Spread=₹0.50
+2025-12-11 14:56:52 | INFO | live | Monitoring... NSE=₹1001.10 BSE=₹1000.65 Spread=₹0.45
+2025-12-11 14:56:57 | INFO | live | Monitoring... NSE=₹1360.30 BSE=₹1360.80 Spread=₹0.50
+2025-12-11 14:57:02 | INFO | live | Monitoring... NSE=₹1542.90 BSE=₹1542.40 Spread=₹0.50
+2025-12-11 14:57:07 | INFO | live | Monitoring... NSE=₹1360.70 BSE=₹1360.15 Spread=₹0.55
+2025-12-11 14:57:12 | INFO | live | Monitoring... NSE=₹1000.40 BSE=₹1000.70 Spread=₹0.30
+2025-12-11 14:57:17 | INFO | live | Monitoring... NSE=₹1000.60 BSE=₹1000.75 Spread=₹0.15
+2025-12-11 14:57:22 | INFO | live | Monitoring... NSE=₹1543.30 BSE=₹1542.65 Spread=₹0.65
+2025-12-11 14:57:27 | INFO | live | Monitoring... NSE=₹1000.70 BSE=₹1000.30 Spread=₹0.40
+2025-12-11 14:57:32 | INFO | live | Monitoring... NSE=₹1543.50 BSE=₹1542.95 Spread=₹0.55
+2025-12-11 14:57:37 | INFO | live | Monitoring... NSE=₹1543.50 BSE=₹1542.75 Spread=₹0.75
+2025-12-11 14:57:42 | INFO | live | Monitoring... NSE=₹1360.90 BSE=₹1360.40 Spread=₹0.50
+2025-12-11 14:57:47 | INFO | live | Monitoring... NSE=₹1000.80 BSE=₹1000.50 Spread=₹0.30
+2025-12-11 14:57:52 | INFO | live | Monitoring... NSE=₹1543.50 BSE=₹1542.75 Spread=₹0.75
+2025-12-11 14:57:57 | INFO | live | Monitoring... NSE=₹1360.50 BSE=₹1360.30 Spread=₹0.20
+2025-12-11 14:58:02 | INFO | live | Monitoring... NSE=₹1360.50 BSE=₹1360.20 Spread=₹0.30
+2025-12-11 14:58:07 | INFO | live | Monitoring... NSE=₹1543.10 BSE=₹1542.80 Spread=₹0.30
+2025-12-11 14:58:12 | INFO | live | Monitoring... NSE=₹1360.50 BSE=₹1360.20 Spread=₹0.30
+2025-12-11 14:58:17 | INFO | live | Monitoring... NSE=₹1543.20 BSE=₹1543.45 Spread=₹0.25
+2025-12-11 14:58:22 | INFO | live | Monitoring... NSE=₹1543.20 BSE=₹1543.45 Spread=₹0.25
+2025-12-11 14:58:27 | INFO | live | Monitoring... NSE=₹1543.00 BSE=₹1543.45 Spread=₹0.45
+2025-12-11 14:58:32 | INFO | live | Monitoring... NSE=₹1543.10 BSE=₹1543.45 Spread=₹0.35
+2025-12-11 14:58:37 | INFO | live | Monitoring... NSE=₹1543.00 BSE=₹1543.45 Spread=₹0.45
+2025-12-11 14:58:42 | INFO | live | Monitoring... NSE=₹1543.20 BSE=₹1543.45 Spread=₹0.25
+2025-12-11 14:58:47 | INFO | live | Monitoring... NSE=₹1542.90 BSE=₹1543.45 Spread=₹0.55
+2025-12-11 14:58:52 | INFO | live | Monitoring... NSE=₹1360.60 BSE=₹1360.20 Spread=₹0.40
+2025-12-11 14:58:57 | INFO | live | Monitoring... NSE=₹1360.70 BSE=₹1360.20 Spread=₹0.50
+2025-12-11 14:59:02 | INFO | live | Monitoring... NSE=₹1000.20 BSE=₹1000.90 Spread=₹0.70
+2025-12-11 14:59:07 | INFO | live | Monitoring... NSE=₹1000.30 BSE=₹1001.00 Spread=₹0.70
+2025-12-11 14:59:12 | INFO | live | Monitoring... NSE=₹1000.60 BSE=₹1000.95 Spread=₹0.35
+2025-12-11 14:59:17 | INFO | live | Monitoring... NSE=₹1360.50 BSE=₹1361.10 Spread=₹0.60
+2025-12-11 14:59:22 | INFO | live | Monitoring... NSE=₹1000.30 BSE=₹1000.95 Spread=₹0.65
+2025-12-11 14:59:27 | INFO | live | Monitoring... NSE=₹1360.50 BSE=₹1359.95 Spread=₹0.55
+2025-12-11 14:59:32 | INFO | live | Monitoring... NSE=₹1542.90 BSE=₹1542.45 Spread=₹0.45
+2025-12-11 14:59:37 | INFO | live | Monitoring... NSE=₹1543.20 BSE=₹1542.45 Spread=₹0.75
+2025-12-11 14:59:42 | INFO | live | Monitoring... NSE=₹1543.50 BSE=₹1542.45 Spread=₹1.05
+2025-12-11 14:59:47 | INFO | live | Monitoring... NSE=₹1543.30 BSE=₹1542.45 Spread=₹0.85
+2025-12-11 14:59:52 | INFO | live | Monitoring... NSE=₹1543.30 BSE=₹1543.00 Spread=₹0.30
+2025-12-11 14:59:57 | INFO | live | Monitoring... NSE=₹1000.30 BSE=₹1000.85 Spread=₹0.55
+2025-12-11 15:00:02 | INFO | live | Monitoring... NSE=₹1360.40 BSE=₹1360.05 Spread=₹0.35
+2025-12-11 15:00:07 | INFO | live | Monitoring... NSE=₹1360.90 BSE=₹1360.05 Spread=₹0.85
+2025-12-11 15:00:12 | INFO | live | Monitoring... NSE=₹1360.80 BSE=₹1360.50 Spread=₹0.30
+2025-12-11 15:00:17 | INFO | live | Monitoring... NSE=₹1544.30 BSE=₹1544.70 Spread=₹0.40
+2025-12-11 15:00:22 | INFO | live | Monitoring... NSE=₹1360.90 BSE=₹1360.65 Spread=₹0.25
+2025-12-11 15:00:27 | INFO | live | Monitoring... NSE=₹1361.00 BSE=₹1361.50 Spread=₹0.50
+2025-12-11 15:00:32 | INFO | live | Monitoring... NSE=₹1361.00 BSE=₹1361.50 Spread=₹0.50
+2025-12-11 15:00:37 | INFO | live | Monitoring... NSE=₹1361.00 BSE=₹1361.50 Spread=₹0.50
+2025-12-11 15:00:42 | INFO | live | Monitoring... NSE=₹1360.80 BSE=₹1361.50 Spread=₹0.70
+2025-12-11 15:00:47 | INFO | live | Monitoring... NSE=₹1544.70 BSE=₹1544.90 Spread=₹0.20
+2025-12-11 15:00:52 | INFO | live | Monitoring... NSE=₹1544.70 BSE=₹1544.90 Spread=₹0.20
+2025-12-11 15:00:57 | INFO | live | Monitoring... NSE=₹1000.80 BSE=₹1001.00 Spread=₹0.20
+2025-12-11 15:01:02 | INFO | live | Monitoring... NSE=₹1000.70 BSE=₹1001.30 Spread=₹0.60
+2025-12-11 15:01:07 | INFO | live | Monitoring... NSE=₹1544.80 BSE=₹1545.30 Spread=₹0.50
+2025-12-11 15:01:12 | INFO | live | Monitoring... NSE=₹1000.70 BSE=₹1001.45 Spread=₹0.75
+2025-12-11 15:01:17 | INFO | live | Monitoring... NSE=₹1360.90 BSE=₹1361.50 Spread=₹0.60
+2025-12-11 15:01:22 | INFO | live | Monitoring... NSE=₹1545.00 BSE=₹1544.65 Spread=₹0.35
+2025-12-11 15:01:27 | INFO | live | Monitoring... NSE=₹1360.80 BSE=₹1360.65 Spread=₹0.15
+2025-12-11 15:01:32 | INFO | live | Monitoring... NSE=₹1360.80 BSE=₹1361.30 Spread=₹0.50
+2025-12-11 15:01:37 | INFO | live | Monitoring... NSE=₹1545.10 BSE=₹1545.30 Spread=₹0.20
+2025-12-11 15:01:42 | INFO | live | Monitoring... NSE=₹1545.10 BSE=₹1545.30 Spread=₹0.20
+2025-12-11 15:01:47 | INFO | live | Monitoring... NSE=₹1545.00 BSE=₹1545.70 Spread=₹0.70
+2025-12-11 15:01:52 | INFO | live | Monitoring... NSE=₹1360.70 BSE=₹1360.10 Spread=₹0.60
+2025-12-11 15:01:57 | INFO | live | Monitoring... NSE=₹1544.90 BSE=₹1544.30 Spread=₹0.60
+2025-12-11 15:02:02 | INFO | live | Monitoring... NSE=₹1544.80 BSE=₹1544.05 Spread=₹0.75
+2025-12-11 15:02:07 | INFO | live | Monitoring... NSE=₹1360.40 BSE=₹1359.70 Spread=₹0.70
+2025-12-11 15:02:12 | INFO | live | Monitoring... NSE=₹1360.30 BSE=₹1359.75 Spread=₹0.55
+2025-12-11 15:02:17 | INFO | live | Monitoring... NSE=₹1001.00 BSE=₹1001.20 Spread=₹0.20
+2025-12-11 15:02:22 | INFO | live | Monitoring... NSE=₹1360.30 BSE=₹1359.70 Spread=₹0.60
+2025-12-11 15:02:27 | INFO | live | Monitoring... NSE=₹1544.60 BSE=₹1544.20 Spread=₹0.40
+2025-12-11 15:02:32 | INFO | live | Monitoring... NSE=₹1359.70 BSE=₹1359.80 Spread=₹0.10
+2025-12-11 15:02:37 | INFO | live | Monitoring... NSE=₹1359.90 BSE=₹1360.30 Spread=₹0.40
+2025-12-11 15:02:42 | INFO | live | Monitoring... NSE=₹1544.70 BSE=₹1545.20 Spread=₹0.50
+2025-12-11 15:02:47 | INFO | live | Monitoring... NSE=₹1544.50 BSE=₹1545.40 Spread=₹0.90
+2025-12-11 15:02:52 | INFO | live | Monitoring... NSE=₹1545.00 BSE=₹1545.55 Spread=₹0.55
+2025-12-11 15:02:57 | INFO | live | Monitoring... NSE=₹1545.00 BSE=₹1545.60 Spread=₹0.60
+2025-12-11 15:03:02 | INFO | live | Monitoring... NSE=₹1360.00 BSE=₹1360.50 Spread=₹0.50
+2025-12-11 15:03:07 | INFO | live | Monitoring... NSE=₹1359.80 BSE=₹1360.40 Spread=₹0.60
+2025-12-11 15:03:12 | INFO | live | Monitoring... NSE=₹1000.80 BSE=₹1001.20 Spread=₹0.40
+2025-12-11 15:03:17 | INFO | live | Monitoring... NSE=₹1360.00 BSE=₹1359.80 Spread=₹0.20
+2025-12-11 15:03:22 | INFO | live | Monitoring... NSE=₹1360.00 BSE=₹1359.80 Spread=₹0.20
+2025-12-11 15:03:27 | INFO | live | Monitoring... NSE=₹1360.00 BSE=₹1359.85 Spread=₹0.15
+2025-12-11 15:03:32 | INFO | live | Monitoring... NSE=₹1360.10 BSE=₹1359.85 Spread=₹0.25
+2025-12-11 15:03:37 | INFO | live | Monitoring... NSE=₹1360.20 BSE=₹1359.70 Spread=₹0.50
+2025-12-11 15:03:42 | INFO | live | Monitoring... NSE=₹1360.20 BSE=₹1359.55 Spread=₹0.65
+2025-12-11 15:03:47 | INFO | live | Monitoring... NSE=₹1360.20 BSE=₹1359.60 Spread=₹0.60
+2025-12-11 15:03:52 | INFO | live | Monitoring... NSE=₹1000.80 BSE=₹1000.30 Spread=₹0.50
+2025-12-11 15:03:57 | INFO | live | Monitoring... NSE=₹1360.20 BSE=₹1359.60 Spread=₹0.60
+2025-12-11 15:04:02 | INFO | live | Monitoring... NSE=₹1360.20 BSE=₹1359.60 Spread=₹0.60
+2025-12-11 15:04:07 | INFO | live | Monitoring... NSE=₹1544.70 BSE=₹1544.25 Spread=₹0.45
+2025-12-11 15:04:12 | INFO | live | Monitoring... NSE=₹1544.60 BSE=₹1544.05 Spread=₹0.55
+2025-12-11 15:04:17 | INFO | live | Monitoring... NSE=₹1360.20 BSE=₹1359.65 Spread=₹0.55
+2025-12-11 15:04:22 | INFO | live | Monitoring... NSE=₹1360.20 BSE=₹1359.50 Spread=₹0.70
+2025-12-11 15:04:27 | INFO | live | Monitoring... NSE=₹1360.20 BSE=₹1359.60 Spread=₹0.60
+2025-12-11 15:04:32 | INFO | live | Monitoring... NSE=₹1000.80 BSE=₹1000.30 Spread=₹0.50
+2025-12-11 15:04:37 | INFO | live | Monitoring... NSE=₹1544.70 BSE=₹1544.80 Spread=₹0.10
+2025-12-11 15:04:42 | INFO | live | Monitoring... NSE=₹1000.80 BSE=₹1000.95 Spread=₹0.15
+2025-12-11 15:04:47 | INFO | live | Monitoring... NSE=₹1544.80 BSE=₹1545.10 Spread=₹0.30
+2025-12-11 15:04:52 | INFO | live | Monitoring... NSE=₹1544.80 BSE=₹1545.15 Spread=₹0.35
+2025-12-11 15:04:57 | INFO | live | Monitoring... NSE=₹1544.70 BSE=₹1545.40 Spread=₹0.70
+2025-12-11 15:05:02 | INFO | live | Monitoring... NSE=₹1544.70 BSE=₹1545.35 Spread=₹0.65
+2025-12-11 15:05:07 | INFO | live | Monitoring... NSE=₹1360.20 BSE=₹1360.80 Spread=₹0.60
+2025-12-11 15:05:12 | INFO | live | Monitoring... NSE=₹1360.20 BSE=₹1360.80 Spread=₹0.60
+2025-12-11 15:05:18 | INFO | live | Monitoring... NSE=₹1360.10 BSE=₹1360.00 Spread=₹0.10
+2025-12-11 15:05:23 | INFO | live | Monitoring... NSE=₹1360.20 BSE=₹1360.05 Spread=₹0.15
+2025-12-11 15:05:28 | INFO | live | Monitoring... NSE=₹1360.20 BSE=₹1360.65 Spread=₹0.45
+2025-12-11 15:05:33 | INFO | live | Monitoring... NSE=₹1360.20 BSE=₹1360.65 Spread=₹0.45
+2025-12-11 15:05:38 | INFO | live | Monitoring... NSE=₹1360.10 BSE=₹1360.20 Spread=₹0.10
+2025-12-11 15:05:43 | INFO | live | Monitoring... NSE=₹1360.20 BSE=₹1360.65 Spread=₹0.45
+2025-12-11 15:05:48 | INFO | live | Monitoring... NSE=₹1360.20 BSE=₹1360.65 Spread=₹0.45
+2025-12-11 15:05:49 | INFO | decision_engine | Decision engine cancelled
+2025-12-11 15:05:49 | INFO | decision_engine | Decision engine shutting down. Processed 8169 ticks.
+2025-12-11 15:05:49 | INFO | main | Shutting down data feed...
+2025-12-11 15:05:52 | INFO | main | Bot shutdown complete
+2025-12-11 15:05:52 | WARNING | data_feed | Event loop is closed. Cannot queue tick for ICICIBANK/BSE
+2025-12-11 15:05:52 | WARNING | data_feed | Event loop is closed. Cannot queue tick for HDFCBANK/BSE
+2025-12-11 15:05:52 | WARNING | data_feed | Event loop is closed. Cannot queue tick for ICICIBANK/NSE
